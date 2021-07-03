@@ -1,0 +1,7 @@
+<div>
+    <textarea style="border: 1px solid #546d76;" *ngIf="!showMarkDown" nz-input rows="{{rows}}" placeholder="Write anything"  [(ngModel)]="text" (change)="textChangeEvent()"></textarea>
+    <ngx-md *ngIf="showMarkDown">{{text}}</ngx-md>
+    <div style="width: 100%; text-align: right">
+        <span (click)="showMarkDown = !showMarkDown" style="cursor: pointer">{{ showMarkDown ? 'Hide Preview' : 'Preview' }}</span>
+    </div>
+</div>

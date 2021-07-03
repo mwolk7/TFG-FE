@@ -1,0 +1,13 @@
+server {
+  listen ${LISTEN_PORT};
+  location / {
+    sub_filter 'href="assets' 'href="${UTP_PATH}assets';
+    sub_filter 'base href="/"' 'base href="${UTP_PATH}"';
+    sub_filter 'src="' 'src="${UTP_PATH}';
+    sub_filter '</head>' '<script>const api_url = "${UTP_BE_PATH}"; const etl_api_url = "${UTP_ETL_PATH}"; const keycloak_enabled = ${KC_ENABLED}; const keycloak_url = "${KC_URL}"; const keycloak_realm = "${KC_REALM}"; const keycloak_client_id = "${KC_CLIENT_ID}"; </script>';
+    sub_filter_once off;
+    root /usr/share/nginx/html;
+    index index.html index.htm;
+    try_files $uri $uri/ /index.html =404;
+  }
+}

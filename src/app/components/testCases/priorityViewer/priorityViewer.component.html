@@ -1,0 +1,6 @@
+<div style="width: 25px">
+    <div class="prioriryBar"  [ngClass]=" (priority ==='Critical' ) ? 'criticalPriority' : 'normalPriority'"></div>
+    <div class="prioriryBar"  [ngClass]=" (priority ==='Critical' || priority ==='High' ) ? 'highPriority' : 'normalPriority'"></div>
+    <div class="prioriryBar"  [ngClass]=" (priority ==='Critical' || priority ==='High' || priority ==='Medium') ? 'mediumPriority' : 'normalPriority'"></div>
+    <div class="prioriryBar"  [ngClass]=" (priority ==='Critical' || priority ==='High' || priority ==='Medium' || priority ==='Low') ? 'lowPriority' : 'normalPriority'"></div>
+</div>

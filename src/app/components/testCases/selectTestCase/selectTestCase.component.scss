@@ -1,0 +1,62 @@
+@import "src/assets/scss/style";
+
+
+.module {
+  z-index: 60;
+  background-color: $Light-Grey-3;
+  display: flex;
+  height: 35px;
+  align-items: center;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: $White;
+  margin-bottom: 10px;
+  border-radius: $border-radius;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testCasesContainer {
+  z-index: 50;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: $White;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  padding: 10px;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+.testCase {
+  background-color: $Light-Grey-2;
+  display: flex;
+  height: 35px;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: $White;
+  border-radius: $border-radius;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+
+}
+
+.iconExpand {
+  font-size: 15px;
+  padding-top: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+.colClass {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}

@@ -1,0 +1,111 @@
+<div>
+    <div style="height: calc(100% - 55px); overflow: hidden; overflow-y: scroll;">
+        <app-small-separator></app-small-separator>
+        <form nz-form>
+            <nz-row  style="width: 100%">
+                <nz-col nzSm="24" nzMd="24" class="colClass">
+                    <nz-form-item>
+                        <nz-form-label class="labelWhite">Project</nz-form-label>
+                        <nz-select nzShowSearch nzAllowClear name="project" [(ngModel)]="bug.projectId" [nzPlaceHolder]="'Select..'" (ngModelChange)="getModelByProject()" [nzLoading]="isProjectLoading">
+                            <nz-option *ngFor="let item of projects" [nzLabel]="item.name" [nzValue]="item.id"></nz-option>
+                        </nz-select>
+                    </nz-form-item >
+                </nz-col>
+            </nz-row>
+            <div *ngIf="bug.projectId != null">
+                <app-loader-container [loading]="isModelLoading">
+                    <nz-row  style="width: 100%">
+                        <nz-col nzSm="24" nzMd="24" class="colClass">
+                            <nz-form-item>
+                                <nz-form-label class="labelWhite">Title</nz-form-label>
+                                <input nz-input name="title" required [(ngModel)]="bug.summary">
+                            </nz-form-item >
+                        </nz-col>
+                    </nz-row>
+                    <nz-row  style="width: 100%">
+                        <nz-col nzSm="24" nzMd="12" class="colClass">
+                            <nz-form-item>
+                                <nz-form-label class="labelWhite">Priority</nz-form-label>
+                                <nz-select nzShowSearch nzAllowClear name="priority" required [(ngModel)]="bug.priorityId" [nzPlaceHolder]="'Select..'">
+                                    <nz-option *ngFor="let item of model.priorities" [nzLabel]="item.description" [nzValue]="item.id"></nz-option>
+                                </nz-select>
+                                <ng-template #tagPlaceHolderDevice let-selectedList> and {{ selectedList.length }} more selected </ng-template>
+                            </nz-form-item >
+                        </nz-col>
+                        <nz-col nzSm="24" nzMd="12" class="colClass">
+                            <nz-form-item>
+                                <nz-form-label class="labelWhite">Milestone</nz-form-label>
+                                <nz-select nzShowSearch nzAllowClear name="milestone" [(ngModel)]="bug.milestoneId" [nzPlaceHolder]="'Select..'" [nzMaxTagCount]="3" [nzMaxTagPlaceholder]="tagPlaceHolderDevice" nzMode="multiple">
+                                    <nz-option *ngFor="let item of model.milestones" [nzLabel]="item.description" [nzValue]="item.id"></nz-option>
+                                </nz-select>
+                            </nz-form-item >
+                        </nz-col>
+                    </nz-row>
+                    <nz-row  style="width: 100%">
+                        <nz-col nzSm="24" nzMd="12" class="colClass">
+                            <nz-form-item>
+                                <nz-form-label class="labelWhite">Asignee</nz-form-label>
+                                <nz-select nzShowSearch nzAllowClear name="asignee" [(ngModel)]="bug.assigneeId" [nzPlaceHolder]="'Select..'" >
+                                    <nz-option *ngFor="let item of model.projectUsers" [nzLabel]="item.description" [nzValue]="item.id"></nz-option>
+                                </nz-select>
+                            </nz-form-item >
+                        </nz-col>
+                        <nz-col nzSm="24" nzMd="12" class="colClass">
+                            <nz-form-item>
+                                <nz-form-label class="labelWhite" required>Type</nz-form-label>
+                                <nz-select nzShowSearch nzAllowClear name="type" [(ngModel)]="bug.issueTypeId" [nzPlaceHolder]="'Select..'" >
+                                    <nz-option *ngFor="let item of model.issuesType" [nzLabel]="item.description" [nzValue]="item.id"></nz-option>
+                                </nz-select>
+                            </nz-form-item >
+                        </nz-col>
+                    </nz-row>
+                    <nz-row  style="width: 100%">
+                        <nz-col nzSm="24" nzMd="12" class="colClass">
+                            <nz-form-item>
+                                <nz-form-label class="labelWhite">Category</nz-form-label>
+                                <nz-select nzShowSearch nzAllowClear name="category" [(ngModel)]="bug.categoryId" [nzPlaceHolder]="'Select..'"  [nzMaxTagCount]="3" [nzMaxTagPlaceholder]="tagPlaceHolderDevice" nzMode="multiple" >
+                                    <nz-option *ngFor="let item of model.categories" [nzLabel]="item.description" [nzValue]="item.id"></nz-option>
+                                </nz-select>
+                            </nz-form-item >
+                        </nz-col>
+                        <nz-col nzSm="24" nzMd="12" class="colClass">
+                            <nz-form-item>
+                                <nz-form-label class="labelWhite">Version</nz-form-label>
+                                <nz-select nzShowSearch nzAllowClear name="version" [(ngModel)]="bug.versionId" [nzPlaceHolder]="'Select..'" [nzMaxTagCount]="3" [nzMaxTagPlaceholder]="tagPlaceHolderDevice" nzMode="multiple">
+                                    <nz-option *ngFor="let item of model.versions" [nzLabel]="item.description" [nzValue]="item.id"></nz-option>
+                                </nz-select>
+                            </nz-form-item >
+                        </nz-col>
+                    </nz-row>
+
+                    <nz-row  style="width: 100%">
+                        <nz-col nzSm="24" nzMd="24" class="colClass">
+                            <nz-form-item>
+                                <nz-form-label class="labelWhite">Description</nz-form-label>
+                                <app-markdown-area [(text)]="bug.description"  [rows]="15" style="width: 100%"></app-markdown-area>
+                            </nz-form-item >
+                        </nz-col>
+                    </nz-row>
+
+                    <app-files-selector-integration [projectId]="projectId" (sendImages)="getImagesFromGallery($event)"></app-files-selector-integration>
+
+                    <nz-row style="margin-left: 14px;margin-right: 14px">
+                        <nz-upload nzAction="" [nzCustomRequest]="uploadFile" [nzLimit]="5" [nzSize]="5000" [nzFileList]="fileList" [nzMultiple]="true" (nzChange)="handleUpload($event)">
+                            <button nz-button class="nb-util-button"><i nz-icon nzType="upload"></i>Click to Upload</button>
+                        </nz-upload>
+                    </nz-row>
+                </app-loader-container>
+            </div>
+        </form>
+        <app-medium-separator></app-medium-separator>
+        <app-medium-separator></app-medium-separator>
+        <app-medium-separator></app-medium-separator>
+    </div>
+
+    <div class="footer">
+        <button nz-button nzSize="default" type="button" (click)="createBugOnClick()" class="nb-main-button" style="margin-right: 8px;"><span>Create</span></button>
+        <button nz-button nzSize="default" type="reset" (click)="resetReportBugDrawer()" class="nb-util-button" style="margin-right: 8px;"><span>Clear All</span></button>
+        <button nz-button nzSize="default" type="button" (click)="closeDrawer()" class="nb-util-button" style="margin-right: 8px;"><span>Close</span></button>
+    </div>
+</div>
+

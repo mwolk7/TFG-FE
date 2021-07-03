@@ -1,0 +1,25 @@
+@import "src/assets/scss/style";
+
+.prioriryBar {
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  margin-top: 1px;
+}
+
+.normalPriority {
+  background-color: $Light-Grey-3;
+}
+
+.criticalPriority{
+  background-color: red;
+}
+.highPriority{
+  background-color: orangered;
+}
+.mediumPriority{
+  background-color: yellow;
+}
+.lowPriority{
+  background-color: lawngreen;
+}

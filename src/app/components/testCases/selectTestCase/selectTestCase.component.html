@@ -1,0 +1,18 @@
+<div class="module" (click)="module.toggle=!module.toggle" style="cursor: pointer">
+    <div>
+        <i nz-icon click-stop-propagation  class="iconExpand" nzType="{{module.toggle ? 'down' : 'right'}}"  (click)="module.toggle=!module.toggle" style="cursor: pointer"></i>
+        <label nz-checkbox click-stop-propagation style="padding-left: 20px; font-size: 16px;"  [(ngModel)]="allChecked" (ngModelChange)="updateAllChecked()" [nzIndeterminate]="indeterminate">{{module.name}}</label>
+    </div>
+    <div>
+        <span>{{testCaseSelected}}/{{module.testCases?.length}}</span>
+    </div>
+</div>
+<div  class="containerTestCase" *ngIf="module.toggle">
+    <div *ngFor="let testCase of module.testCases">
+        <div class="testCase">
+            <label nz-checkbox style="padding-left: 20px; font-size: 16px;" [(ngModel)]="testCase.run" (ngModelChange)="updateSingleChecked()">{{testCase.name}}</label>
+            <div style="margin-left: auto; padding-top: 3px">{{testCase.priority}}</div>
+            <app-priority-viewer style="padding-left: 15px" [priority]="testCase.priority" ></app-priority-viewer>
+        </div>
+    </div>
+</div>

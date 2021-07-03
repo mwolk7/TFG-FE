@@ -1,0 +1,24 @@
+
+<div class="fr-wrapper">
+        <div  *ngFor="let file of getFilteredImages()">
+            <nz-card  class="fr-card" [nzActions]="[actionCheck]" [nzCover]="coverTemplate">
+                <nz-skeleton [nzActive]="true" [nzLoading]="loading">
+                </nz-skeleton>
+            </nz-card>
+            <ng-template #coverTemplate>
+                <img alt="image-not-found" class="image"  [src]="apiBasePath+'/file/content/'+file.id+'?apiKey='+apiKey"/>
+            </ng-template>
+            <ng-template #actionCheck>
+                <div nz-checkbox (nzCheckedChange)="toggleCheck($event, file)"></div>
+            </ng-template>
+            <ng-template #actionDelete>
+                <button class="delete-button" nz-button nzType="danger" nzSize="small" nz-popconfirm nzPopconfirmTitle="Delete image from gallery?" (nzOnConfirm)="removeFile(file)"><i nz-icon nzType="delete"></i></button>
+            </ng-template>
+        </div>
+    <div class="footer">
+        <button nz-button nzSize="default" type="button" (click)="selectFilesOnClick()" class="nb-main-button" style="margin-right: 8px"><span>Select</span></button>
+        <button nz-button nzSize="default" nzType="danger" nz-popconfirm nzPopconfirmTitle="Delete selected image(s) from gallery?" (nzOnConfirm)="deleteFilesOnClick()" style="margin-right: 8px"><span>Delete</span></button>
+        <button nz-button nzSize="default" type="button" (click)="close()" class="nb-util-button" style="margin-right: 8px"><span>Close</span></button>
+    </div>
+</div>
+

@@ -1,0 +1,85 @@
+<app-section-container>
+    <div style="width: 100%;">
+        <button nz-button nzType="link" nzSize="large" class="backButton" (click)="backOnClick()"><i nz-icon nzType="arrow-left" class="arrowIcon"></i></button>
+        <button style="position: absolute; right: 2%;" nz-button nzType="danger" nz-popconfirm nzPopconfirmTitle="Delete Project?" (nzOnConfirm)="deleteProjectOnClick()">Delete Project</button>
+    </div>
+    <div style="text-align: center">
+        <!--avatar-->
+        <nz-avatar nz-page-header-avatar [nzText]="projectData.name | twoCharacters" style="width: 200px; height: 200px; line-height: 200px; font-size: 80px" class="notBug-avatar"></nz-avatar>
+        <app-medium-separator></app-medium-separator>
+        <div nz-col style="width: 100%">
+            <div nz-row>
+                <span nz-tooltip="Edit Project Name" nz-row nz-typography nzEditable style="font-size: 20px; font-weight: bold;display: inline-block; width: 20%" [(nzContent)]="projectData.name" (nzContentChange)="editProjectNameOrTags()">{{projectData.name}}</span>
+            </div>
+                <div nz-row>
+                <span nz-tooltip="Edit Project Tag" nz-row nz-typography nzEditable style="font-size: 20px; font-weight: bold;display: inline-block; width: 10%" [(nzContent)]="projectData.tag" (nzContentChange)="editProjectNameOrTags()">{{projectData.tag}}</span>
+            </div>
+        </div>
+        <app-small-separator></app-small-separator>
+        <app-small-separator></app-small-separator>
+    </div>
+    <app-medium-separator></app-medium-separator>
+    <div>
+        <div nz-row style="width: 100%">
+            <div nz-col nzSm="24" nzMd="12" class="colClass">
+                <nz-card nzTitle="Users"  [nzExtra]="addUserTemplate" >
+                    <app-medium-separator></app-medium-separator>
+                    <app-row-user *ngFor="let user of projectUsersData" [projectUser]="user" [projectId]="projectId"></app-row-user>
+                </nz-card>
+                <ng-template #addUserTemplate>
+                    <div style="display: flex">
+                        <button nz-button class="nb-main-button" (click)="newUserProjectOnClick()">Add</button>
+                    </div>
+                </ng-template>
+            </div>
+            <div nz-col nzSm="24" nzMd="12" class="colClass">
+                <nz-card nzTitle="Versions"  [nzExtra]="addVersionTemplate" >
+                    <nz-list>
+                        <nz-list-item *ngFor="let version of projectVersionData">
+                                <div style="width: 100%">
+                                    <span>{{ version.project_version }}</span>
+                                    <button class="delete-button" nz-button nzType="danger" nzSize="small" nz-popconfirm nzPopconfirmTitle="Delete Project Version?" (nzOnConfirm)="deleteProjectVersionOnClick(version.id)"><i nz-icon nzType="delete"></i></button>
+                                </div>
+                        </nz-list-item>
+                    </nz-list>
+                </nz-card>
+
+                <ng-template #addVersionTemplate>
+                    <div style="display: flex">
+                        <button nz-button class="nb-main-button" (click)="newProjectVersionOnClick()">Add</button>
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</app-section-container>
+
+<div>
+    <div nz-row style="width: 100%">
+        <div nz-col nzSm="24" nzMd="12" class="colClass">
+            <nz-card nzTitle="Api key - Chrome Extension"  [nzExtra]="addApikeyTemplate" [nzLoading]="apiKeyLoading">
+                <nz-list>
+                    <nz-list-item >
+                        <div style=" position: relative;float: left;">
+                            <span class="no-word-break">{{fileTokenAccessDto.token}}</span>
+                        </div>
+                    </nz-list-item>
+                </nz-list>
+            </nz-card>
+
+            <ng-template #addApikeyTemplate>
+                <div  style="display: flex">
+                    <div style="display: flex">
+                        <button nz-button class="nb-main-button" (click)="refreshProjectApikey()">Refresh</button>
+                    </div>
+                    <div style="display: flex; margin-left: 5px">
+                        <button nz-button class="nb-main-button" (click)="copyToClipboard(fileTokenAccessDto.token)">Copy</button>
+                    </div>
+                </div>
+            </ng-template>
+
+        </div>
+    </div>
+</div>
+<app-project-new-project-version [projectId]="projectData.id"  (closeOnClick)="closeNewProjectVersionOnClick()" (successOnClick)="successNewProjectVersionOnClick($event)" [showNewProjectVersion]="showNewVersionProject" ></app-project-new-project-version>
+<app-new-user-project [parentProject]="projectData" (closeOnClick)="closeUserNewProjectOnClick()" (successOnClick)="successUserNewProjectOnClick()" [showNewUserProject]="showNewUserProject" [user]="newUserProjectObject" [role]="newUserProjectRole" > </app-new-user-project>

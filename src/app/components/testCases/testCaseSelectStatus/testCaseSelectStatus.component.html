@@ -1,0 +1,11 @@
+<div>
+    <button nz-button  nz-dropdown nzTrigger='click' [nzDisabled]="isClosed" style="width: 150px" nzPlacement="bottomRight" [(ngModel)]="testCaseStatus" [ngClass]="buttonText === 'Pass' ? 'button-green' : ''"  [nzDropdownMenu]="statusMenu" nzType="{{buttonType}}" nzSize="small">{{buttonText}}</button>
+    <nz-dropdown-menu #statusMenu="nzDropdownMenu">
+    <ul nz-menu>
+        <li nz-menu-item style="color: green" (click)="changeStatusOnClick('Pass')">Exito</li>
+        <li nz-menu-item style="color: red"(click)="changeStatusOnClick('Fail')">Fallo</li>
+        <li nz-menu-item  style="color: white"(click)="changeStatusOnClick('NA')">N/A</li>
+        <li nz-menu-item style="color: white" (click)="changeStatusOnClick('CNT')">N/P</li>
+    </ul>
+    </nz-dropdown-menu>
+</div>

@@ -1,0 +1,46 @@
+@import "src/assets/scss/style";
+
+:host {
+  display: flex;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.layout {
+  min-height: 100vh;
+  background: $Black;
+}
+
+.right-layout {
+  margin-left: 80px;
+  background: unset;
+}
+
+nz-header {
+  background: #fff;
+  padding: 0;
+}
+
+nz-content {
+  margin: 0px;
+  overflow: initial;
+}
+
+.inner-content {
+  padding: 24px;
+  background: #fff;
+  text-align: center;
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 45px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}

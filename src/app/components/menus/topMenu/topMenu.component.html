@@ -1,0 +1,68 @@
+<nz-header class="main-header">
+  <img  class="logo" (click)="goToProjects()" style="cursor: pointer;"/>
+  <div class="main-toolbar-left">
+    <div  style="padding-left: 20px">
+      <button nz-button nzType="secondary" class="button-black"
+              nz-popover
+              [(nzVisible)]="visibleProyects"
+              nzPopoverTrigger="click"
+              [nzPopoverContent]="proyectsTemplate"
+              nzPopoverPlacement="bottomLeft">PROYECTOS</button>
+
+      <ng-template #proyectsTemplate >
+        <div style="width: 400px; height: 250px;" class="pop-over-style">
+          <div style="display: flex; justify-content: space-between;background-color: #545a66">
+            <app-search-input [(inputModel)]="searchProjectPopUp" style="width: 100%"> </app-search-input>
+          </div>
+          <div style="display: flex; overflow: hidden; overflow-y: scroll; height: 220px; padding-top: 10px; margin-top: 10px">
+            <nz-list nzSize="small" style="width: 100%; color: #ffffff; cursor: pointer">
+              <nz-list-item *ngFor="let project of projectData | filterTable: searchProjectPopUp" (click)="goToProject(project)" class="itemProjectList">
+                <div style="justify-content: start">
+                  {{project.name}}
+                </div>
+                <div style="justify-content: end; color: grey;">
+                  {{project.projectPath}}
+                </div>
+              </nz-list-item>
+            </nz-list>
+          </div>
+        </div>
+      </ng-template>
+
+    </div>
+
+    <nz-breadcrumb style="padding-left: 20px" >
+      <nz-breadcrumb-item>
+        <a (click)="goToProjects()">INICIO</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item *ngFor="let project of pathProjects">
+        <a (click)="goToProject(project)">{{project.name}}</a>
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+
+  </div>
+  <div class="main-toolbar-right">
+    <div class="main-toolbar-user">
+
+     <!--  <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Go to.." [(ngModel)]="selectedOS" nzSize="medium" class="searchTopBar">
+        <nz-option nzCustomContent nzLabel="Windows" nzValue="windows"><i nz-icon nzType="windows"></i> Windows</nz-option>
+        <nz-option nzCustomContent nzLabel="Mac" nzValue="mac"><i nz-icon nzType="apple"></i> Mac</nz-option>
+        <nz-option nzCustomContent nzLabel="Android" nzValue="android"><i nz-icon nzType="android"></i> Android </nz-option>
+      </nz-select> -->
+
+      <div>
+        <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu" class="userStyle">
+          <span class="userName" style="font-size: 14px; font-weight: bold" >{{currentUser.name}}</span>
+          <i nz-icon nzType="caret-down" nzTheme="outline" class="chevron"></i>
+        </a>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+          <ul nz-menu class="menuContainer">
+            <li nz-menu-item style="cursor: default"> @{{currentUser.username}} </li>
+            <li nz-menu-item (click)="profiloOnClick()"> Perfil </li>
+            <li nz-menu-item (click)="logoutOnClick()"> Cerrar sesion </li>
+          </ul>
+        </nz-dropdown-menu>
+      </div>
+    </div>
+  </div>
+</nz-header>

@@ -1,0 +1,12 @@
+<div style="height: 100%">
+    <app-loader-container [loading]="isCredentialLoading">
+        <div *ngIf="this.showNoCredentials">
+            <span style="color: white">NO CREDENTIALS</span>
+        </div>
+        <nz-tabset *ngIf="!this.showNoCredentials" style="height: 100%">
+            <nz-tab *ngFor="let credential of credentials" [nzTitle]="credential.name" >
+                <app-backlog-integration [module]="module" [testCase]="testCase" [testRunner]="testRunner" [projectId]="projectId" [credential]="credential" [lastBug]="lastBug" (closeOnClick)="closeDrawer()"></app-backlog-integration>
+            </nz-tab>
+        </nz-tabset>
+    </app-loader-container>
+</div>

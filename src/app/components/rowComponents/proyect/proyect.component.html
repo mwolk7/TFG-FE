@@ -1,0 +1,21 @@
+<div style="display: flex; justify-content: center">
+    <nz-row class="row-component-row">
+        <!-- Avatar -->
+        <nz-col  nzSm="24" nzMd="2" class="row-component-avatar-col">
+          <nz-avatar [nzText]="project.name | twoCharacters" class="notBug-avatar"  (click)="projectClick()"></nz-avatar>
+        </nz-col>
+        <!-- Name -->
+        <nz-col  nzSm="24" nzMd="12" class="row-component-name-col">
+            <span class="row-component-name-col-title" (click)="projectClick()" >{{project.name}}</span>
+<!--            <span>{{project.actualUserRole}}</span>-->
+        </nz-col>
+        <!-- TEstCases -->
+<!--        <nz-col  nzSm="24" nzMd="8" class="row-component-testSuite-col">-->
+<!--            <span class="row-component-testSuite-col-text">{{project.projectPath}}</span>-->
+<!--        </nz-col>-->
+        <!-- Date -->
+<!--        <nz-col  nzSm="24" nzMd="2" class="row-component-date-col">-->
+<!--            <span class="row-component-date-col-date">{{project.lastModifiedDate | date: 'short'}}</span>-->
+<!--        </nz-col>-->
+    </nz-row>
+</div>

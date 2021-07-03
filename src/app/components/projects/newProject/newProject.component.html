@@ -1,0 +1,17 @@
+<!-- MODAL NEW PROJECT -->
+<nz-modal [(nzVisible)]="showNewProject" nzTitle="New Project" (nzOnCancel)="cancelNewProjectOnClick()">
+    <div>
+        <form nz-form>
+            <nz-form-item>
+                <input style="border: 1px solid #546d76;" nz-input name="newName" placeholder="Name" [(ngModel)]="newProject.name" />
+            </nz-form-item>
+            <nz-form-item>
+                <input style="border: 1px solid #546d76;" nz-input name="newName" placeholder="Tags" [(ngModel)]="newProject.tag" />
+            </nz-form-item>
+        </form>
+    </div>
+    <div *nzModalFooter>
+        <button nz-button class="nb-util-button" (click)="cancelNewProjectOnClick()">Cancel</button>
+        <button nz-button class="nb-main-button" (click)="confirmNewProjectOnClick()" [nzLoading]="isConfirmNewProjectLoading">Create</button>
+    </div>
+</nz-modal>

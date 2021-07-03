@@ -1,0 +1,33 @@
+@import "src/assets/scss/style";
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  color: $White;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 3px 0px rgba(0,0,0,0.07);
+}
+
+nz-sider {
+  overflow: auto;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  background: $Grey;
+  z-index: 98;
+  box-shadow: 3px 0px rgba(0,0,0,0.07);
+}
+
+.menu {
+  color: $Primary;
+  border: unset;
+}
+.buttons {
+  width: 40px;
+  height: 36px;
+  padding: 0px;
+  margin-left: -5px;
+}
+

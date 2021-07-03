@@ -1,0 +1,11 @@
+<div #datatablewrapper [class]="dtClasses" [style.height]="dtHeight">
+  <nz-spin [nzSpinning]="loading">
+    <table #datatable>
+        <ng-content></ng-content>
+    </table>
+    <ng-container>
+      <div *ngIf="loading && data && data.length === 0" [style.min-height.px]="130"></div>
+      <nz-empty appEmpty *ngIf="!loading && data && data.length === 0" [nzNotFoundContent]="noresult" [nzNotFoundImage]="noresultImage"></nz-empty>
+    </ng-container>
+  </nz-spin>
+</div>

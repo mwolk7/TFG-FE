@@ -1,0 +1,26 @@
+<!-- MODAL NEW PROJECT -->
+<nz-modal [(nzVisible)]="showNewIntegration" nzTitle="New BackLog Integration" (nzOnCancel)="cancelNewProjectOnClick()">
+    <div>
+        <form nz-form>
+            <nz-form-item>
+                <input style="border: 1px solid #546d76;background-color: #343740; width: 95%" nz-input name="newName" placeholder="Name" [(ngModel)]="newIntegration.name" />
+            </nz-form-item>
+            <nz-form-item>
+                <div style="display: flex">
+                    <input style="border: 1px solid #546d76;background-color: #343740" nz-input name="url" placeholder="Url" [(ngModel)]="newIntegration.url" />
+                    <a (click)="helpOnClick('https://support.backlog.com/hc/en-us/community/posts/360028425434-How-to-generate-API-key-its-function')" style="padding-left: 10px;margin-top: 7px"><i nz-icon nzType="question-circle" nzTheme="outline"></i></a>
+                </div>
+            </nz-form-item>
+            <nz-form-item>
+                <div style="display: flex">
+                    <input style="border: 1px solid #546d76;background-color: #343740" nz-input name="ApiKey" placeholder="ApiKey" [(ngModel)]="newIntegration.apiKey" />
+                    <a (click)="helpOnClick('https://support.backlog.com/hc/en-us/community/posts/360028425434-How-to-generate-API-key-its-function')" style="padding-left: 10px; margin-top: 7px"><i nz-icon nzType="question-circle" nzTheme="outline"></i></a>
+                </div>
+            </nz-form-item>
+        </form>
+    </div>
+    <div *nzModalFooter>
+        <button nz-button class="nb-util-button" (click)="cancelNewProjectOnClick()">Cancel</button>
+        <button nz-button class="nb-main-button" (click)="confirmNewProjectOnClick()" [nzLoading]="isConfirmNewIntegrationLoading">Save</button>
+    </div>
+</nz-modal>

@@ -1,0 +1,761 @@
+@import "app-colors";
+@import "app.fonts";
+@import "pre-loader";
+* {
+  font-family: Montserrat;
+}
+
+/*------------------FIX ZOOM PAGE------------------*/
+
+body {
+  /* zoom: 0.8; // will we apply this fix?
+  -moz-transform: scale(0.8);
+  -moz-transform-origin: 0 0; */
+}
+
+.app-layout {
+  height: 125vh !important;
+}
+
+/*------------------BREAKPOINTS------------------*/
+
+$breakpoints: (
+  9999px: 18px,
+  1360px: 16px,
+  1000px: 14px,
+  800px: 12px,
+);
+
+// NOTE: taken from theme, report here alsfo for changes in base theme
+$padding: 24px;
+
+
+@each $width, $size in $breakpoints {
+  @media screen and (max-width: $width) {
+  }
+}
+
+//NOTE: to be updated when theme.less colors are updated (keep the same name...)
+$border-color-base: #e8e8e8;
+// Border radius
+$border-radius: 5px;
+
+/*------------------BUTTONS------------------*/
+
+// CONFIRM
+/*
+.ant-btn-primary {
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-left: $padding;
+  outline: 0;
+  text-align: center;
+  //font-weight: bold;
+  border-radius: $border-radius;
+  color: white;
+  //text-transform: uppercase;
+  background-color: $Primary;
+  border: 1px solid $Primary;
+  cursor: pointer;
+  &.ant-btn-primary:hover:enabled {
+    background-color: $Light-primary;
+  }
+  &.ant-btn-primary:disabled {
+    background-color: $Grey;
+    border: 1px solid $Grey;
+    cursor: not-allowed;
+  }
+}
+*/
+
+// BIG BUTTON
+.ant-btn-lg {
+  height: 40px;
+}
+
+// MEDIUM BUTTON
+.ant-btn-md {
+  height: 32px;
+}
+
+// notBug main button
+
+.nb-main-button {
+  background-color: $Diamond-teal;
+  color: $White;
+  border-color: $Dark-blue-2;
+
+  &:hover {
+    background-color: $Dark-blue-3;
+    border-color: $Dark-blue-2;
+  }
+}
+
+// notBug util button
+
+.nb-util-button {
+  background-color: $Light-Grey-4;
+  color: $White;
+  border-color: $Dark-blue-2;
+
+  &:hover {
+    background-color: $Dark-blue-3;
+    border-color: $Dark-blue-2;
+  }
+}
+
+// GREEN BUTTON
+.button-green {
+  background-color: $Green;
+  color: $White;
+  border-color: #86BE7A;
+
+  &:hover {
+    background-color: #86BE7A;
+    border-color: $Green;
+  }
+}
+
+// BLACK BUTTON
+.button-black {
+  background-color: $Light-Grey-2;
+  color: $White;
+  border-color: $Light-Grey-2;
+
+  &:hover {
+    background-color: $Light-Grey-3;
+    border-color: $Light-Grey-3;
+  }
+}
+
+/*------------------TEXT HEADERS------------------*/
+
+h1 {
+  font-size: 24px;
+  color: $White;
+}
+
+h2 {
+  font-size: 18px;
+  color: $White;
+}
+
+h3 {
+  color: $White;
+}
+
+h4 {
+  color: $White;
+}
+
+/*------------------BASIC TABLE------------------*/
+
+.ant-table-header {
+  background: unset;
+}
+.ant-table-thead > tr > th {
+  background: $Light-Grey-2;
+  color: $White;
+  border-bottom: unset;
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom: 1px solid $Light-Grey-2;
+}
+
+.ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body {
+  background: $Light-Grey;
+  color: $White;
+}
+
+// Hover
+.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+  background: $Light-Grey-2;
+}
+
+.ant-table-placeholder {
+  background: unset;
+  border-bottom: unset;
+  border-top: unset;
+}
+
+.ant-empty-normal {
+  color: white;
+}
+
+
+
+
+/*------------------POP OVER------------------*/
+::ng-deep.ant-popover-inner {
+  background-color:$Grey !important;
+}
+
+
+::ng-deep.ant-dropdown-menu {
+  background-color:$Light-Grey-2 !important;
+  border-color: #177DDC !important;
+}
+::ng-deep.ant-pagination-prev{
+  background-color:$Light-Grey-2 !important;
+  border-color: $Light-Grey !important;
+}
+::ng-deep.ant-pagination-item-active{
+  background-color:$Light-Grey-2 !important;
+  border-color: $Light-Grey  !important;
+}
+::ng-deep.ant-pagination-next{
+  background-color:$Light-Grey-2 !important;
+  border-color: $Light-Grey  !important;
+}
+::ng-deep.ant-pagination-disabled {
+  background-color: $Light-Grey-2 !important;
+  border-color: $Light-Grey  !important;
+}
+
+::ng-deep.ant-pagination-item-link {
+  background-color: $Light-Grey-2 !important;
+  border-color: $Light-Grey  !important;
+}
+
+::ng-deep.ant-pagination-item {
+  background-color:$Light-Grey-2 !important;
+  border-color: $Light-Grey  !important;
+}
+
+
+*{
+  word-break: keep-all;
+  &.no-word-break{
+    word-break: break-all;
+  }
+}
+/*------------------MODAL------------------*/
+
+.ant-modal-footer button + button {
+  margin-left: 24px;
+}
+.fullscreen {
+  &.ant-modal {
+    top: 0px;
+    padding-bottom: 0px;
+  }
+  .ant-modal-close {
+    top: 8px;
+    right: initial;
+    left: 6px;
+  }
+  .ant-modal-header {
+    height: 72px;
+    background-color: $Light-primary;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 79px;
+    padding-right: 24px;
+    .ant-modal-title .ng-star-inserted {
+      font-size: 24px;
+    }
+  }
+  .ant-modal-footer {
+    display: none;
+  }
+  .ant-modal-body {
+    //    height: calc(100vh - 23px);
+    height: calc(100vh - 72px);
+    padding: 0;
+  }
+}
+
+.ant-modal-body {
+  padding-bottom: 0px;
+}
+
+// MODAL SMALL
+
+.icon-modal {
+  color: red;
+  font-size: 24px;
+  padding-right: 16px;
+  margin-right: 5px;
+}
+
+.title-modal {
+  color: #424242;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.message-modal {
+  margin-left: 45px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.ant-modal-content {
+  position: relative;
+  background-color: $Light-Grey-2;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 4px;
+  pointer-events: auto;
+}
+
+.ant-modal-header {
+  padding: 16px 24px;
+  color: $White;
+  background-color: $Light-Grey-2;
+  border-bottom: 1px solid $White;
+  border-radius: 4px 4px 0 0;
+}
+
+.ant-modal-title {
+  margin: 0;
+  color: $White;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  word-wrap: break-word;
+}
+
+.ant-modal-footer {
+  padding: 12px 20px;
+}
+/* ---- TIMELINE --- */
+
+// Line
+.ant-timeline-item-tail {
+  border-left: 2px solid $Light-Grey-2;
+}
+// ball
+.ant-timeline-item-head {
+  background-color: $Light-Grey-2;
+}
+
+/* ---- STATICS --- */
+
+.ant-statistic-title {
+  margin-bottom: 4px;
+  color: $White;
+  font-size: 14px;
+}
+
+// Value colors
+.ant-statistic-content {
+  color: white;
+}
+
+.statisticRed {
+  .ant-statistic-content {
+    color: $Red;
+  }
+}
+
+.statisticGreen {
+  .ant-statistic-content {
+    color: $Green;
+  }
+}
+
+.statisticYellow {
+  .ant-statistic-content {
+    color: $Yellow;
+  }
+}
+
+/* ---- CARDS --- */
+nz-card {
+
+}
+.ant-card {
+  border-radius: $border-radius;
+  background: $Light-Grey;
+  border-color: $Grey;
+}
+.ant-card-head {
+  border-bottom: 1px solid $Light-Grey-3;
+}
+.ant-card-head-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: $White;
+}
+/* ---- TAGS --- */
+nz-tag {
+  cursor: pointer;
+  margin-right: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  opacity: 0.9;
+  background-color: #32394d;
+  border-color: #252830;
+}
+
+/*--DIVIDER ---*/
+nz-divider {
+  margin: 4px 0;
+  // vertical
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* ---- FORMS --- */
+
+// INPUTS
+.ant-input {
+  background-color: $Light-Grey-3;
+  border-color: $Light-Grey-3;
+  color: $White;
+}
+
+
+// Selects
+.ant-select-selection {
+  background-color: #343740 !important;
+  border-color: $Light-Grey-3  !important;
+  color: $White;
+}
+
+.ant-select-arrow .ant-select-arrow-icon {
+  color: $White;
+}
+
+// Clear btutton
+.ant-select-selection__clear {
+  background-color: $Light-Grey-2  !important;
+}
+
+// Hover en dropdown de select
+.ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
+  background-color: $Primary;
+}
+
+.ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title {
+  color: $White;
+}
+
+// TAGS de seleccionados
+.ant-select-selection--multiple .ant-select-selection__choice {
+  background-color: #32394d;
+  border-color: #252830;
+}
+
+.ant-select-dropdown-menu-item-selected {
+  background-color: $Primary;
+}
+
+.ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
+  background-color: $Primary;
+}
+
+
+.ant-select {
+  color: $Black;
+}
+.ant-select-dropdown-menu-item {
+  color: $Black;
+}
+
+.ant-form-item label {
+  color: $White;
+}
+
+
+/* ----- CARDAS  ---*/
+.ant-card-body {
+ padding-top: 0px;
+}
+
+/* -----   MESSAGE ----- */
+.ant-message {
+  color: $Black;
+}
+
+/* ---- ERRORS --- */
+.ant-result-subtitle {
+  color: $White;
+}
+
+.ant-notification-notice {
+  color: $Black;
+}
+
+
+/* --- PAGE HEADER ----*/
+.ant-page-header {
+  background-color: $Light-Grey;
+  border-radius: $border-radius;
+}
+
+.ant-page-header-heading-title {
+  color: $White;
+  font-size: 24px;
+}
+
+.ant-page-header-back-button {
+  color: $White;
+}
+
+
+/* -- DESCRIPTION -- */
+.ant-descriptions-item-label {
+  color: $White;
+  font-size: 16px;
+}
+
+.ant-descriptions-item {
+  vertical-align: top;
+}
+
+/* --- ROW COMPONENTES --- */
+// General
+.row-component-row {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-bottom: 1px solid grey;
+}
+
+// AVATAR
+.row-component-avatar-col {
+  max-width: 50px;
+}
+
+.row-component-avatar-col-avatar {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+// NAME
+.row-component-name-col {
+  margin-left: 20px;
+  display: grid;
+}
+
+.row-component-name-col-title {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+// DATE
+.row-component-date-col {
+  margin-left: 20px;
+  text-align: end;
+  margin-top: 13px;
+}
+
+.row-component-date-col-date {
+  font-size: 16px;
+}
+
+// TEstSuite
+.row-component-testSuite-col {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.row-component-testSuite-col-text {
+  font-size: 16px;
+}
+
+// ACTION
+.row-component-action-col {
+  margin-left: 20px;
+  text-align: end;
+  padding-top: 13px;
+}
+
+.row-component-action-col-icon {
+  margin-left: 25px;
+  font-size: 20px;
+  cursor: pointer;
+
+  &:hover {
+    color: $Primary;
+  }
+}
+
+
+/* --- AVATARS ---*/
+.notBug-avatar {
+  color: $Diamond-teal;
+  background-color: #5a5a5a;
+  border: 1px solid $Diamond-teal;
+  height: 35px;
+  width: 35px;
+  line-height: 34px;
+  font-size: 15px;
+}
+
+.avatar-testSuite {
+  color: $Diamond-teal;
+  background-color: #5a5a5a;
+  border: 1px solid $Diamond-teal;
+  height: 35px;
+  width: 35px;
+  line-height: 33px;
+  font-size: 15px;
+}
+
+/* --- COLAPSABLES ---*/
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  color: $White;
+}
+
+.ant-collapse-content {
+  color: $White;
+  border-top: unset;
+}
+
+.ant-collapse {
+  border: unset;
+  border-bottom: unset;
+}
+
+/* -- PROGRESS --*/
+
+//DONE TASK
+.ant-steps-item-finish .ant-steps-item-icon {
+  background-color: #167ddc;
+  border-color: #177DDC;
+}
+.ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+  color: #ffffff;
+}
+
+// CURRENT TASK
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+  color: $White
+}
+.ant-steps-item-process .ant-steps-item-icon > .ant-steps-icon {
+  color: #fff;
+}
+
+/* --- DRAWER ----*/
+.ant-drawer-close {
+  color: $White;
+}
+.ant-drawer-body {
+  padding-top: 5px;
+}
+
+.ant-drawer-header-no-title {
+  background: $Light-Grey-2;
+}
+.ant-drawer-header {
+  border-bottom: 1px solid $Light-Grey-3;
+}
+.ant-drawer-title {
+  color: $White;
+}
+.ant-drawer-content {
+  background-color: $Light-Grey;
+}
+.ant-drawer-content {
+  color: $White;
+}
+
+
+/* -- TABS ---*/
+.ant-tabs-nav .ant-tabs-tab {
+  color: $White;
+}
+
+.ant-tabs-bar {
+  margin: 0px 0 0px 0;
+  border-bottom: 1px solid $Light-Grey-3;
+}
+
+
+/* -- CALENDAR ---*/
+.ant-calendar-date {
+  color: $Black;
+}
+.ant-calendar-picker-icon {
+  color: $White
+}
+
+/* -- BREADCRUMN --- */
+
+.ant-breadcrumb {
+  line-height: unset;
+}
+
+
+nz-breadcrumb-item:last-child {
+  color: $White
+}
+
+/* ---------------LOADER--------------------*/
+
+.page-loader-hover {
+  border-radius: 0.35em;
+  background: #000000;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  opacity: 1;
+  -webkit-transition: opacity 0.18s ease-in-out;
+  -moz-transition: opacity 0.18s ease-in-out;
+  -ms-transition: opacity 0.18s ease-in-out;
+  -o-transition: opacity 0.18s ease-in-out;
+  transition: opacity 0.18s ease-in-out;
+  &.no-z {
+    z-index: 10;
+  }
+
+  &.mini-loader {
+    background: rgba(25, 25, 25, 0.7);
+    .loader-block {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      div[vertical-nav-type="collapsed"] & {
+        left: 50%;
+      }
+      div[vertical-nav-type="expanded"] & {
+        // NOTE: to be refactored
+        left: calc((100% - 286px) / 2 + 286px);
+      }
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.page-loader-off > .page-loader-hover {
+  opacity: 0;
+}
+
+.preloader3 {
+  > div {
+    background-color: $Diamond-teal;
+  }
+}
+
+/* --------------------------------------------*/
+
+.ant-upload-list-item-info {
+  height: 100%;
+  padding: 0 12px 0 4px;
+  transition: background-color 0.3s;
+}
+
+.ant-upload-list-item:hover .ant-upload-list-item-info {
+  background-color: #32394d;
+}

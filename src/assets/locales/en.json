@@ -1,0 +1,976 @@
+{
+  "CHIAVE": "Italiano",
+  "ERRORI": {
+    "TITOLO": "Errore",
+    "ERRORE_DI_SISTEMA": "Errore di sistema",
+    "ERRORE_OFFLINE": "Impossibile stabilire una connessione, controlla le impostazioni di rete e riprova",
+    "ERRORE_NON_AUTORIZZATO": "Non disponi delle autorizzazioni per accedere alla risorsa",
+    "ERRORE_ESTENSIONE": "L'estensione del file caricato non è tra quelle supportate ({{EstensioniSupportate}})"
+  },
+  "AVVISO": {
+    "TITOLO": "Avviso"
+  },
+  "MENU_PRINCIPALE": {
+    "AMMINISTRAZIONE": "Amministrazione",
+    "DELIBERE": "Delibere",
+    "POSIZIONI": "Posizioni",
+    "HOMEPAGE": "Homepage",
+    "PORTFOLIO_MANAGEMENT": "Portfolio management"
+  },
+  "MENU_UTENTE": {
+    "DATI_UTENTE_LOGGATO": "Profilo",
+    "HELP": "Help?",
+    "LOGOUT": "Logout"
+  },
+  "SEZIONE_FILTRI": {
+    "TITOLO": "Filtri",
+    "RIPRISTINA_DEFAULT": "Ripristina",
+    "APPLICA_FILTRI": "Applica",
+    "PLACEHOLDER": {
+      "TUTTI": "- Tutti -",
+      "DA": "Da",
+      "A": "A"
+    }
+  },
+  "DATI_UTENTE": {
+    "TITOLO": "Profilo utente",
+    "TITOLO_SECONDARIO": "Dati dell'utente",
+    "ELENCO": {
+      "DESCRIZIONE_UTENTE": "Cognome e nome",
+      "RUOLI": "Profilo",
+      "UNITA_ORGANIZZATIVA": "Unità organizzativa",
+      "EMAIL": "Email",
+      "GRUPPO": "Gruppo"
+    }
+  },
+  "LISTA_POSIZIONI": {
+    "TITOLO": {
+      "LISTA_POSIZIONI": "Lista posizioni"
+    },
+    "ELENCO": {
+      "FILTRI": {
+        "DENOMINAZIONE": "Denominazione",
+        "GBV_TOT": "GBV Tot. (€)",
+        "GRUPPO_ECONOMICO": "Gruppo economico",
+        "INDUSTRY": "Industry",
+        "NDG_CONTROPARTE": "NDG",
+        "NDG_DI_PROVENIENZA": "NDG di provenienza",
+        "PRESA_IN_CARICO": "Presa in carico",
+        "STATO_RISCHIO_SEC": "Stato rischio",
+        "STATO_POSIZIONE": "Stato posizione",
+        "STRATEGIA_UW": "Strategia underwriting",
+        "UNITA_ORGANIZZATIVA_ASSEGNATARIA": "Unità organizzativa",
+        "UTENTE_ASSEGNATARIO": "Assegnatario",
+        "APERTE": "Aperte",
+        "CHIUSE": "Chiuse"
+      },
+      "DENOMINAZIONE": "Denominazione",
+      "GBV_TOT": "GBV Tot (€)",
+      "GRUPPO_ECONOMICO": "Gruppo economico",
+      "NESSUNA_POSIZIONE": "Nessun dato disponibile",
+      "NDG_CONTROPARTE": "NDG",
+      "NDG_DI_PROVENIENZA": "NDG di provenienza",
+      "STATO_RISCHIO_SEC": "Stato rischio",
+      "STATO_POSIZIONE": "Stato posizione",
+      "STRATEGIA_UW": "Strategia underwriting",
+      "UNITA_ORGANIZZATIVA_ASSEGNATARIA": "Unità organizzativa"
+    }
+  },
+  "POSIZIONE": {
+    "MENU": {
+      "BUSINESS_PLAN": "Business plan",
+      "DELIBERE": "Delibere",
+      "DETTAGLI": "Dettagli",
+      "MONITORING": "Monitoring",
+      "MOVIMENTI": "Movimenti",
+      "SINTESI": "Sintesi"
+    },
+    "TITOLO": "POSIZIONE {{NdgPosizione}} {{Denominazione}}",
+    "DETTAGLI": {
+      "ANAGRAFICA_CONTROPARTI": {
+        "SEZIONE_CONTROPARTE": {
+          "TITOLO": "{{Denominazione}} {{Primario}}",
+          "ELENCO": {
+            "ATECO": "ATECO",
+            "DATA_DI_NASCITA": "Data di nascita",
+            "DATA_COSTITUZIONE": "Data costituzione",
+            "DATA_ISCRIZIONE_CAMERA_DI_COMMERCIO": "Data iscrizione camera di commercio",
+            "EMAIL": "Email",
+            "INDIRIZZO_DOMICILIO": "Indirizzo domicilio  ",
+            "INDIRIZZO_SEDE_LEGALE": "Indirizzo sede legale ",
+            "INDIRIZZO_SEDE_OPERATIVA": "Indirizzo sede operativa",
+            "LUOGO_E_PROVINCIA_DI_NASCITA": "Luogo di nascita",
+            "NATURA_GIURIDICA": "Natura giuridica",
+            "NAZIONALITA": "Nazionalità ",
+            "NDG": "NDG",
+            "NDG_DI_PROVENIENZA": "NDG di provenienza",
+            "NUM_CAMERA_DI_COMMERCIO_E_PROV_CAMERA_DI_COMMERCIO": "Iscrizione camera di commercio",
+            "NUMERO_DI_TELEFONO": "Numero di telefono",
+            "INDIRIZZO_RESIDENZA": "Indirizzo residenza",
+            "SAE": "SAE ",
+            "SESSO": "Stato civile"
+          },
+          "AZIONI": {
+            "VEDI_COINTESTAZIONI": "Vedi cointestazioni",
+            "VEDI_POSIZIONE": "Vedi posizione"
+          }
+        },
+        "VEDI_COINTESTAZIONI": {
+          "TITOLO": "Lista cointestazioni",
+          "DENOMINAZIONE": "Denominazione",
+          "GBV_TOT": "GBV Tot (€)",
+          "NDG_CONTROPARTE": "NDG"
+        },
+        "VEDI_POSIZIONE": {
+          "TITOLO": "Dettaglio posizione",
+          "DENOMINAZIONE": "Denominazione",
+          "GBV_TOT": "GBV Tot (€)",
+          "NDG_CONTROPARTE": "NDG"
+        }
+      },
+      "ANAGRAFICA": {
+        "CONTROPARTI": {
+          "SEZIONE_CONTROPARTE": {
+            "ELENCO": {
+              "CODICE_FISCALE": "Codice fiscale",
+              "PARTITA_IVA": "Partita IVA"
+            }
+          }
+        }
+      },
+      "MENU": {
+        "COLLEGAMENTI": "Collegamenti",
+        "CONTROPARTI": "Controparti",
+        "GARANZIE": "Garanzie",
+        "GRUPPO_ECONOMICO": "Gruppo economico",
+        "IMMOBILI": "Immobili",
+        "LINEE_DI_CREDITO": "Linee di credito",
+        "RAPPORTI": "Rapporti",
+        "CONTENZIOSI": "Contenziosi"
+      },
+      "COLLEGAMENTI": {
+        "SEZIONE_COLLEGATO": {
+          "ELENCO": {
+            "DENOMINAZIONE": "Denominazione",
+            "TIPO_LEGAME": "Tipo collegamento",
+            "CODICE_FISCALE": "Codice fiscale",
+            "DATA_DI_NASCITA": "Data di nascita",
+            "EMAIL": "Email",
+            "INDIRIZZO_DOMICILIO": "Domicilio / sede operativa",
+            "LUOGO_E_PROVINCIA_DI_NASCITA": "Luogo e provincia di nascita",
+            "NATURA_GIURIDICA": "Natura giuridica",
+            "NAZIONALITA": "Nazionalità",
+            "NDG_COLLEGATO": "NDG",
+            "NUMERO_DI_TELEFONO": "Telefono",
+            "PARTITA_IVA": "Partita IVA",
+            "INDIRIZZO_RESIDENZA": "Residenza / sede legale",
+            "NESSUN_COLLEGATO": "Nessun dato disponibile"
+          },
+          "COINTESTATARI": {
+            "TITOLO": "Cointestatari",
+            "ELENCO": {
+              "NDG_COINTESTATARIO": "NDG",
+              "DENOMINAZIONE": "Denominazione",
+              "NATURA_GIURIDICA": "Natura giuridica",
+              "INDIRIZZO_RESIDENZA": "Residenza / sede legale",
+              "INDIRIZZO_DOMICILIO": "Domicilio / sede operativa",
+              "LUOGO_E_PROVINCIA_DI_NASCITA": "Luogo e provincia di nascita",
+              "DATA_DI_NASCITA": "Data di nascita",
+              "NAZIONALITA": "Nazionalità",
+              "CODICE_FISCALE": "Codice Fiscale",
+              "PARTITA_IVA": "Partita IVA",
+              "NUMERO_DI_TELEFONO": "Telefono",
+              "EMAIL": "Email",
+              "COINTESTATARIO_PRIMARIO": "Cointestatario primario"
+            }
+          }
+        }
+      },
+      "GRUPPO_ECONOMICO": {
+        "SEZIONE_GRUPPO": {
+          "ELENCO": {
+            "CODICE_GRUPPO_ECONOMICO": "Codice",
+            "DENOMINAZIONE_GRUPPO_ECONOMICO": "Denominazione",
+            "GBV_GRUPPO_ECONOMICO": "GBV (€)"
+          }
+        },
+        "SEZIONE_COMPONENTI": {
+          "TITOLO": "Componenti",
+          "ELENCO": {
+            "DENOMINAZIONE_NDG": "Denominazione",
+            "GBV_NDG": "GBV  (€)",
+            "NDG": "NDG",
+            "RUOLO": "Ruolo",
+            "NESSUN_SOGGETTO": "Nessun dato disponibile"
+          }
+        },
+        "AZIONI": {
+          "VEDI_POSIZIONE": "Vedi posizione"
+        }
+      },
+      "LINEE_DI_CREDITO": {
+        "ELENCO": {
+          "COD": {
+            "DIVISA": "Divisa"
+          },
+          "CODICE_LINEA_DI_CREDITO": "Codice ",
+          "DATA_DI_SCADENZA": "Data scadenza",
+          "IMPORTO_DELIBERATO": "Importo (€)",
+          "NESSUNA_LINEA_DI_CREDITO": "Nessun dato disponibile",
+          "STATO_DELLE_LINEA_DI_CREDITO": "Stato",
+          "TIPOLOGIA_SCADENZA": "Tipo scadenza",
+          "FILTRI": {
+            "CODICE_LINEA_DI_CREDITO": "Codice",
+            "IMPORTO_DELIBERATO": "Importo (€)"
+          }
+        }
+      },
+      "RAPPORTI": {
+        "AZIONI": {
+          "VEDI_GARANZIE_COLLEGATE": "Vedi garanzie collegate",
+          "VEDI_DETTAGLI_RAPPORTO": "Vedi dettagli rapporto"
+        },
+        "ELENCO": {
+          "CODICE_RAPPORTO": "Codice",
+          "CODICE_RAPPORTO_ORIGINARIO": "Codice rapp. originario",
+          "DATA_APERTURA_RAPPORTO": "Data apertura",
+          "DI_CUI_CAPITALE_A_SCADERE": "Capitale a scadere (€)",
+          "DI_CUI_MORA": "Mora (€)",
+          "DI_CUI_RATEO_INTERESSI_CORRISPETTIVI": "Rateo (€)",
+          "DI_CUI_SCADUTO_IMPAGATO": "Scaduto impagato (€)",
+          "DI_CUI_SPESE": "Spese (€)",
+          "FLAG_SECURED_UNSECURED": "Sec/unsec",
+          "GBV": "GBV (€)",
+          "IMPORTO_FIDO_ACCORDATO": "Fido/accordato (€)",
+          "CODICE_DI_PROVENIENZA": "Codice di provenienza",
+          "TIPO_RAPPORTO": "Tipo",
+          "DELIBERA_ASSOCIATA": "Delibera",
+          "FILTRI": {
+            "TUTTI": "Tutti",
+            "APERTI": "Aperti",
+            "CHIUSI": "Chiusi",
+            "CODICE_RAPPORTO": "Codice",
+            "CODICE_RAPPORTO_ORIGINARIO": "Codice rapporto originario",
+            "DATA_APERTURA_RAPPORTO": "Data apertura",
+            "DI_CUI_CAPITALE_A_SCADERE": "Capitale a scadere (€)",
+            "DI_CUI_MORA": "Mora (€)",
+            "DI_CUI_RATEO_INTERESSI_CORRISPETTIVI": "Rateo (€)",
+            "DI_CUI_SCADUTO_IMPAGATO": "Scaduto impagato (€)",
+            "DI_CUI_SPESE": "Spese (€)",
+            "FLAG_SECURED_UNSECURED": "Sec/unsec",
+            "GARANZIA_COLLEGATA": "Garanzie collegate",
+            "GBV": "GBV (€)",
+            "IMPORTO_FIDO_ACCORDATO": "Fido/accordato (€)",
+            "CODICE_DI_PROVENIENZA": "Codice di provenienza",
+            "TIPO_RAPPORTO": "Tipo",
+            "STATO_RAPPORTO": "Stato rapporto"
+          },
+          "DATA_CHIUSURA_RAPPORTO": "Data chiusura",
+          "NESSUN_RAPPORTO": "Nessun dato disponibile"
+        },
+        "FINANZIAMENTI_DETTAGLIO": {
+          "ELENCO": {
+            "DATI_GENERALI": "Dati generali",
+            "CODICE_RAPPORTO": "Codice",
+            "STATO_FINANZIAMENTO": "Stato finanziamento",
+            "SEC_UNSEC": "Sec/unsec",
+            "FLAG_POOL": "Pool",
+            "GBV": "GBV",
+            "ETICHETTA_IMPORTO": "Importo (€)",
+            "GBV_DEL_FINANZIAMENTO": "GBV totale",
+            "DI_CUI_QUOTA_CAPITALE": "di cui quota capitale",
+            "DI_CUI_QUOTA_DI_INTERESSI_CORRISPETTIVI": "di cui quota int. corrisp.",
+            "DI_CUI_MORA": "di cui mora",
+            "ALTRI_DATI": "Altri dati",
+            "DIETIMO_INTERESSI_MORA": "Dietimo int. mora (€)",
+            "ACCONTI_VERSATI_CONTO_CAPITALE_CONTO_ANTICIPI": "Acconti versati c/cap. (€)",
+            "ACCONTI_VERSATI_CONTO_INTERESSI_CONTO_ANTICIPI": "Acconti versati c/int. (€)",
+            "DATA_EROGAZIONE": "Data erogazione",
+            "AMMONTARE_RINEGOZIOATO": "Ammontare rineg. (€)",
+            "DATA_SCADENZA_RINEGOZIATA": "Scadenza rinegoziata",
+            "DATA_ACCOLLO": "Data accollo ",
+            "INTESTATARIO_ORIGINARIO": "Intestatario originario",
+            "CODICE_MUTUO_PADRE": "Codice mutuo padre",
+            "CARATTERISTICHE": "Caratteristiche",
+            "TIPOLOGIA_TASSO": "Tipologia tasso",
+            "TIPO_PIANO_DETTAGLIO": "Tipo piano",
+            "TASSO_IN_ESSERE": "Tasso in essere (%)",
+            "INDICE": "Indice",
+            "PERIODICITA_RATA": "Periodicità rata ",
+            "SPREAD": "Spread"
+          },
+          "AZIONI": {
+            "CHIUDI": "Chiudi"
+          },
+          "TITOLO": "DETTAGLIO FINANZIAMENTO"
+        },
+        "FINANZIAMENTI": {
+          "DETTAGLIO": {
+            "ELENCO": {
+              "DI_CUI_SCADUTO_IMPAGATO": "di cui scaduto impagato",
+              "DI_CUI_CAPITALE_A_SCADERE": "di cui capitale a scadere",
+              "DI_CUI_RATEO_A_INTERESSI_CORRISPETTIVI": "di cui rateo int. corrisp.",
+              "DI_CUI_SPESE": "di cui spese",
+              "DIETIMO_INTERESSI_CORRISPETTIVI": "Dietimo int. corrisp. (€)",
+              "AMMONTARE_DELL_EROGAZIONE": "Ammontare erog. (€)",
+              "DATA_SCADENZA_MIGRATA": "Scadenza (migrata)",
+              "DATA_RINEGOZIAZIONE": "Data rinegoziazione",
+              "DATA_ULTIMA_SCADENZA_RATA": "Ultima scadenza rata",
+              "DATA_PROSSIMA_SCADENZA_RATA": "Prossima scadenza rata",
+              "DATA_CHIUSURA": "Data chiusura",
+              "DATA_DELLA_PRIMA_RATA_INSOLUTA": "Prima rata insoluta"
+            }
+          }
+        },
+        "DETTAGLIO_SOFFERENZE_RAPPORTI": {
+          "TITOLO": "Sofferenze - rapporti",
+          "ELENCO": {
+            "TIPO_RAPPORTO_ORIGINARIO": "Tipo rapporto originario",
+            "N_RAPPORTO_SOFFERENZA": "N° rapp. sofferenza",
+            "RAPPORTO_ORIGINARIO": "Rapporto originario",
+            "GBV": "GBV (€)",
+            "QUOTA_CAPITALE": "Capitale (€)",
+            "QUOTA_MORA": "Mora (€)",
+            "SPESE": "Spese (€)",
+            "TASSO_DI_MORA": "Tasso di mora (%)"
+          }
+        }
+      },
+      "IMMOBILI": {
+        "ELENCO": {
+          "NESSUN_IMMOBILE": "Nessun dato disponibile",
+          "CODICE_IMMOBILE": "Codice",
+          "CODICE_DOSSIER": "Codice dossier",
+          "IMMOBILE_RESIDENZIALE_NON_RESIDENZIALE": "Destinazione d'uso",
+          "TIPOLOGIA_IMMOBILE": "Tipo immobile",
+          "TIPO_PERIZIA": "Tipo perizia",
+          "VALORE_DI_STIMA_PERIZIA": "Valore perizia (€)",
+          "DATA_ULTIMA_STIMA_PERIZIA": "Data perizia",
+          "INDIRIZZO_IMMOBILE": "Indirizzo",
+          "STATO_IMMOBILE": "Stato",
+          "CATEGORIA_CATASTALE": "Categoria catastale",
+          "GRADO_IPOTECA": "Grado ipoteca",
+          "IMPORTO_GRADO_IPOTECHE": "Importo grado ipoteche (€)",
+          "FLAG_DI_IMMOBILE_IN_COSTRUZIONE": "In costruzione",
+          "PERCENTUALE_AVANZAMENTO_LAVORI": "Avanzamento lavori (%)",
+          "VALORE_ISCRIZIONE_IPOTECA": "Valore iscrizione ipoteca (€)",
+          "IMPORTO_PERIZIA_ORIGINALE": "Importo perizia originale (€)",
+          "FILTRI": {
+            "CODICE_IMMOBILE": "Codice",
+            "CODICE_DOSSIER": "Codice dossier",
+            "IMMOBILE_RESIDENZIALE_NON_RESIDENZIALE": "Destinazione d'uso",
+            "TIPOLOGIA_IMMOBILE": "Tipo immobile",
+            "TIPO_PERIZIA": "Tipo perizia",
+            "GRADO_IPOTECA": "Grado ipoteca",
+            "CODICE_GARANZIA": "Codice garanzia"
+          }
+        }
+      },
+      "GARANZIE": {
+        "ELENCO": {
+          "NESSUNA_GARANZIA": "Nessun dato presente",
+          "CODICE_GARANZIA": "Codice",
+          "TIPO_GARANZIA": "Tipo",
+          "VALORE_GARANZIA": "Valore (€)",
+          "DATA_CONFERMA": "Data conferma",
+          "DATA_SCADENZA_GARANZIA": "Data scadenza",
+          "DENOMINAZIONE_GARANTE": "Denominazione garante",
+          "FILTRI": {
+            "CODICE_RAPPORTO": "Codice rapporto"
+          }
+        },
+        "AZIONI": {
+          "VEDI_IMMOBILI_COLLEGATI": "Vedi immobili collegati",
+          "VEDI_RAPPORTI_COLLEGATI": "Vedi rapporti collegati"
+        },
+        "GARANTI": {
+          "ELENCO": {
+            "GARANTI_COLLEGATI": "Garanti collegati",
+            "NDG_GARANTE": "NDG",
+            "DENOMINAZIONE": "Denominazione",
+            "NATURA_GIURIDICA": "Natura giuridica",
+            "INDIRIZZO_RESIDENZA": "Residenza / sede legale",
+            "INDIRIZZO_DOMICILIO": "Domicilio / sede operativa",
+            "LUOGO_E_PROVINCIA_DI_NASCITA": "Luogo e provincia di nascita",
+            "DATA_DI_NASCITA": "Data di nascita",
+            "NAZIONALITA": "Nazionalità",
+            "CODICE_FISCALE": "Codice Fiscale",
+            "PARTITA_IVA": "Partita IVA",
+            "NUMERO_DI_TELEFONO": "Telefono",
+            "EMAIL": "Email"
+          }
+        }
+      },
+      "CONTENZIOSO": {
+        "SEZIONE_CONTENZIOSO": {
+          "TITOLO": "{{Tipo}} {{Stato}}",
+          "TITOLO_IN_CREAZIONE": "Aggiunta contenzioso",
+          "TITOLO_IN_MODIFICA": "Modifica contenzioso",
+          "ELENCO": {
+            "DATA_INIZIO": "Data inizio",
+            "DATA_FINE": "Data fine",
+            "TIPO_CONTENZIOSO": "Tipo contenzioso",
+            "SOGGETTI_COLLEGATI": "Attori (soggetti collegati)",
+            "ALTRI_SOGGETTI": "Altri attori",
+            "NOTE": "Note"
+          }
+        },
+        "AZIONI": {
+          "AGGIUNGI_CONTENZIOSO": "Aggiungi ",
+          "CONFERMA_INSERIMENTO": "Conferma",
+          "ANNULLA_INSERIMENTO": "Annulla",
+          "CONFERMA_MODIFICA": "Conferma",
+          "ANNULLA_MODIFICA": "Annulla",
+          "MESSAGGIO_CONFERMA_CANCELLAZIONE": "Sei sicuro di voler eliminare il contenzioso selezionato?",
+          "CONFERMA": "Conferma",
+          "ANNULLA": "Annulla"
+        },
+        "NESSUN_CONTENZIOSO": "Nessun contenzioso disponibile"
+      },
+      "CENTRALE_RISCHI": {
+        "FENOMENO": {
+          "CREDITI_PER_CASSA": {
+            "RISCHI": {
+              "AUTOLIQUIDANTI": "Crediti per cassa   "
+            },
+            "RISCHI_A_SCADENZA": "Rischi autoliquidanti ",
+            "RISCHI_A_REVOCA": "Rischi a scadenza ",
+            "FINANZ": {
+              "A_PROC": {
+                "_CONC": {
+                  "_E_ALTRI_FIN": {
+                    "_PARTICOLARI": "Rischi a Revoca"
+                  }
+                }
+              }
+            },
+            "SOFFERENZE": "Sofferenze"
+          },
+          "CREDITIDI_FIRMA": "Crediti di firma ",
+          "CREDITI_DI_FIRMA": {
+            "GARANZIE_CONNESSE_CON_OPERAZIONI_DI_NATURA_COMMERCIALE": "Garanzie connesse con operazioni di natura commerciale ",
+            "GARANZIE_CONNESSE_CON_OPERAZIONI_DI_NATURA_FINANZIARIA": "Garanzie connesse con operazioni di natura finanziaria "
+          },
+          "GARANZIE_RICEVUTE": "Garanzie ricevute",
+          "DERIVATI_FINANZIARI": "Derivati finanziari ",
+          "SEZIONE_INFORMATIVA": "Sezione informativa "
+        },
+        "STATO_RAPPORTO": "Stato rapporto ",
+        "SEZIONE_PORTAFOGLIO": {
+          "": "Portafoglio",
+          "ACCORDATO": "Accordato ",
+          "UTILIZZATO": "Utilizzato",
+          "VALORE_GARANZIA": "Valore garanzia ",
+          "IMPORTO_GARANTITO": "Importo garantito ",
+          "ALTRI_IMPORTI": "Altri importi ",
+          "SCONFINO": "Sconfino  ",
+          "MARGINE": "Margine "
+        },
+        "SEZIONE_SISTEMA": "Sistema",
+        "SEZIONE_CALCOLATO": "Calcolato",
+        "ELENCO": {
+          "FILTRI": {
+            "SOGGETTO": "Soggetto",
+            "TIPO_VISUALIZZAZIONE": "Tipo visualizzazione",
+            "MESE_E_ANNO_DI_RIFERIMENTO": "Mese di riferimento ",
+            "FENOMENO": "Fenomeno"
+          }
+        }
+      }
+    },
+    "BUSINESS_PLAN": {
+      "ELENCO": {
+        "DATA_ORA_AGGIORNAMENTO": "Ultimo aggiornamento",
+        "IRR": "IRR (%)",
+        "MESSAGGIO": {
+          "NESSUN_BUSINESS_PLAN": "Nessun dato disponibile"
+        },
+        "MOIC": "MOIC",
+        "MV": "MV (€)",
+        "STRATEGIA": "Strategia",
+        "TIPO_BUSINESS_PLAN": "Tipo",
+        "UTENTE_AGGIORNAMENTO": "Utente aggiornamento",
+        "VERSIONE": "Versione",
+        "WAL": "WAL (anni)"
+      },
+      "AZIONI": {
+        "CARICA_BUSINESS_PLAN": "Carica business plan",
+        "SELEZIONE": {
+          "BUDGET": "Budget",
+          "DELIBERE": "Delibere",
+          "GESTORE": "Gestore",
+          "TUTTI": "Tutti",
+          "UNDERWRITING": "Underwriting"
+        },
+        "SELEZIONE_TIPOLOGIA_DI_BUSINEES_PLAN_VISUALIZZATI": "Tipo di business plan",
+        "MODALE_CONFERMA": {
+          "MESSAGGIO": "Sei sicuro di voler eliminare il business plan selezionato?",
+          "ANNULLA": "Annulla",
+          "CONFERMA": "Conferma"
+        }
+      }
+    },
+    "MONITORING": {
+      "AZIONI": {
+        "SELETTORE_TIPOLOGIA_DATI": {
+          "CUMULATI": "Cumulati",
+          "DI_PERIODO": "Di Periodo"
+        },
+        "MENU_DETTAGLIO_MOVIMENTI": {
+          "FEES": "Vedi movimenti actual fees",
+          "GDP": "Vedi movimenti actual GDP",
+          "SPESE_LE_P": "Vedi movimenti actual spese",
+          "TUTTI_I_MOVIMENTI": "Vedi tutti i movimenti actual"
+        },
+        "AZIONE_SELETTORE_TIPOLOGIA_DATI": "Tipologia dati",
+        "AZIONE_SELEZIONE_COLONNE_DA_VISUALIZZARE": "Personalizza colonne",
+        "SELEZIONE_COLONNE_DA_VISUALIZZARE": {
+          "ACTUAL": "Actual",
+          "GESTORE": "Business plan gestore",
+          "UNDERWRITING": "Business plan underwriting"
+        }
+      },
+      "ELENCO_CASH_FLOW": {
+        "CASHFLOW_ACTUAL": "Actual",
+        "CASHFLOW_GESTORE": "Business plan gestore",
+        "CASHFLOW_UNDERWRITING": "Business plan underwriting",
+        "TITOLO": "Cash flow"
+      },
+      "ELENCO": {
+        "FEES": "Fees ",
+        "GBV": "GBV ",
+        "GDP": "GDP ",
+        "NDP": "NDP ",
+        "SPESE_L_P": "Spese L&P ",
+        "SEZIONE_ACTUAL": "Actual",
+        "DELTA_FEES": "Delta fees ",
+        "DELTA_GDP": "Delta GDP ",
+        "DELTA_NDP": "Delta NDP ",
+        "DELTA_SPESE_L_P": "Delta spese L&P ",
+        "SEZIONE_BP_GESTORE": "Business plan gestore",
+        "SEZIONE_BP_UNDERWRITING": "Business plan underwriting",
+        "VALUTA": "Valori in €",
+        "NESSUN_DATO": "Nessun dato disponibile",
+        "NESSUNA_COLONNA_SELEZIONATA": "Seleziona almeno un cash flow per visualizzare i risultati"
+      }
+    },
+    "MOVIMENTI": {
+      "ELENCO": {
+        "NESSUN_MOVIMENTO": "Nessun dato disponibile",
+        "CODICE_RAPPORTO": "Codice rapporto",
+        "DATA_CONTABILE": "Data contabile",
+        "IMPORTO": "Importo (€)",
+        "TIPO_MOVIMENTO": "Tipo movimento",
+        "TIPO_RAPPORTO": "Tipo rapporto",
+        "DATA_VALUTA": "Data valuta ",
+        "FILTRI": {
+          "CODICE_RAPPORTO": "Codice rapporto",
+          "DATA_CONTABILE": "Data contabile",
+          "DATA_VALUTA": "Data valuta ",
+          "IMPORTO": "Importo (€)",
+          "TIPO_MOVIMENTO": "Tipo movimento",
+          "TIPO_RAPPORTO": "Tipo rapporto"
+        }
+      }
+    },
+    "SINTESI": {
+      "DATI_ASSEGNAZIONE": {
+        "ELENCO": {
+          "GESTORE_DI_RIFERIMENTO": "Gestore di riferimento",
+          "STATO_ASSEGNAZIONE": "Stato assegnazione",
+          "UNITA_ORGANIZZATIVA_ASSEGNATARIA": "Unità organizzativa "
+        },
+        "TITOLO": "Assegnazione"
+      },
+      "DATI_DI_SINTESI": {
+        "ELENCO": {
+          "DATA_CHIUSURA_ATTESA": "Chiusura attesa",
+          "DATA_INGRESSO_STATO": "Ingresso stato",
+          "FLAG_PRESENZA_POOL": "Pool",
+          "FLAG_SERVICING_BANK": "Servicing bank",
+          "NDG_DI_PROVENIENZA": "NDG di provenienza",
+          "SO_W": "SoW (%)",
+          "STATO_RISCHIO": "Stato rischio SEC"
+        },
+        "TITOLO": "Dati di sintesi"
+      },
+      "GBV": {
+        "TITOLO": "GBV",
+        "ELENCO": {
+          "GBV_SEC": "GBV SEC (€)",
+          "GBV_TOT": "GBV Tot (€)",
+          "GBV_UNSEC": "GBV UNSEC (€)"
+        },
+        "AZIONI": {
+          "VEDI_DETTAGLIO": "Vedi storico",
+          "VEDI_MENO": "Vedi meno"
+        },
+        "STORICO": {
+          "EVENTO_CUT_OFF": "Cut-off (€)",
+          "EVENTO_MIGRAZIONE": "Migrazione (€)",
+          "GBV_TOTALE": "GBV totale",
+          "DI_CUI_SECURED": "di cui secured",
+          "DI_CUI_UNSECURED": "di cui unsecured",
+          "DI_CUI_FACILITY_RECEIVABLE": "di cui facility receivable",
+          "DI_CUI_LEASING": "di cui leasing",
+          "DI_CUI_REVOLVING_BANK": "di cui revolving bank"
+        }
+      },
+      "DATI_GESTIONALI": {
+        "ELENCO": {
+          "GRUPPO_ECONOMICO": "Gruppo economico",
+          "INDUSTRY": "Industry",
+          "STRATEGIA_UW": "Strategia UW"
+        },
+        "TITOLO": "Dati gestionali"
+      },
+      "STATO_POSIZIONE": {
+        "TITOLO": "Stato posizione",
+        "NESSUNO_STATO": "- Stato non definito -"
+      }
+    },
+    "DELIBERE": {
+      "AZIONI": {
+        "CREA_NUOVA_PROPOSTA": "Crea nuova proposta",
+        "CREA_DELIBERA_DISABILITATO": "Per creare una proposta di delibera a partire dalla posizione in esame occorre che quest'ultima sia assegnata ad un utente appartenente ad una unità organizzativa"
+      },
+      "CREA_PROPOSTA": {
+        "TITOLO": "Crea proposta di delibera",
+        "POSIZIONE_GIA_ASSOCIATA": "La posizione è già associata ad una proposta non annullata. Non è possibile creare la proposta di delibera",
+        "RAPPORTI_GIA_ASSOCIATI": "Tutti i rapporti aperti della posizione sono già associati a proposte non annullate. Non è possibile creare la proposta di delibera",
+        "DATA_ENTRY": {
+          "DENOMINAZIONE": "Denominazione",
+          "TIPO_PROPOSTA": "Tipo proposta",
+          "STRATEGIA_ASSOCIATA": "Strategia associata"
+        },
+        "AZIONI": {
+          "ANNULLA": "Annulla",
+          "CREA": "Crea proposta"
+        }
+      }
+    },
+    "TOOLBAR": {
+      "DOCUMENTI": {
+        "TITOLO": "Documenti",
+        "APRI_CARTELLA": "Vedi cartella documentale"
+      },
+      "NOTE": {
+        "TITOLO": "Note",
+        "DATA_ENTRY": {
+          "TITOLO": "Titolo...",
+          "TESTO_NOTA": "Scrivi una nota..."
+        },
+        "AZIONI": {
+          "AGGIUNGI_NOTA": "Aggiungi nota",
+          "CONFERMA_INSERIMENTO": "Conferma",
+          "ANNULLA_INSERIMENTO": "Annulla",
+          "CONFERMA_MODIFICA": "Conferma",
+          "ANNULLA_MODIFICA": "Annulla",
+          "RICERCA_NOTA": "Cerca nelle note...",
+          "MESSAGGIO_CONFERMA_CANCELLAZIONE": "Sei sicuro di voler eliminare la nota selezionata?",
+          "MESSAGGIO_CONFERMA_USCITA": "Sei sicuro di voler uscire senza salvare la nota modificata?",
+          "CONFERMA": "Conferma",
+          "ANNULLA": "Annulla"
+        }
+      },
+      "CONTATTI": {
+        "TITOLO": "Contatti",
+        "DATI_ADVISOR": {
+          "TITOLO": "Dati Advisor",
+          "ELENCO": {
+            "DENOMINAZIONE_ADVISOR": "Denominazione",
+            "PARTITA_IVA": "Partita IVA",
+            "CATEGORIA": "Tipologia",
+            "RIFERIMENTO": "Riferimento",
+            "TELEFONO": "Telefono",
+            "PEC": "PEC"
+          }
+        },
+        "DATI_CONTATTO_AGGIUNTIVO": {
+          "TITOLO": "Dati contatto",
+          "ELENCO": {
+            "DENOMINAZIONE_CONTATTO": "Nome",
+            "RUOLO": "Ruolo",
+            "TELEFONO1": "Telefono 1",
+            "TELEFONO2": "Telefono 2",
+            "EMAIL": "Email",
+            "PEC": "PEC",
+            "NOTE": "Note"
+          }
+        },
+        "DATI_CONTATTO": {
+          "TITOLO": "Dati contatto",
+          "ELENCO": {
+            "DENOMINAZIONE_CONTATTO": "Nome",
+            "RUOLO": "Ruolo",
+            "TELEFONO1": "Telefono 1",
+            "TELEFONO2": "Telefono 2",
+            "EMAIL": "Email",
+            "PEC": "PEC",
+            "NOTE": "Note"
+          }
+        },
+        "AZIONI": {
+          "AGGIUNGI_CONTATTO": "Aggiungi contatto",
+          "CONFERMA_INSERIMENTO": "Conferma",
+          "ANNULLA_INSERIMENTO": "Annulla",
+          "MESSAGGIO_CONFERMA_USCITA": "Uscendo dalla posizione le modifiche in corso ad un contatto non saranno salvate",
+          "MESSAGGIO_DI_CONFERMA_CANCELLAZIONE": "Sei sicuro di voler eliminare il contatto selezionato?",
+          "CONFERMA_MODIFICA": "Conferma",
+          "ANNULLA_MODIFICA": "Annulla",
+          "CONFERMA": "Conferma",
+          "ANNULLA": "Annulla"
+        },
+        "DATA_ENTRY": {
+          "TIPO_CONTATTO": "Tipo contatto"
+        },
+        "PLACEHOLDER": {
+          "SELEZIONA": "- Seleziona -"
+        }
+      }
+    }
+  },
+  "DEV": {
+    "TEST_CHIAVE": "TESTIT4",
+    "TEST_CHIAVE2": "TEST2IT4",
+    "CHILD": {
+      "TEST_CHIAVE": "TESTCHILDIT4",
+      "TEST_CHIAVE2": "TESTCHILD2IT4"
+    },
+    "DEFAULT": {
+      "VALUES": {
+        "ALL": "- Tutti -",
+        "SI": "Si",
+        "NO": "No",
+        "FROM": "Da",
+        "TO": "A",
+        "OTHERS": "+",
+        "RESIDENTIAL": "Residenziale",
+        "NOT_RESIDENTIAL": "Non residenziale",
+        "NEW": "Nuovo",
+        "USED": "Usato",
+        "SELEZIONARE": "- Selezionare -",
+        "SEC": "Secured",
+        "UNSEC": "Unsecured"
+      }
+    }
+  },
+  "DELIBERE": {
+    "LISTA_DELIBERE": {
+      "TITOLO": "Delibere",
+      "ELENCO": {
+        "FILTRI": {
+          "CODICE_PROTOCOLLO": "N° protocollo",
+          "UNITA_ORGANIZZATIVA_CREAZIONE": "Unità org. creazione",
+          "DATA_PROTOCOLLO": "Data protocollo",
+          "TIPO_PROPOSTA": "Tipo proposta ",
+          "DENOMINAZIONE_PROPOSTA": "Denominazione proposta ",
+          "GBV_PROPOSTA": "GBV proposta (€)",
+          "STRATEGIA_PROPOSTA": "Strategia proposta ",
+          "UNITA_ORGANIZZATIVA": "Unità org. assegnatario",
+          "UTENTE_ASSEGNATARIO": "Utente assegnatario",
+          "STATO": "Stato",
+          "ATTIVE": "Attive",
+          "ANNULLATE": "Annullate"
+        },
+        "CODICE_PROTOCOLLO": "N° Protocollo",
+        "DATA_PROTOCOLLO": "Data protocollo",
+        "UNITA_ORGANIZZATIVA_CREAZIONE": "Unità org. creazione",
+        "TIPO_PROPOSTA": "Tipo proposta ",
+        "DENOMINAZIONE_PROPOSTA": "Denominazione proposta ",
+        "GBV_PROPOSTA": "GBV proposta (€)",
+        "STRATEGIA_PROPOSTA": "Strategia proposta ",
+        "UNITA_ORGANIZZATIVA": "Unità org. assegnatario",
+        "UTENTE_ASSEGNATARIO": "Utente assegnatario",
+        "STATO": "Stato ",
+        "NESSUNA_DELIBERA": "Nessun dato disponibile"
+      }
+    },
+    "SINTESI_PROPOSTA": {
+      "TITOLO": "SINTESI PROPOSTA {{CodProtocollo}} {{DenominazioneProposta}}",
+      "DATI": {
+        "TITOLO": "Dati proposta",
+        "ELENCO": {
+          "CODICE_PROTOCOLLO": "Numero protocollo",
+          "DENOMINAZIONE": "Denominazione",
+          "DATA_PROTOCOLLO": "Data protocollo",
+          "UNITA_ORGANIZZATIVA_CREAZIONE": "Unità organizzativa di creazione",
+          "TIPO_PRATICA": "Tipo proposta ",
+          "GBV_PROPOSTA": "GBV proposta (€)",
+          "STATO": "Stato",
+          "STRATEGIA_PROPOSTA": "Strategia proposta",
+          "UNITA_ORGANIZZATIVA": "Unità organizzativa",
+          "UTENTE_ASSEGNATARIO": "Utente assegnatario"
+        }
+      },
+      "ELENCO_POSIZIONI": {
+        "TITOLO": "ELENCO POSIZIONI ASSOCIATE ({{NumPosizioniAssociate}})",
+        "AZIONI": {
+          "AGGIUNGI_POSIZIONE": "Aggiungi posizioni",
+          "MODALE_CONFERMA": {
+            "MESSAGGIO": "Sei sicuro di voler eliminare la selezione effettuata?",
+            "ANNULLA": "Annulla ",
+            "CONFERMA": "Conferma"
+          },
+          "RIMUOVI_SELEZIONE": "Elimina selezione"
+        }
+      },
+      "AGGIUNGI_POSIZIONE": {
+        "TITOLO": "Seleziona posizioni da aggiungere",
+        "ELENCO": {
+          "NESSUNA_POSIZIONE": "Nessun dato disponibile"
+        },
+        "AZIONI": {
+          "CONTATORE_DELLE_POSIZIONI_ASSOCIATE": "Totale posizioni associate: {{NumPosizioniAssociate}}"
+        }
+      },
+      "AGGIUNGI_RAPPORTI": {
+        "AZIONI": {
+          "CONTATORE_DEI_RAPPORTI_ASSOCIATI": "Totale rapport associati: {{NumRapportiAssociati}}"
+        }
+      },
+      "TOOLBAR": {
+        "DOCUMENTI": {
+          "TITOLO": "Documenti",
+          "APRI_CARTELLA": "Vedi cartella documentale"
+        }
+      }
+    }
+  },
+  "CARICA_BUSINESS_PLAN": {
+    "TITOLO": "Caricamento business plan",
+    "SELEZIONE_FILE": {
+      "MESSAGGIO": "Fai click o trascina il file in quest'area per caricare il business plan"
+    },
+    "CHIUDI": "Chiudi",
+    "AVANZAMENTO": {
+      "MESSAGGIO": "Caricamento in corso …",
+      "ANNULLA": "Annulla il caricamento"
+    },
+    "ESITO_POSITIVO": {
+      "MESSAGGIO": "Caricamento eseguito con successo!"
+    },
+    "CARICA_NUOVO_FILE": "Carica nuovo file",
+    "ESITO_NEGATIVO": {
+      "MESSAGGIO_UNO": "Errore, il file non è stato caricato correttamente",
+      "MESSAGGIO_DUE": "Sono stati trovati i seguenti errori:"
+    },
+    "LISTA_ERRORI": "Scarica lista completa degli errori",
+    "ERRORE": {
+      "MANCANZA_FOGLI": "Manca il foglio {{NomeFoglio}}",
+      "COLONNE_ERRATE": "Foglio {{NomeFoglio}}: una o più intestazioni delle colonne non sono corrette",
+      "NUMERO_RIGHE_COMPILATE": "Foglio {{NomeFoglio}}: numero righe compilate maggiore di 1",
+      "ERRORE_FORMATO": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}} - campo {{NomeCampo}} obbligatorio non presente o con formato / valori errati",
+      "VERSIONE_DUPLICATA": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}} - campo {{NomeCampo}}: versione già presente a sistema per la stessa posizione e tipo Business plan",
+      "PORTAFOGLIO_NON_CORRETTO": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}: portafoglio non corretto o non presente a sistema",
+      "NDG_NON_CORRETTO": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}: NDG non corretto o non presente a sistema",
+      "SEQUENZA_POSIZIONI": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}: riga non nella sequenza corretta (NDG posizione)",
+      "SEQUENZA_DATE": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}: riga non nella sequenza corretta (data)",
+      "BP_ETEROGENEI": "Foglio {{NomeFoglio}}: presenza di business plan di tipo diverso",
+      "PORTAFOGLI_ETEROGENEI": "Foglio {{NomeFoglio}}: posizioni appartenenti a portafogli diversi tra loro",
+      "NDG_RIPETUTO": "Foglio {{NomeFoglio}}: l'NDG non può essere ripetuto su più righe",
+      "MANCANZA_RIGHE": "Foglio {{NomeFoglio}}: deve esserci almeno una riga compilata"
+    }
+  },
+  "PORTFOLIO_MANAGEMENT": {
+    "MENU": {
+      "ASSEGNAZIONE_GESTORE": "Assegnazione utente gestore"
+    },
+    "ASSEGNAZIONE_GESTORE": {
+      "CARICA_FILE": {
+        "AZIONI": {
+          "CARICA_ASSEGNAZIONE": "Carica assegnazione utente",
+          "ANNULLA_CARICAMENTO": "Annulla il caricamento",
+          "CHIUDI": "Chiudi",
+          "CARICA_NUOVO_FILE": "Carica nuovo file",
+          "SCARICA_ERRORI": "Scarica lista completa degli errori",
+          "SCARICA_WARNING": "Scarica lista completa dei warning"
+        },
+        "TITOLO": "Caricamento Assegnazione Utente",
+        "SELEZIONE_FILE": {
+          "MESSAGGIO": "Fai click o trascina il file in quest'area per caricare le assegnazioni"
+        },
+        "AVANZAMENTO": {
+          "MESSAGGIO": "Caricamento in corso…"
+        },
+        "ESITO_POSITIVO": {
+          "MESSAGGIO": "Caricamento eseguito con successo!"
+        },
+        "ESITO_NEGATIVO": {
+          "MESSAGGIO_UNO": "Errore, il file non è stato caricato correttamente",
+          "MESSAGGIO_DUE": "Sono stati trovati i seguenti errori:"
+        },
+        "ESITO_WARNING": {
+          "MESSAGGIO_UNO": "Attenzione, il file è stato caricato ma sono presenti dei warning",
+          "MESSAGGIO_DUE": "Sono stati trovati i seguenti warning:"
+        }
+      }
+    }
+  },
+  "CARICA_FILE_ASSEGNAZIONE_UTENTI": {
+    "ERRORE": {
+      "MANCA_FOGLIO": "Manca il foglio {{NomeFoglio}}",
+      "COLONNE_ERRATE": "Foglio {{NomeFoglio}}: una o più intestazioni delle colonne non sono corrette",
+      "NESSUNA_RIGA": "Foglio {{NomeFoglio}}: deve esserci almeno una riga compilata",
+      "PORTAFOGLIO": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}: portafoglio non corretto o non presente a sistema",
+      "NDG": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}: NDG non corretto o non presente a sistema",
+      "EMAIL": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}: e-mail non corretta o non presente a sistema",
+      "ASSEGNAZIONE": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}: il tipo di assegnazione specificato non è valido",
+      "CODICE_PORTAFOGLIO_NON_OMOGENEO": "Foglio {{NomeFoglio}}: posizioni appartenenti a portafogli diversi tra loro",
+      "NDG_RIPETUTO": "Foglio {{NomeFoglio}}: l'NDG non può essere ripetuto su più righe",
+      "INDIRIZZO_EMAIL_DUPLICATO": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}:l'indirizzo email {{EmailUtente}} non è univoco all'interno del sistema"
+    },
+    "WARNING": {
+      "UTENTE_UO_NON_COERENTE": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}: Warning - Utente non assegnato ad una unità organizzativa oppure con una unità organizzativa non coerente con quella della posizione",
+      "GRUPPO_ECONOMICO": "La posizione {{NDG}} del gruppo economico {{Gruppo}} assegnata a {{Utente}} non è coerente con le seguenti assegnazioni relative allo stesso gruppo economico: {{ListaNdgUtenti}}"
+    }
+  },
+  "CARICA_FILE_ASSEGNAZIONE_SEGMENTO": {
+    "ERRORE": {
+      "MANCA_FOGLIO": "Manca il foglio {{NomeFoglio}}",
+      "COLONNE_ERRATE": "Foglio {{NomeFoglio}}: una o più intestazioni delle colonne non sono corrette",
+      "NESSUNA_RIGA": "Foglio {{NomeFoglio}}: deve esserci almeno una riga compilata",
+      "PORTAFOGLIO": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}: portafoglio non corretto o non presente a sistema",
+      "NDG": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}: NDG non corretto o non presente a sistema",
+      "SEGMENTO": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}: il segmento specificato non è valido",
+      "CODICE_PORTAFOGLIO_NON_OMOGENEO": "Foglio {{NomeFoglio}}: posizioni appartenenti a portafogli diversi tra loro",
+      "NDG_RIPETUTO": "Foglio {{NomeFoglio}}: l'NDG non può essere ripetuto su più righe"
+    }
+  },
+  "CARICA_FILE_ASSEGNAZIONE_GRUPPO_ECONOMICO": {
+    "ERRORE": {
+      "MANCA_FOGLIO": "Manca il foglio {{NomeFoglio}}",
+      "COLONNE_ERRATE": "Foglio {{NomeFoglio}}: una o più intestazioni delle colonne non sono corrette",
+      "NESSUNA_RIGA": "Foglio {{NomeFoglio}}: deve esserci almeno una riga compilata",
+      "NDG": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}: NDG non presente",
+      "CODICE_GRUPPO_DUPLICATO": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}: il codice gruppo economico {{CodiceGruppo}} non è univoco all'interno del sistema",
+      "GRUPPO_ECONOMICO": "Foglio {{NomeFoglio}} - riga {{NumeroRiga}}: Gruppo economico non presente",
+      "NDG_RIPETUTO": "Foglio {{NomeFoglio}}: l'NDG non può essere ripetuto su più righe"
+    }
+  },
+  "LOGIN": {
+    "TITOLO": "Login",
+    "DATA_ENTRY": {
+      "NOME_UTENTE": "Login",
+      "PASSWORD": "Password"
+    },
+    "ERRORE": {
+      "CREDENZIALI_NON_VALIDE": "Nome utente / password non validi"
+    }
+  },
+  "POSIZONE": {
+    "DETTAGLI": {
+      "CENTRALE_RISCHI": {
+        "CAMPI_TESTATA": {
+          "ELENCO": {
+            "CODICE_CR": "Codice CR ",
+            "CODICE_FISCALE": "Codice fiscale",
+            "PARTITA_IVA": "Partita Iva",
+            "N_SOGGETTI_SEGNALANTI": "N° soggetti segnalanti"
+          }
+        },
+        "NESSUN_DATO_DISPONIBILE": "Nessun dato disponibile"
+      }
+    }
+  }
+}

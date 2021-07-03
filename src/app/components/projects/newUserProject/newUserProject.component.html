@@ -1,0 +1,36 @@
+<!-- MODAL NEW PROJECT -->
+<nz-modal [(nzVisible)]="showNewUserProject" nzTitle="New Project User" (nzOnCancel)="cancelNewProjectOnClick()">
+    <div>
+        <form nz-form>
+            <nz-form-item>
+
+                <nz-select style="border: 1px solid #546d76;background-color: #343740"
+                        nzPlaceHolder="Select user"
+                        nzShowSearch
+                        nzServerSearch
+                        name="user"
+                        [(ngModel)]="user.id"
+                        (nzOnSearch)="onSearch($event)"
+                        required="true"
+                >
+                    <ng-container *ngFor="let o of userList">
+                        <nz-option *ngIf="!isUserLoading" [nzValue]="o.id" [nzLabel]="getUserLabel(o)"></nz-option>
+                    </ng-container>
+                    <nz-option *ngIf="isUserLoading" nzDisabled nzCustomContent>
+                        <i nz-icon nzType="loading" class="loading-icon"></i> Loading users...
+                    </nz-option>
+                </nz-select>
+
+            </nz-form-item>
+            <nz-form-item>
+                <nz-select style="border: 1px solid #546d76; background-color: #343740" name="roles" [(ngModel)]="role" [nzPlaceHolder]="'Select role..'" required="true">
+                    <nz-option *ngFor="let item of roles" [nzLabel]="item.key" [nzValue]="item.value" [nzDisabled]="item.key === 'Owner'"></nz-option>
+                </nz-select>
+            </nz-form-item >
+        </form>
+    </div>
+    <div *nzModalFooter>
+        <button nz-button class="nb-util-button" (click)="cancelNewProjectOnClick()">Cancel</button>
+        <button nz-button class="nb-main-button" (click)="confirmNewProjectOnClick()" [nzLoading]="isConfirmNewUserProjectLoading">Add</button>
+    </div>
+</nz-modal>

@@ -1,0 +1,119 @@
+@import "src/assets/scss/style";
+
+.logo {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: $White;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: $Grey;
+  width: 45px;
+  margin-left: 15px;
+}
+
+.main-header {
+  padding: 0;
+  width: 100%;
+  z-index: 95;
+  display: flex;
+  background-color: $Light-Grey;
+  opacity: 99%;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 10px rgba(0,0,0,0.07);
+  .main-toolbar-left {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .main-toolbar-right {
+    height: 100%;
+    width: 100%;
+    .main-toolbar-user {
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 24px;
+      color: $Secondary;
+      .icon {
+        font-size: 25px;
+      }
+      span {
+        margin-left: 24px;
+        font-size: 16px;
+        height: 100%;
+        font-family: Montserrat;
+      }
+      .chevron {
+        margin-left: 24px;
+        cursor: pointer;
+      }
+      .userName {
+        cursor: pointer;
+      }
+      .selectClass {
+
+      }
+    }
+  }
+  .main-toolbar-logo {
+    min-width: 200px;
+    min-height: 48px;
+    padding-left: 24px;
+    align-self: center;
+  }
+
+  .menuTab {
+    align-self: flex-end;
+    margin-left: 100px;
+  }
+}
+
+.menuContainer {
+  min-width: 200px;
+
+  .ant-dropdown-menu-item:hover,
+  .ant-dropdown-menu-submenu-title:hover {
+    background-color: $Grey;
+  }
+}
+
+.userStyle {
+  color: $White;
+}
+
+.searchTopBar{
+  width: 250px;
+}
+
+.navigatorText {
+  color: $White;
+  padding-left: 20px;
+}
+
+:host ::ng-deep .ant-input {
+  background-color: $White;
+  border: unset;
+  color: $White;
+}
+
+.itemProjectList{
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 3px;
+  &:hover {
+    background-color: #a2a2a2;
+  }
+
+  ::ng-deep.pop-over-style{
+  background-color: $White !important;
+}
+
+}
+
+

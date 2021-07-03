@@ -1,0 +1,688 @@
+﻿Chiave;CHIAVE
+Errori.Titolo;ERRORI.TITOLO
+Errori.Errore di sistema;ERRORI.ERRORE_DI_SISTEMA
+Errori.Errore offline;ERRORI.ERRORE_OFFLINE
+Errori.Errore non autorizzato;ERRORI.ERRORE_NON_AUTORIZZATO
+Errori.Errore estensione;ERRORI.ERRORE_ESTENSIONE
+Avviso.Titolo;AVVISO.TITOLO
+Menu principale.Amministrazione;MENU_PRINCIPALE.AMMINISTRAZIONE
+Menu principale.Delibere;MENU_PRINCIPALE.DELIBERE
+Menu principale.Posizioni;MENU_PRINCIPALE.POSIZIONI
+Menu principale.Homepage;MENU_PRINCIPALE.HOMEPAGE
+Menu principale.Portfolio management;MENU_PRINCIPALE.PORTFOLIO_MANAGEMENT
+Menu utente.Dati utente loggato;MENU_UTENTE.DATI_UTENTE_LOGGATO
+Menu utente.Help;MENU_UTENTE.HELP
+Menu utente.Logout;MENU_UTENTE.LOGOUT
+Sezione filtri.Titolo;SEZIONE_FILTRI.TITOLO
+Sezione filtri.Ripristina default;SEZIONE_FILTRI.RIPRISTINA_DEFAULT
+Sezione filtri.Applica filtri;SEZIONE_FILTRI.APPLICA_FILTRI
+Sezione filtri.Placeholder.Tutti;SEZIONE_FILTRI.PLACEHOLDER.TUTTI
+Sezione filtri.Placeholder.Da;SEZIONE_FILTRI.PLACEHOLDER.DA
+Sezione filtri.Placeholder.A;SEZIONE_FILTRI.PLACEHOLDER.A
+Dati Utente.Titolo;DATI_UTENTE.TITOLO
+Dati Utente.Titolo secondario;DATI_UTENTE.TITOLO_SECONDARIO
+Dati Utente.Elenco.Descrizione utente ;DATI_UTENTE.ELENCO.DESCRIZIONE_UTENTE
+Dati Utente.Elenco.Ruoli;DATI_UTENTE.ELENCO.RUOLI
+Dati Utente.Elenco.Unita organizzativa ;DATI_UTENTE.ELENCO.UNITA_ORGANIZZATIVA
+Dati Utente.Elenco.Email;DATI_UTENTE.ELENCO.EMAIL
+Dati Utente.Elenco.Gruppo;DATI_UTENTE.ELENCO.GRUPPO
+Lista posizioni.titolo.lista posizioni;LISTA_POSIZIONI.TITOLO.LISTA_POSIZIONI
+Lista posizioni.azioni.Apri dettaglio posizione;LISTA_POSIZIONI.AZIONI.APRI_DETTAGLIO_POSIZIONE
+Lista posizioni.azioni.Ordinamento colonne;LISTA_POSIZIONI.AZIONI.ORDINAMENTO_COLONNE
+Lista posizioni.elenco.filtri.Denominazione;LISTA_POSIZIONI.ELENCO.FILTRI.DENOMINAZIONE
+Lista posizioni.elenco.filtri.GBV Tot;LISTA_POSIZIONI.ELENCO.FILTRI.GBV_TOT
+Lista posizioni.elenco.filtri.Gruppo economico;LISTA_POSIZIONI.ELENCO.FILTRI.GRUPPO_ECONOMICO
+Lista posizioni.elenco.filtri.Industry;LISTA_POSIZIONI.ELENCO.FILTRI.INDUSTRY
+Lista posizioni.elenco.filtri.NDG controparte;LISTA_POSIZIONI.ELENCO.FILTRI.NDG_CONTROPARTE
+Lista posizioni.elenco.filtri.NDG di provenienza;LISTA_POSIZIONI.ELENCO.FILTRI.NDG_DI_PROVENIENZA
+Lista posizioni.elenco.filtri.Presa in carico;LISTA_POSIZIONI.ELENCO.FILTRI.PRESA_IN_CARICO
+Lista posizioni.elenco.filtri.Stato Rischio SEC;LISTA_POSIZIONI.ELENCO.FILTRI.STATO_RISCHIO_SEC
+Lista posizioni.elenco.filtri.Stato posizione;LISTA_POSIZIONI.ELENCO.FILTRI.STATO_POSIZIONE
+Lista posizioni.elenco.filtri.Strategia UW;LISTA_POSIZIONI.ELENCO.FILTRI.STRATEGIA_UW
+Lista posizioni.elenco.filtri.Unità organizzativa assegnataria;LISTA_POSIZIONI.ELENCO.FILTRI.UNITA_ORGANIZZATIVA_ASSEGNATARIA
+Lista posizioni.elenco.filtri.Utente assegnatario;LISTA_POSIZIONI.ELENCO.FILTRI.UTENTE_ASSEGNATARIO
+Lista posizioni.elenco.filtri.aperte;LISTA_POSIZIONI.ELENCO.FILTRI.APERTE
+Lista posizioni.elenco.filtri.chiuse;LISTA_POSIZIONI.ELENCO.FILTRI.CHIUSE
+Lista posizioni.elenco.Denominazione;LISTA_POSIZIONI.ELENCO.DENOMINAZIONE
+Lista posizioni.elenco.GBV Tot;LISTA_POSIZIONI.ELENCO.GBV_TOT
+Lista posizioni.elenco.Gruppo economico;LISTA_POSIZIONI.ELENCO.GRUPPO_ECONOMICO
+Lista posizioni.elenco.nessuna posizione;LISTA_POSIZIONI.ELENCO.NESSUNA_POSIZIONE
+Lista posizioni.elenco.NDG controparte;LISTA_POSIZIONI.ELENCO.NDG_CONTROPARTE
+Lista posizioni.elenco.NDG di provenienza;LISTA_POSIZIONI.ELENCO.NDG_DI_PROVENIENZA
+Lista posizioni.elenco.Stato Rischio SEC;LISTA_POSIZIONI.ELENCO.STATO_RISCHIO_SEC
+Lista posizioni.elenco.Stato posizione;LISTA_POSIZIONI.ELENCO.STATO_POSIZIONE
+Lista posizioni.elenco.Strategia UW;LISTA_POSIZIONI.ELENCO.STRATEGIA_UW
+Lista posizioni.elenco.Unità organizzativa assegnataria;LISTA_POSIZIONI.ELENCO.UNITA_ORGANIZZATIVA_ASSEGNATARIA
+Posizione.Menu.Business plan;POSIZIONE.MENU.BUSINESS_PLAN
+Posizione.Menu.Delibere;POSIZIONE.MENU.DELIBERE
+Posizione.Menu.Dettagli;POSIZIONE.MENU.DETTAGLI
+Posizione.Menu.Monitoring;POSIZIONE.MENU.MONITORING
+Posizione.Menu.Movimenti;POSIZIONE.MENU.MOVIMENTI
+Posizione.Menu.Sintesi;POSIZIONE.MENU.SINTESI
+Posizione.Titolo;POSIZIONE.TITOLO
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Titolo;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.TITOLO
+Posizione.Dettagli.Anagrafica.Controparti.Sezione controparte.Elenco.Codice Fiscale;POSIZIONE.DETTAGLI.ANAGRAFICA.CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.CODICE_FISCALE
+Posizione.Dettagli.Anagrafica.Controparti.Sezione controparte.Elenco.Partita IVA;POSIZIONE.DETTAGLI.ANAGRAFICA.CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.PARTITA_IVA
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.ATECO;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.ATECO
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.Data Di Nascita;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.DATA_DI_NASCITA
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.Data Costituzione;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.DATA_COSTITUZIONE
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.Data Iscrizione Camera Di Commercio;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.DATA_ISCRIZIONE_CAMERA_DI_COMMERCIO
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.Email;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.EMAIL
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.Indirizzo Domicilio;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.INDIRIZZO_DOMICILIO
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.Indirizzo Sede legale ;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.INDIRIZZO_SEDE_LEGALE
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.Indirizzo Sede operativa;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.INDIRIZZO_SEDE_OPERATIVA
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.Luogo e Provincia di nascita;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.LUOGO_E_PROVINCIA_DI_NASCITA
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.Natura giuridica ;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.NATURA_GIURIDICA
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.Nazionalità;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.NAZIONALITA
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.NDG;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.NDG
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.NDG di provenienza;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.NDG_DI_PROVENIENZA
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.Num Camera Di Commercio e Prov Camera Di Commercio;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.NUM_CAMERA_DI_COMMERCIO_E_PROV_CAMERA_DI_COMMERCIO
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.Numero di telefono;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.NUMERO_DI_TELEFONO
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.Indirizzo Residenza ;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.INDIRIZZO_RESIDENZA
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.SAE;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.SAE
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Elenco.Sesso;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.ELENCO.SESSO
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Azioni.Vedi cointestazioni ;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.AZIONI.VEDI_COINTESTAZIONI
+Posizione.Dettagli.Anagrafica Controparti.Sezione controparte.Azioni.Vedi posizione ;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.SEZIONE_CONTROPARTE.AZIONI.VEDI_POSIZIONE
+Posizione.Dettagli.Anagrafica Controparti.Vedi Cointestazioni.Titolo;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.VEDI_COINTESTAZIONI.TITOLO
+Posizione.Dettagli.Anagrafica Controparti.Vedi Posizione.Titolo;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.VEDI_POSIZIONE.TITOLO
+Posizione.Dettagli.Anagrafica Controparti.Vedi Cointestazioni.Denominazione;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.VEDI_COINTESTAZIONI.DENOMINAZIONE
+Posizione.Dettagli.Anagrafica Controparti.Vedi Cointestazioni.GBV Tot;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.VEDI_COINTESTAZIONI.GBV_TOT
+Posizione.Dettagli.Anagrafica Controparti.Vedi Cointestazioni.NDG controparte;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.VEDI_COINTESTAZIONI.NDG_CONTROPARTE
+Posizione.Dettagli.Anagrafica Controparti.Vedi Posizione.Denominazione;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.VEDI_POSIZIONE.DENOMINAZIONE
+Posizione.Dettagli.Anagrafica Controparti.Vedi Posizione.GBV Tot;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.VEDI_POSIZIONE.GBV_TOT
+Posizione.Dettagli.Anagrafica Controparti.Vedi Posizione.NDG controparte;POSIZIONE.DETTAGLI.ANAGRAFICA_CONTROPARTI.VEDI_POSIZIONE.NDG_CONTROPARTE
+Posizione.business plan.elenco.Data ora aggiornamento;POSIZIONE.BUSINESS_PLAN.ELENCO.DATA_ORA_AGGIORNAMENTO
+Posizione.business plan.elenco.IRR;POSIZIONE.BUSINESS_PLAN.ELENCO.IRR
+Posizione.business plan.elenco.messaggio.nessun business plan ;POSIZIONE.BUSINESS_PLAN.ELENCO.MESSAGGIO.NESSUN_BUSINESS_PLAN
+Posizione.business plan.elenco.MOIC;POSIZIONE.BUSINESS_PLAN.ELENCO.MOIC
+Posizione.business plan.elenco.MV;POSIZIONE.BUSINESS_PLAN.ELENCO.MV
+Posizione.business plan.elenco.Strategia;POSIZIONE.BUSINESS_PLAN.ELENCO.STRATEGIA
+Posizione.business plan.elenco.tipo business plan;POSIZIONE.BUSINESS_PLAN.ELENCO.TIPO_BUSINESS_PLAN
+Posizione.business plan.elenco.Utente aggiornamento;POSIZIONE.BUSINESS_PLAN.ELENCO.UTENTE_AGGIORNAMENTO
+Posizione.business plan.elenco.Versione;POSIZIONE.BUSINESS_PLAN.ELENCO.VERSIONE
+Posizione.business plan.elenco.WAL;POSIZIONE.BUSINESS_PLAN.ELENCO.WAL
+Posizione.business plan.azioni.Cancella;POSIZIONE.BUSINESS_PLAN.AZIONI.CANCELLA
+Posizione.business plan.azioni.Carica Business plan;POSIZIONE.BUSINESS_PLAN.AZIONI.CARICA_BUSINESS_PLAN
+Posizione.business plan.azioni.Download;POSIZIONE.BUSINESS_PLAN.AZIONI.DOWNLOAD
+Posizione.business plan.azioni.selezione.budget;POSIZIONE.BUSINESS_PLAN.AZIONI.SELEZIONE.BUDGET
+Posizione.business plan.azioni.selezione.Delibere;POSIZIONE.BUSINESS_PLAN.AZIONI.SELEZIONE.DELIBERE
+Posizione.business plan.azioni.selezione.gestore;POSIZIONE.BUSINESS_PLAN.AZIONI.SELEZIONE.GESTORE
+Posizione.business plan.azioni.selezione.tutti;POSIZIONE.BUSINESS_PLAN.AZIONI.SELEZIONE.TUTTI
+Posizione.business plan.azioni.selezione.underwriting;POSIZIONE.BUSINESS_PLAN.AZIONI.SELEZIONE.UNDERWRITING
+Posizione.business plan.azioni.Selezione Tipologia Di Businees Plan Visualizzati;POSIZIONE.BUSINESS_PLAN.AZIONI.SELEZIONE_TIPOLOGIA_DI_BUSINEES_PLAN_VISUALIZZATI
+Posizione.business plan.azioni.modale conferma.messaggio;POSIZIONE.BUSINESS_PLAN.AZIONI.MODALE_CONFERMA.MESSAGGIO
+Posizione.business plan.azioni.modale conferma.annulla;POSIZIONE.BUSINESS_PLAN.AZIONI.MODALE_CONFERMA.ANNULLA
+Posizione.business plan.azioni.modale conferma.conferma;POSIZIONE.BUSINESS_PLAN.AZIONI.MODALE_CONFERMA.CONFERMA
+Posizione.Dettagli.Menu.Collegamenti;POSIZIONE.DETTAGLI.MENU.COLLEGAMENTI
+Posizione.Dettagli.Menu.Controparti;POSIZIONE.DETTAGLI.MENU.CONTROPARTI
+Posizione.Dettagli.Menu.Garanzie;POSIZIONE.DETTAGLI.MENU.GARANZIE
+Posizione.Dettagli.Menu.Gruppo economico;POSIZIONE.DETTAGLI.MENU.GRUPPO_ECONOMICO
+Posizione.Dettagli.Menu.Immobili;POSIZIONE.DETTAGLI.MENU.IMMOBILI
+Posizione.Dettagli.Menu.Linee di credito;POSIZIONE.DETTAGLI.MENU.LINEE_DI_CREDITO
+Posizione.Dettagli.Menu.Rapporti;POSIZIONE.DETTAGLI.MENU.RAPPORTI
+Posizione.Dettagli.Menu.Contenziosi;POSIZIONE.DETTAGLI.MENU.CONTENZIOSI
+Posizione.dettagli.collegamenti.Sezione collegato.elenco.Denominazione;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.ELENCO.DENOMINAZIONE
+Posizione.dettagli.collegamenti.Sezione collegato.elenco.Tipo legame;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.ELENCO.TIPO_LEGAME
+Posizione.dettagli.collegamenti.Sezione collegato.elenco.Codice Fiscale;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.ELENCO.CODICE_FISCALE
+Posizione.dettagli.collegamenti.Sezione collegato.elenco.Data Di Nascita;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.ELENCO.DATA_DI_NASCITA
+Posizione.dettagli.collegamenti.Sezione collegato.elenco.Email;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.ELENCO.EMAIL
+Posizione.dettagli.collegamenti.Sezione collegato.elenco.Indirizzo Domicilio;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.ELENCO.INDIRIZZO_DOMICILIO
+Posizione.dettagli.collegamenti.Sezione collegato.elenco.Luogo e Provincia di nascita;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.ELENCO.LUOGO_E_PROVINCIA_DI_NASCITA
+Posizione.dettagli.collegamenti.Sezione collegato.elenco.Natura giuridica;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.ELENCO.NATURA_GIURIDICA
+Posizione.dettagli.collegamenti.Sezione collegato.elenco.Nazionalità;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.ELENCO.NAZIONALITA
+Posizione.dettagli.collegamenti.Sezione collegato.elenco.NDG Collegato;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.ELENCO.NDG_COLLEGATO
+Posizione.dettagli.collegamenti.Sezione collegato.elenco.Numero di telefono;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.ELENCO.NUMERO_DI_TELEFONO
+Posizione.dettagli.collegamenti.Sezione collegato.elenco.Partita IVA;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.ELENCO.PARTITA_IVA
+Posizione.dettagli.collegamenti.Sezione collegato.elenco.Indirizzo Residenza;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.ELENCO.INDIRIZZO_RESIDENZA
+Posizione.dettagli.collegamenti.Sezione collegato.elenco.Nessun collegato;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.ELENCO.NESSUN_COLLEGATO
+Posizione.dettagli.collegamenti.sezione collegato.Cointestatari.Titolo;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.COINTESTATARI.TITOLO
+Posizione.dettagli.collegamenti.sezione collegato.Cointestatari.elenco.NDG Cointestatario;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.COINTESTATARI.ELENCO.NDG_COINTESTATARIO
+Posizione.dettagli.collegamenti.sezione collegato.Cointestatari.elenco.Denominazione;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.COINTESTATARI.ELENCO.DENOMINAZIONE
+Posizione.dettagli.collegamenti.sezione collegato.Cointestatari.elenco.Natura giuridica;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.COINTESTATARI.ELENCO.NATURA_GIURIDICA
+Posizione.dettagli.collegamenti.sezione collegato.Cointestatari.elenco.Indirizzo Residenza;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.COINTESTATARI.ELENCO.INDIRIZZO_RESIDENZA
+Posizione.dettagli.collegamenti.sezione collegato.Cointestatari.elenco.Indirizzo Domicilio;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.COINTESTATARI.ELENCO.INDIRIZZO_DOMICILIO
+Posizione.dettagli.collegamenti.sezione collegato.Cointestatari.elenco.Luogo e Provincia di nascita;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.COINTESTATARI.ELENCO.LUOGO_E_PROVINCIA_DI_NASCITA
+Posizione.dettagli.collegamenti.sezione collegato.Cointestatari.elenco.Data Di Nascita;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.COINTESTATARI.ELENCO.DATA_DI_NASCITA
+Posizione.dettagli.collegamenti.sezione collegato.Cointestatari.elenco.Nazionalità;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.COINTESTATARI.ELENCO.NAZIONALITA
+Posizione.dettagli.collegamenti.sezione collegato.Cointestatari.elenco.Codice Fiscale;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.COINTESTATARI.ELENCO.CODICE_FISCALE
+Posizione.dettagli.collegamenti.sezione collegato.Cointestatari.elenco.Partita IVA;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.COINTESTATARI.ELENCO.PARTITA_IVA
+Posizione.dettagli.collegamenti.sezione collegato.Cointestatari.elenco.Numero di telefono;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.COINTESTATARI.ELENCO.NUMERO_DI_TELEFONO
+Posizione.dettagli.collegamenti.sezione collegato.Cointestatari.elenco.Email;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.COINTESTATARI.ELENCO.EMAIL
+Posizione.dettagli.collegamenti.sezione collegato.Cointestatari.elenco.Cointestatario Primario;POSIZIONE.DETTAGLI.COLLEGAMENTI.SEZIONE_COLLEGATO.COINTESTATARI.ELENCO.COINTESTATARIO_PRIMARIO
+Posizione.Dettagli.Gruppo Economico.Sezione gruppo.Elenco.Codice Gruppo economico;POSIZIONE.DETTAGLI.GRUPPO_ECONOMICO.SEZIONE_GRUPPO.ELENCO.CODICE_GRUPPO_ECONOMICO
+Posizione.Dettagli.Gruppo Economico.Sezione gruppo.Elenco.Denominazione Gruppo economico;POSIZIONE.DETTAGLI.GRUPPO_ECONOMICO.SEZIONE_GRUPPO.ELENCO.DENOMINAZIONE_GRUPPO_ECONOMICO
+Posizione.Dettagli.Gruppo Economico.Sezione gruppo.Elenco.GBV gruppo economico;POSIZIONE.DETTAGLI.GRUPPO_ECONOMICO.SEZIONE_GRUPPO.ELENCO.GBV_GRUPPO_ECONOMICO
+﻿Chiave;CHIAVE
+dev.testChiave;DEV.TEST_CHIAVE
+dev.testChiave2;DEV.TEST_CHIAVE2
+dev.child.testChiave;DEV.CHILD.TEST_CHIAVE
+dev.child.testChiave2;DEV.CHILD.TEST_CHIAVE2
+dev.default.values.all;DEV.DEFAULT.VALUES.ALL
+dev.default.values.si;DEV.DEFAULT.VALUES.SI
+dev.default.values.no;DEV.DEFAULT.VALUES.NO
+dev.default.values.from;DEV.DEFAULT.VALUES.FROM
+dev.default.values.to;DEV.DEFAULT.VALUES.TO
+dev.default.values.others;DEV.DEFAULT.VALUES.OTHERS
+dev.default.values.residential;DEV.DEFAULT.VALUES.RESIDENTIAL
+dev.default.values.notResidential;DEV.DEFAULT.VALUES.NOT_RESIDENTIAL
+dev.default.values.new;DEV.DEFAULT.VALUES.NEW
+dev.default.values.used;DEV.DEFAULT.VALUES.USED
+dev.default.values.selezionare;DEV.DEFAULT.VALUES.SELEZIONARE
+dev.default.values.sec;DEV.DEFAULT.VALUES.SEC
+dev.default.values.unsec;DEV.DEFAULT.VALUES.UNSEC
+Posizione.Dettagli.Gruppo Economico.Sezione Componenti.Titolo;POSIZIONE.DETTAGLI.GRUPPO_ECONOMICO.SEZIONE_COMPONENTI.TITOLO
+Posizione.Dettagli.Gruppo Economico.Sezione Componenti.Elenco.Denominazione NDG;POSIZIONE.DETTAGLI.GRUPPO_ECONOMICO.SEZIONE_COMPONENTI.ELENCO.DENOMINAZIONE_NDG
+Posizione.Dettagli.Gruppo Economico.Sezione Componenti.Elenco.GBV NDG;POSIZIONE.DETTAGLI.GRUPPO_ECONOMICO.SEZIONE_COMPONENTI.ELENCO.GBV_NDG
+Posizione.Dettagli.Gruppo Economico.Sezione Componenti.Elenco.NDG;POSIZIONE.DETTAGLI.GRUPPO_ECONOMICO.SEZIONE_COMPONENTI.ELENCO.NDG
+Posizione.Dettagli.Gruppo Economico.Sezione Componenti.Elenco.Ruolo;POSIZIONE.DETTAGLI.GRUPPO_ECONOMICO.SEZIONE_COMPONENTI.ELENCO.RUOLO
+Posizione.Dettagli.Gruppo Economico.Sezione Componenti.Elenco.Nessun Soggetto;POSIZIONE.DETTAGLI.GRUPPO_ECONOMICO.SEZIONE_COMPONENTI.ELENCO.NESSUN_SOGGETTO
+Posizione.Dettagli.Gruppo Economico.Azioni.Vedi Posizione;POSIZIONE.DETTAGLI.GRUPPO_ECONOMICO.AZIONI.VEDI_POSIZIONE
+Posizione.dettagli.Linee di credito.elenco.Cod. divisa;POSIZIONE.DETTAGLI.LINEE_DI_CREDITO.ELENCO.COD.DIVISA
+Posizione.dettagli.Linee di credito.elenco.Codice Linea Di Credito;POSIZIONE.DETTAGLI.LINEE_DI_CREDITO.ELENCO.CODICE_LINEA_DI_CREDITO
+Posizione.dettagli.Linee di credito.elenco.Data di scadenza;POSIZIONE.DETTAGLI.LINEE_DI_CREDITO.ELENCO.DATA_DI_SCADENZA
+Posizione.dettagli.Linee di credito.elenco.Importo Deliberato;POSIZIONE.DETTAGLI.LINEE_DI_CREDITO.ELENCO.IMPORTO_DELIBERATO
+Posizione.dettagli.Linee di credito.elenco.nessuna linea di credito;POSIZIONE.DETTAGLI.LINEE_DI_CREDITO.ELENCO.NESSUNA_LINEA_DI_CREDITO
+Posizione.dettagli.Linee di credito.elenco.Stato delle linea di credito;POSIZIONE.DETTAGLI.LINEE_DI_CREDITO.ELENCO.STATO_DELLE_LINEA_DI_CREDITO
+Posizione.dettagli.Linee di credito.elenco.Tipologia scadenza;POSIZIONE.DETTAGLI.LINEE_DI_CREDITO.ELENCO.TIPOLOGIA_SCADENZA
+Posizione.dettagli.Linee di credito.elenco.filtri.Codice Linea Di Credito;POSIZIONE.DETTAGLI.LINEE_DI_CREDITO.ELENCO.FILTRI.CODICE_LINEA_DI_CREDITO
+Posizione.dettagli.Linee di credito.elenco.filtri.Importo Deliberato;POSIZIONE.DETTAGLI.LINEE_DI_CREDITO.ELENCO.FILTRI.IMPORTO_DELIBERATO
+Posizione.monitoring.azioni.Selettore tipologia dati.Cumulati;POSIZIONE.MONITORING.AZIONI.SELETTORE_TIPOLOGIA_DATI.CUMULATI
+Posizione.monitoring.azioni.Selettore tipologia dati.Di Periodo;POSIZIONE.MONITORING.AZIONI.SELETTORE_TIPOLOGIA_DATI.DI_PERIODO
+Posizione.monitoring.azioni.menu dettaglio movimenti.Fees;POSIZIONE.MONITORING.AZIONI.MENU_DETTAGLIO_MOVIMENTI.FEES
+Posizione.monitoring.azioni.menu dettaglio movimenti.GDP;POSIZIONE.MONITORING.AZIONI.MENU_DETTAGLIO_MOVIMENTI.GDP
+Posizione.monitoring.azioni.menu dettaglio movimenti.Spese LeP;POSIZIONE.MONITORING.AZIONI.MENU_DETTAGLIO_MOVIMENTI.SPESE_LE_P
+Posizione.monitoring.azioni.menu dettaglio movimenti.Tutti i movimenti ;POSIZIONE.MONITORING.AZIONI.MENU_DETTAGLIO_MOVIMENTI.TUTTI_I_MOVIMENTI
+Posizione.monitoring.azioni.Azione Selettore tipologia dati;POSIZIONE.MONITORING.AZIONI.AZIONE_SELETTORE_TIPOLOGIA_DATI
+Posizione.monitoring.azioni.Azione Selezione Colonne Da Visualizzare;POSIZIONE.MONITORING.AZIONI.AZIONE_SELEZIONE_COLONNE_DA_VISUALIZZARE
+Posizione.monitoring.azioni.Selezione Colonne Da Visualizzare.Actual;POSIZIONE.MONITORING.AZIONI.SELEZIONE_COLONNE_DA_VISUALIZZARE.ACTUAL
+Posizione.monitoring.azioni.Selezione Colonne Da Visualizzare.Gestore;POSIZIONE.MONITORING.AZIONI.SELEZIONE_COLONNE_DA_VISUALIZZARE.GESTORE
+Posizione.monitoring.azioni.Selezione Colonne Da Visualizzare.Underwriting;POSIZIONE.MONITORING.AZIONI.SELEZIONE_COLONNE_DA_VISUALIZZARE.UNDERWRITING
+Posizione.monitoring.elenco Cash flow.Cashflow actual;POSIZIONE.MONITORING.ELENCO_CASH_FLOW.CASHFLOW_ACTUAL
+Posizione.monitoring.elenco Cash flow.Cashflow gestore;POSIZIONE.MONITORING.ELENCO_CASH_FLOW.CASHFLOW_GESTORE
+Posizione.monitoring.elenco Cash flow.Cashflow underwriting;POSIZIONE.MONITORING.ELENCO_CASH_FLOW.CASHFLOW_UNDERWRITING
+Posizione.monitoring.elenco Cash flow.titolo;POSIZIONE.MONITORING.ELENCO_CASH_FLOW.TITOLO
+Posizione.monitoring.elenco.Fees;POSIZIONE.MONITORING.ELENCO.FEES
+Posizione.monitoring.elenco.GBV;POSIZIONE.MONITORING.ELENCO.GBV
+Posizione.monitoring.elenco.GDP;POSIZIONE.MONITORING.ELENCO.GDP
+Posizione.monitoring.elenco.NDP ;POSIZIONE.MONITORING.ELENCO.NDP
+Posizione.monitoring.elenco.Spese L&P;POSIZIONE.MONITORING.ELENCO.SPESE_L_P
+Posizione.monitoring.elenco.sezione actual;POSIZIONE.MONITORING.ELENCO.SEZIONE_ACTUAL
+Posizione.monitoring.elenco.Delta Fees;POSIZIONE.MONITORING.ELENCO.DELTA_FEES
+Posizione.monitoring.elenco.Delta GDP;POSIZIONE.MONITORING.ELENCO.DELTA_GDP
+Posizione.monitoring.elenco.Delta NDP;POSIZIONE.MONITORING.ELENCO.DELTA_NDP
+Posizione.monitoring.elenco.Delta Spese L&P;POSIZIONE.MONITORING.ELENCO.DELTA_SPESE_L_P
+Posizione.monitoring.elenco.sezione BP gestore;POSIZIONE.MONITORING.ELENCO.SEZIONE_BP_GESTORE
+Posizione.monitoring.elenco.sezione BP Underwriting;POSIZIONE.MONITORING.ELENCO.SEZIONE_BP_UNDERWRITING
+Posizione.monitoring.elenco.valuta;POSIZIONE.MONITORING.ELENCO.VALUTA
+Posizione.monitoring.elenco.nessun dato;POSIZIONE.MONITORING.ELENCO.NESSUN_DATO
+Posizione.Monitoring.Elenco.Nessuna colonna selezionata;POSIZIONE.MONITORING.ELENCO.NESSUNA_COLONNA_SELEZIONATA
+Posizione.Movimenti.elenco.Nessun movimento;POSIZIONE.MOVIMENTI.ELENCO.NESSUN_MOVIMENTO
+Posizione.movimenti.elenco.Codice Rapporto;POSIZIONE.MOVIMENTI.ELENCO.CODICE_RAPPORTO
+Posizione.movimenti.elenco.Data Contabile;POSIZIONE.MOVIMENTI.ELENCO.DATA_CONTABILE
+Posizione.movimenti.elenco.Importo;POSIZIONE.MOVIMENTI.ELENCO.IMPORTO
+Posizione.movimenti.elenco.Tipo Movimento;POSIZIONE.MOVIMENTI.ELENCO.TIPO_MOVIMENTO
+Posizione.movimenti.elenco.Tipo Rapporto;POSIZIONE.MOVIMENTI.ELENCO.TIPO_RAPPORTO
+Posizione.movimenti.elenco.Data Valuta;POSIZIONE.MOVIMENTI.ELENCO.DATA_VALUTA
+Posizione.movimenti.elenco.filtri.Codice Rapporto;POSIZIONE.MOVIMENTI.ELENCO.FILTRI.CODICE_RAPPORTO
+Posizione.movimenti.elenco.filtri.Data Contabile;POSIZIONE.MOVIMENTI.ELENCO.FILTRI.DATA_CONTABILE
+Posizione.movimenti.elenco.filtri.Data Valuta;POSIZIONE.MOVIMENTI.ELENCO.FILTRI.DATA_VALUTA
+Posizione.movimenti.elenco.filtri.Importo;POSIZIONE.MOVIMENTI.ELENCO.FILTRI.IMPORTO
+Posizione.movimenti.elenco.filtri.Tipo Movimento;POSIZIONE.MOVIMENTI.ELENCO.FILTRI.TIPO_MOVIMENTO
+Posizione.movimenti.elenco.filtri.Tipo Rapporto;POSIZIONE.MOVIMENTI.ELENCO.FILTRI.TIPO_RAPPORTO
+Posizione.dettagli.rapporti.azioni.Vedi garanzie collegate;POSIZIONE.DETTAGLI.RAPPORTI.AZIONI.VEDI_GARANZIE_COLLEGATE
+Posizione.dettagli.rapporti.azioni.Vedi sofferenze rapporti;POSIZIONE.DETTAGLI.RAPPORTI.AZIONI.VEDI_SOFFERENZE_RAPPORTI
+Posizione.dettagli.rapporti.azioni.Vedi dettagli rapporto;POSIZIONE.DETTAGLI.RAPPORTI.AZIONI.VEDI_DETTAGLI_RAPPORTO
+Posizione.dettagli.rapporti.elenco.Codice Rapporto;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.CODICE_RAPPORTO
+Posizione.dettagli.rapporti.elenco.Codice Rapporto Originario;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.CODICE_RAPPORTO_ORIGINARIO
+Posizione.dettagli.rapporti.elenco.Data Apertura Rapporto;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.DATA_APERTURA_RAPPORTO
+Posizione.dettagli.rapporti.elenco.Di cui capitale a Scadere;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.DI_CUI_CAPITALE_A_SCADERE
+Posizione.dettagli.rapporti.elenco.Di Cui Mora;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.DI_CUI_MORA
+Posizione.dettagli.rapporti.elenco.Di Cui Rateo Interessi Corrispettivi;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.DI_CUI_RATEO_INTERESSI_CORRISPETTIVI
+Posizione.dettagli.rapporti.elenco.Di Cui Scaduto Impagato;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.DI_CUI_SCADUTO_IMPAGATO
+Posizione.dettagli.rapporti.elenco.Di Cui Spese;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.DI_CUI_SPESE
+Posizione.dettagli.rapporti.elenco.Flag Secured Unsecured;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FLAG_SECURED_UNSECURED
+Posizione.dettagli.rapporti.elenco.GBV;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.GBV
+Posizione.dettagli.rapporti.elenco.Importo Fido Accordato;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.IMPORTO_FIDO_ACCORDATO
+Posizione.dettagli.rapporti.elenco.Codice di provenienza;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.CODICE_DI_PROVENIENZA
+Posizione.dettagli.rapporti.elenco.Tipo Rapporto;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.TIPO_RAPPORTO
+Posizione.dettagli.rapporti.elenco.Delibera associata;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.DELIBERA_ASSOCIATA
+Posizione.dettagli.rapporti.elenco.filtri.Tutti;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.TUTTI
+Posizione.dettagli.rapporti.elenco.filtri.Aperti;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.APERTI
+Posizione.dettagli.rapporti.elenco.filtri.Chiusi;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.CHIUSI
+Posizione.dettagli.rapporti.elenco.filtri.Codice Rapporto;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.CODICE_RAPPORTO
+Posizione.dettagli.rapporti.elenco.filtri.Codice Rapporto Originario;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.CODICE_RAPPORTO_ORIGINARIO
+Posizione.dettagli.rapporti.elenco.filtri.Data Apertura Rapporto;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.DATA_APERTURA_RAPPORTO
+Posizione.dettagli.rapporti.elenco.filtri.Di Cui Capitale A scadere;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.DI_CUI_CAPITALE_A_SCADERE
+Posizione.dettagli.rapporti.elenco.filtri.Di cui Mora;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.DI_CUI_MORA
+Posizione.dettagli.rapporti.elenco.filtri.Di Cui Rateo Interessi Corrispettivi;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.DI_CUI_RATEO_INTERESSI_CORRISPETTIVI
+Posizione.dettagli.rapporti.elenco.filtri.Di Cui Scaduto Impagato;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.DI_CUI_SCADUTO_IMPAGATO
+Posizione.dettagli.rapporti.elenco.filtri.Di Cui Spese;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.DI_CUI_SPESE
+Posizione.dettagli.rapporti.elenco.filtri.Flag secured unsecured;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.FLAG_SECURED_UNSECURED
+Posizione.dettagli.rapporti.elenco.filtri.Garanzia collegata;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.GARANZIA_COLLEGATA
+Posizione.dettagli.rapporti.elenco.filtri.GBV;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.GBV
+Posizione.dettagli.rapporti.elenco.filtri.Importo Fido Accordato;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.IMPORTO_FIDO_ACCORDATO
+Posizione.dettagli.rapporti.elenco.filtri.Codice di provenienza;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.CODICE_DI_PROVENIENZA
+Posizione.dettagli.rapporti.elenco.filtri.Tipo Rapporto;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.TIPO_RAPPORTO
+Posizione.dettagli.rapporti.elenco.filtri.Stato rapporto;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.FILTRI.STATO_RAPPORTO
+Posizione.dettagli.rapporti.elenco.Data Chiusura Rapporto;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.DATA_CHIUSURA_RAPPORTO
+Posizione.dettagli.rapporti.elenco.Nessun rapporto;POSIZIONE.DETTAGLI.RAPPORTI.ELENCO.NESSUN_RAPPORTO
+Posizione.dettagli.rapporti.finanziamenti dettaglio.Elenco.Dati generali;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.DATI_GENERALI
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Codice Rapporto;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.CODICE_RAPPORTO
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Stato Finanziamento;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.STATO_FINANZIAMENTO
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Sec/Unsec  ;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.SEC_UNSEC
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Flag Pool;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.FLAG_POOL
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.GBV;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.GBV
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Etichetta importo;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.ETICHETTA_IMPORTO
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.GBV del Finanziamento;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.GBV_DEL_FINANZIAMENTO
+Posizione.dettagli.rapporti.finanziamenti.dettaglio.elenco.Di cui Scaduto Impagato;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI.DETTAGLIO.ELENCO.DI_CUI_SCADUTO_IMPAGATO
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Di cui Quota Capitale;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.DI_CUI_QUOTA_CAPITALE
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Di cui quota di Interessi Corrispettivi;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.DI_CUI_QUOTA_DI_INTERESSI_CORRISPETTIVI
+Posizione.dettagli.rapporti.finanziamenti.dettaglio.elenco.Di cui Capitale a Scadere;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI.DETTAGLIO.ELENCO.DI_CUI_CAPITALE_A_SCADERE
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Di Cui Mora;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.DI_CUI_MORA
+Posizione.dettagli.rapporti.finanziamenti.dettaglio.elenco.Di cui rateo a interessi corrispettivi  ;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI.DETTAGLIO.ELENCO.DI_CUI_RATEO_A_INTERESSI_CORRISPETTIVI
+Posizione.dettagli.rapporti.finanziamenti.dettaglio.elenco.Di cui spese ;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI.DETTAGLIO.ELENCO.DI_CUI_SPESE
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Altri dati;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.ALTRI_DATI
+Posizione.dettagli.rapporti.finanziamenti.dettaglio.elenco.Dietimo Interessi Corrispettivi;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI.DETTAGLIO.ELENCO.DIETIMO_INTERESSI_CORRISPETTIVI
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Dietimo Interessi mora;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.DIETIMO_INTERESSI_MORA
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Acconti versati conto capitale (conto anticipi) ;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.ACCONTI_VERSATI_CONTO_CAPITALE_CONTO_ANTICIPI
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Acconti versati conto interessi (conto anticipi) ;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.ACCONTI_VERSATI_CONTO_INTERESSI_CONTO_ANTICIPI
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Data erogazione;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.DATA_EROGAZIONE
+Posizione.dettagli.rapporti.finanziamenti.dettaglio.elenco.Ammontare dell’erogazione;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI.DETTAGLIO.ELENCO.AMMONTARE_DELL_EROGAZIONE
+Posizione.dettagli.rapporti.finanziamenti.dettaglio.elenco.Data Scadenza (Migrata);POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI.DETTAGLIO.ELENCO.DATA_SCADENZA_MIGRATA
+Posizione.dettagli.rapporti.finanziamenti.dettaglio.elenco.Data Rinegoziazione;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI.DETTAGLIO.ELENCO.DATA_RINEGOZIAZIONE
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Ammontare rinegozioato;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.AMMONTARE_RINEGOZIOATO
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Data scadenza rinegoziata;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.DATA_SCADENZA_RINEGOZIATA
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Data accollo ;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.DATA_ACCOLLO
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Intestatario originario;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.INTESTATARIO_ORIGINARIO
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Codice mutuo padre;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.CODICE_MUTUO_PADRE
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Caratteristiche;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.CARATTERISTICHE
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Tipologia Tasso;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.TIPOLOGIA_TASSO
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Tipo Piano Dettaglio;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.TIPO_PIANO_DETTAGLIO
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Tasso In Essere;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.TASSO_IN_ESSERE
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Indice;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.INDICE
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Periodicità Rata ;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.PERIODICITA_RATA
+Posizione.dettagli.rapporti.finanziamenti dettaglio.elenco.Spread;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.ELENCO.SPREAD
+Posizione.dettagli.rapporti.finanziamenti.dettaglio.elenco.Data ultima Scadenza Rata;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI.DETTAGLIO.ELENCO.DATA_ULTIMA_SCADENZA_RATA
+Posizione.dettagli.rapporti.finanziamenti.dettaglio.elenco.Data prossima scadenza rata ;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI.DETTAGLIO.ELENCO.DATA_PROSSIMA_SCADENZA_RATA
+Posizione.dettagli.rapporti.finanziamenti.dettaglio.elenco.Data prossima scadenza rata ;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI.DETTAGLIO.ELENCO.DATA_PROSSIMA_SCADENZA_RATA
+Posizione.dettagli.rapporti.finanziamenti.dettaglio.elenco.Data chiusura;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI.DETTAGLIO.ELENCO.DATA_CHIUSURA
+Posizione.dettagli.rapporti.finanziamenti.dettaglio.elenco.Data Della Prima Rata Insoluta;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI.DETTAGLIO.ELENCO.DATA_DELLA_PRIMA_RATA_INSOLUTA
+Posizione.dettagli.rapporti.finanziamenti dettaglio.azioni.chiudi;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.AZIONI.CHIUDI
+Posizione.dettagli.rapporti.finanziamenti dettaglio.titolo;POSIZIONE.DETTAGLI.RAPPORTI.FINANZIAMENTI_DETTAGLIO.TITOLO
+Posizione.dettagli.rapporti.dettaglio sofferenze rapporti.titolo;POSIZIONE.DETTAGLI.RAPPORTI.DETTAGLIO_SOFFERENZE_RAPPORTI.TITOLO
+Posizione.dettagli.rapporti.dettaglio sofferenze rapporti.elenco.Tipo Rapporto originario;POSIZIONE.DETTAGLI.RAPPORTI.DETTAGLIO_SOFFERENZE_RAPPORTI.ELENCO.TIPO_RAPPORTO_ORIGINARIO
+Posizione.dettagli.rapporti.dettaglio sofferenze rapporti.elenco.N rapporto sofferenza;POSIZIONE.DETTAGLI.RAPPORTI.DETTAGLIO_SOFFERENZE_RAPPORTI.ELENCO.N_RAPPORTO_SOFFERENZA
+Posizione.dettagli.rapporti.dettaglio sofferenze rapporti.elenco.rapporto originario;POSIZIONE.DETTAGLI.RAPPORTI.DETTAGLIO_SOFFERENZE_RAPPORTI.ELENCO.RAPPORTO_ORIGINARIO
+Posizione.dettagli.rapporti.dettaglio sofferenze rapporti.elenco.GBV;POSIZIONE.DETTAGLI.RAPPORTI.DETTAGLIO_SOFFERENZE_RAPPORTI.ELENCO.GBV
+Posizione.dettagli.rapporti.dettaglio sofferenze rapporti.elenco.quota capitale;POSIZIONE.DETTAGLI.RAPPORTI.DETTAGLIO_SOFFERENZE_RAPPORTI.ELENCO.QUOTA_CAPITALE
+Posizione.dettagli.rapporti.dettaglio sofferenze rapporti.elenco.quota mora;POSIZIONE.DETTAGLI.RAPPORTI.DETTAGLIO_SOFFERENZE_RAPPORTI.ELENCO.QUOTA_MORA
+Posizione.dettagli.rapporti.dettaglio sofferenze rapporti.elenco.spese;POSIZIONE.DETTAGLI.RAPPORTI.DETTAGLIO_SOFFERENZE_RAPPORTI.ELENCO.SPESE
+Posizione.dettagli.rapporti.dettaglio sofferenze rapporti.elenco.tasso di mora;POSIZIONE.DETTAGLI.RAPPORTI.DETTAGLIO_SOFFERENZE_RAPPORTI.ELENCO.TASSO_DI_MORA
+Posizione.Sintesi.Dati Assegnazione.elenco.Gestore Di Riferimento;POSIZIONE.SINTESI.DATI_ASSEGNAZIONE.ELENCO.GESTORE_DI_RIFERIMENTO
+Posizione.Sintesi.Dati Assegnazione.elenco.Stato assegnazione;POSIZIONE.SINTESI.DATI_ASSEGNAZIONE.ELENCO.STATO_ASSEGNAZIONE
+Posizione.Sintesi.Dati Assegnazione.elenco.Unità organizzativa assegnataria;POSIZIONE.SINTESI.DATI_ASSEGNAZIONE.ELENCO.UNITA_ORGANIZZATIVA_ASSEGNATARIA
+Posizione.Sintesi.Dati Assegnazione.Titolo;POSIZIONE.SINTESI.DATI_ASSEGNAZIONE.TITOLO
+Posizione.Sintesi.Dati Di Sintesi.elenco.Causale di chiusura posizione in caso di UTP;POSIZIONE.SINTESI.DATI_DI_SINTESI.ELENCO.CAUSALE_DI_CHIUSURA_POSIZIONE_IN_CASO_DI_UTP
+Posizione.Sintesi.Dati Di Sintesi.elenco.Contenzioso;POSIZIONE.SINTESI.DATI_DI_SINTESI.ELENCO.CONTENZIOSO
+Posizione.Sintesi.Dati Di Sintesi.elenco.Data Chiusura Attesa;POSIZIONE.SINTESI.DATI_DI_SINTESI.ELENCO.DATA_CHIUSURA_ATTESA
+Posizione.Sintesi.Dati Di Sintesi.elenco.Data Chiusura Posizione;POSIZIONE.SINTESI.DATI_DI_SINTESI.ELENCO.DATA_CHIUSURA_POSIZIONE
+Posizione.Sintesi.Dati Di Sintesi.elenco.Data Ingresso Stato;POSIZIONE.SINTESI.DATI_DI_SINTESI.ELENCO.DATA_INGRESSO_STATO
+Posizione.Sintesi.Dati Di Sintesi.elenco.Flag presenza Pool;POSIZIONE.SINTESI.DATI_DI_SINTESI.ELENCO.FLAG_PRESENZA_POOL
+Posizione.Sintesi.Dati Di Sintesi.elenco.Flag Servicing Bank;POSIZIONE.SINTESI.DATI_DI_SINTESI.ELENCO.FLAG_SERVICING_BANK
+Posizione.Sintesi.GBV.Titolo;POSIZIONE.SINTESI.GBV.TITOLO
+Posizione.Sintesi.GBV.elenco.GBV SEC;POSIZIONE.SINTESI.GBV.ELENCO.GBV_SEC
+Posizione.Sintesi.GBV.elenco.GBV Tot;POSIZIONE.SINTESI.GBV.ELENCO.GBV_TOT
+Posizione.Sintesi.GBV.elenco.GBV UNSEC;POSIZIONE.SINTESI.GBV.ELENCO.GBV_UNSEC
+Posizione.Sintesi.GBV.Azioni.vedi dettaglio;POSIZIONE.SINTESI.GBV.AZIONI.VEDI_DETTAGLIO
+Posizione.Sintesi.GBV.Azioni.vedi meno;POSIZIONE.SINTESI.GBV.AZIONI.VEDI_MENO
+Posizione.Sintesi.Dati Di Sintesi.elenco.NDG di provenienza;POSIZIONE.SINTESI.DATI_DI_SINTESI.ELENCO.NDG_DI_PROVENIENZA
+Posizione.Sintesi.Dati Di Sintesi.elenco.SoW;POSIZIONE.SINTESI.DATI_DI_SINTESI.ELENCO.SO_W
+Posizione.Sintesi.Dati Di Sintesi.elenco.Stato Rischio;POSIZIONE.SINTESI.DATI_DI_SINTESI.ELENCO.STATO_RISCHIO
+Posizione.Sintesi.Dati Di Sintesi.Titolo;POSIZIONE.SINTESI.DATI_DI_SINTESI.TITOLO
+Posizione.Sintesi.Dati Gestionali.elenco.Gruppo Economico;POSIZIONE.SINTESI.DATI_GESTIONALI.ELENCO.GRUPPO_ECONOMICO
+Posizione.Sintesi.Dati Gestionali.elenco.Industry;POSIZIONE.SINTESI.DATI_GESTIONALI.ELENCO.INDUSTRY
+Posizione.Sintesi.Dati Gestionali.elenco.Strategia UW;POSIZIONE.SINTESI.DATI_GESTIONALI.ELENCO.STRATEGIA_UW
+Posizione.Sintesi.Dati Gestionali.Titolo;POSIZIONE.SINTESI.DATI_GESTIONALI.TITOLO
+Posizione.Sintesi.Stato Posizione.Titolo;POSIZIONE.SINTESI.STATO_POSIZIONE.TITOLO
+Posizione.Sintesi.Stato Posizione.Nessuno Stato;POSIZIONE.SINTESI.STATO_POSIZIONE.NESSUNO_STATO
+Posizione.Sintesi.GBV.Storico.Evento Cut off;POSIZIONE.SINTESI.GBV.STORICO.EVENTO_CUT_OFF
+Posizione.Sintesi.GBV.Storico.Evento Migrazione;POSIZIONE.SINTESI.GBV.STORICO.EVENTO_MIGRAZIONE
+Posizione.Sintesi.GBV.Storico.GBV totale;POSIZIONE.SINTESI.GBV.STORICO.GBV_TOTALE
+Posizione.Sintesi.GBV.Storico.Di cui Secured;POSIZIONE.SINTESI.GBV.STORICO.DI_CUI_SECURED
+Posizione.Sintesi.GBV.Storico.Di cui Unsecured;POSIZIONE.SINTESI.GBV.STORICO.DI_CUI_UNSECURED
+Posizione.Sintesi.GBV.Storico.Di cui facility receivable;POSIZIONE.SINTESI.GBV.STORICO.DI_CUI_FACILITY_RECEIVABLE
+Posizione.Sintesi.GBV.Storico.Di cui leasing;POSIZIONE.SINTESI.GBV.STORICO.DI_CUI_LEASING
+Posizione.Sintesi.GBV.Storico.Di cui revolving bank;POSIZIONE.SINTESI.GBV.STORICO.DI_CUI_REVOLVING_BANK
+Posizione.dettagli.Immobili.elenco.nessun immobile;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.NESSUN_IMMOBILE
+Posizione.dettagli.Immobili.elenco.Codice immobile;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.CODICE_IMMOBILE
+Posizione.dettagli.Immobili.elenco.Codice dossier;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.CODICE_DOSSIER
+Posizione.dettagli.Immobili.elenco.Immobile residenziale non residenziale;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.IMMOBILE_RESIDENZIALE_NON_RESIDENZIALE
+Posizione.dettagli.Immobili.elenco.Tipologia immobile;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.TIPOLOGIA_IMMOBILE
+Posizione.dettagli.Immobili.elenco.Tipo perizia;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.TIPO_PERIZIA
+Posizione.dettagli.Immobili.elenco.Valore di stima/perizia;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.VALORE_DI_STIMA_PERIZIA
+Posizione.dettagli.Immobili.elenco.Data ultima stima/perizia;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.DATA_ULTIMA_STIMA_PERIZIA
+Posizione.dettagli.Immobili.elenco.Indirizzo immobile;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.INDIRIZZO_IMMOBILE
+Posizione.dettagli.Immobili.elenco.Stato immobile;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.STATO_IMMOBILE
+Posizione.dettagli.Immobili.elenco.Categoria catastale;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.CATEGORIA_CATASTALE
+Posizione.dettagli.Immobili.elenco.Grado ipoteca;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.GRADO_IPOTECA
+Posizione.dettagli.Immobili.elenco.Importo grado ipoteche;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.IMPORTO_GRADO_IPOTECHE
+Posizione.dettagli.Immobili.elenco.Flag di immobile in costruzione;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.FLAG_DI_IMMOBILE_IN_COSTRUZIONE
+Posizione.dettagli.Immobili.elenco.Percentuale avanzamento lavori;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.PERCENTUALE_AVANZAMENTO_LAVORI
+Posizione.dettagli.Immobili.elenco.Valore iscrizione ipoteca;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.VALORE_ISCRIZIONE_IPOTECA
+Posizione.dettagli.Immobili.elenco.Importo perizia originale;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.IMPORTO_PERIZIA_ORIGINALE
+Posizione.dettagli.Immobili.elenco.filtri.Codice immobile;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.FILTRI.CODICE_IMMOBILE
+Posizione.dettagli.Immobili.elenco.filtri.Codice dossier ;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.FILTRI.CODICE_DOSSIER
+Posizione.dettagli.Immobili.elenco.filtri.Immobile residenziale non residenziale;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.FILTRI.IMMOBILE_RESIDENZIALE_NON_RESIDENZIALE
+Posizione.dettagli.Immobili.elenco.filtri.Tipologia immobile ;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.FILTRI.TIPOLOGIA_IMMOBILE
+Posizione.dettagli.Immobili.elenco.filtri.Tipo perizia ;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.FILTRI.TIPO_PERIZIA
+Posizione.dettagli.Immobili.elenco.filtri.Grado ipoteca ;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.FILTRI.GRADO_IPOTECA
+Posizione.dettagli.Immobili.elenco.filtri.Codice Garanzia;POSIZIONE.DETTAGLI.IMMOBILI.ELENCO.FILTRI.CODICE_GARANZIA
+Posizione.dettagli.Garanzie.elenco.nessuna garanzia;POSIZIONE.DETTAGLI.GARANZIE.ELENCO.NESSUNA_GARANZIA
+Posizione.dettagli.Garanzie.elenco.Codice Garanzia;POSIZIONE.DETTAGLI.GARANZIE.ELENCO.CODICE_GARANZIA
+Posizione.dettagli.Garanzie.elenco.Tipo Garanzia;POSIZIONE.DETTAGLI.GARANZIE.ELENCO.TIPO_GARANZIA
+Posizione.dettagli.Garanzie.elenco.Valore garanzia;POSIZIONE.DETTAGLI.GARANZIE.ELENCO.VALORE_GARANZIA
+Posizione.dettagli.Garanzie.elenco.Data conferma;POSIZIONE.DETTAGLI.GARANZIE.ELENCO.DATA_CONFERMA
+Posizione.dettagli.Garanzie.elenco.Data scadenza garanzia;POSIZIONE.DETTAGLI.GARANZIE.ELENCO.DATA_SCADENZA_GARANZIA
+Posizione.dettagli.Garanzie.elenco.Denominazione Garante;POSIZIONE.DETTAGLI.GARANZIE.ELENCO.DENOMINAZIONE_GARANTE
+Posizione.dettagli.Garanzie.elenco.filtri.Codice rapporto;POSIZIONE.DETTAGLI.GARANZIE.ELENCO.FILTRI.CODICE_RAPPORTO
+Posizione.dettagli.Garanzie.azioni.Vedi immobili collegati;POSIZIONE.DETTAGLI.GARANZIE.AZIONI.VEDI_IMMOBILI_COLLEGATI
+Posizione.dettagli.Garanzie.azioni.Vedi rapporti collegati;POSIZIONE.DETTAGLI.GARANZIE.AZIONI.VEDI_RAPPORTI_COLLEGATI
+Posizione.dettagli.garanzie.garanti.elenco.Garanti collegati;POSIZIONE.DETTAGLI.GARANZIE.GARANTI.ELENCO.GARANTI_COLLEGATI
+Posizione.dettagli.garanzie.garanti.elenco.NDG Garante;POSIZIONE.DETTAGLI.GARANZIE.GARANTI.ELENCO.NDG_GARANTE
+Posizione.dettagli.garanzie.garanti.elenco.Denominazione;POSIZIONE.DETTAGLI.GARANZIE.GARANTI.ELENCO.DENOMINAZIONE
+Posizione.dettagli.garanzie.garanti.elenco.Natura giuridica;POSIZIONE.DETTAGLI.GARANZIE.GARANTI.ELENCO.NATURA_GIURIDICA
+Posizione.dettagli.garanzie.garanti.elenco.Indirizzo Residenza;POSIZIONE.DETTAGLI.GARANZIE.GARANTI.ELENCO.INDIRIZZO_RESIDENZA
+Posizione.dettagli.garanzie.garanti.elenco.Indirizzo Domicilio;POSIZIONE.DETTAGLI.GARANZIE.GARANTI.ELENCO.INDIRIZZO_DOMICILIO
+Posizione.dettagli.garanzie.garanti.elenco.Luogo e Provincia di nascita;POSIZIONE.DETTAGLI.GARANZIE.GARANTI.ELENCO.LUOGO_E_PROVINCIA_DI_NASCITA
+Posizione.dettagli.garanzie.garanti.elenco.Data Di Nascita;POSIZIONE.DETTAGLI.GARANZIE.GARANTI.ELENCO.DATA_DI_NASCITA
+Posizione.dettagli.garanzie.garanti.elenco.Nazionalità;POSIZIONE.DETTAGLI.GARANZIE.GARANTI.ELENCO.NAZIONALITA
+Posizione.dettagli.garanzie.garanti.elenco.Codice Fiscale;POSIZIONE.DETTAGLI.GARANZIE.GARANTI.ELENCO.CODICE_FISCALE
+Posizione.dettagli.garanzie.garanti.elenco.Partita IVA;POSIZIONE.DETTAGLI.GARANZIE.GARANTI.ELENCO.PARTITA_IVA
+Posizione.dettagli.garanzie.garanti.elenco.Numero di telefono;POSIZIONE.DETTAGLI.GARANZIE.GARANTI.ELENCO.NUMERO_DI_TELEFONO
+Posizione.dettagli.garanzie.garanti.elenco.Email;POSIZIONE.DETTAGLI.GARANZIE.GARANTI.ELENCO.EMAIL
+Posizione.Delibere.azioni.Crea Nuova Proposta;POSIZIONE.DELIBERE.AZIONI.CREA_NUOVA_PROPOSTA
+Posizione.Delibere.azioni.Apri sintesi proposta di delibera;POSIZIONE.DELIBERE.AZIONI.APRI_SINTESI_PROPOSTA_DI_DELIBERA
+Posizione.Delibere.azioni.Crea delibera disabilitato;POSIZIONE.DELIBERE.AZIONI.CREA_DELIBERA_DISABILITATO
+Posizione.Delibere.crea proposta.titolo;POSIZIONE.DELIBERE.CREA_PROPOSTA.TITOLO
+Posizione.Delibere.crea proposta.posizione già associata;POSIZIONE.DELIBERE.CREA_PROPOSTA.POSIZIONE_GIA_ASSOCIATA
+Posizione.Delibere.crea proposta.rapporti già associati;POSIZIONE.DELIBERE.CREA_PROPOSTA.RAPPORTI_GIA_ASSOCIATI
+Posizione.Delibere.crea proposta.Data entry.Denominazione;POSIZIONE.DELIBERE.CREA_PROPOSTA.DATA_ENTRY.DENOMINAZIONE
+Posizione.Delibere.crea proposta.Data entry.Tipo proposta;POSIZIONE.DELIBERE.CREA_PROPOSTA.DATA_ENTRY.TIPO_PROPOSTA
+Posizione.Delibere.crea proposta.Data entry.Strategia associata;POSIZIONE.DELIBERE.CREA_PROPOSTA.DATA_ENTRY.STRATEGIA_ASSOCIATA
+Posizione.Delibere.crea proposta.azioni.Annulla;POSIZIONE.DELIBERE.CREA_PROPOSTA.AZIONI.ANNULLA
+Posizione.Delibere.crea proposta.azioni.Crea;POSIZIONE.DELIBERE.CREA_PROPOSTA.AZIONI.CREA
+Delibere.Lista Delibere.titolo;DELIBERE.LISTA_DELIBERE.TITOLO
+Delibere.Lista Delibere.azioni.Apri sintesi proposta ;DELIBERE.LISTA_DELIBERE.AZIONI.APRI_SINTESI_PROPOSTA
+Delibere.Lista Delibere.elenco.filtri.Codice Protocollo;DELIBERE.LISTA_DELIBERE.ELENCO.FILTRI.CODICE_PROTOCOLLO
+Delibere.lista Delibere.elenco.filtri.Unità Organizzativa Creazione  ;DELIBERE.LISTA_DELIBERE.ELENCO.FILTRI.UNITA_ORGANIZZATIVA_CREAZIONE
+Delibere.Lista Delibere.elenco.filtri.Data Protocollo;DELIBERE.LISTA_DELIBERE.ELENCO.FILTRI.DATA_PROTOCOLLO
+Delibere.Lista Delibere.elenco.filtri.Tipo Proposta;DELIBERE.LISTA_DELIBERE.ELENCO.FILTRI.TIPO_PROPOSTA
+Delibere.Lista Delibere.elenco.filtri.Denominazione Proposta;DELIBERE.LISTA_DELIBERE.ELENCO.FILTRI.DENOMINAZIONE_PROPOSTA
+Delibere.Lista Delibere.elenco.filtri.GBVproposta;DELIBERE.LISTA_DELIBERE.ELENCO.FILTRI.GBV_PROPOSTA
+Delibere.Lista Delibere.elenco.filtri.Strategia Proposta;DELIBERE.LISTA_DELIBERE.ELENCO.FILTRI.STRATEGIA_PROPOSTA
+Delibere.Lista Delibere.elenco.filtri.Unità Organizzativa;DELIBERE.LISTA_DELIBERE.ELENCO.FILTRI.UNITA_ORGANIZZATIVA
+Delibere.Lista Delibere.elenco.filtri.Utente Assegnatario;DELIBERE.LISTA_DELIBERE.ELENCO.FILTRI.UTENTE_ASSEGNATARIO
+Delibere.Lista Delibere.elenco.filtri.Stato;DELIBERE.LISTA_DELIBERE.ELENCO.FILTRI.STATO
+Delibere.Lista Delibere.elenco.filtri.Attive;DELIBERE.LISTA_DELIBERE.ELENCO.FILTRI.ATTIVE
+Delibere.Lista Delibere.elenco.filtri.Annullate;DELIBERE.LISTA_DELIBERE.ELENCO.FILTRI.ANNULLATE
+Delibere.Lista Delibere.elenco.Codice protocollo;DELIBERE.LISTA_DELIBERE.ELENCO.CODICE_PROTOCOLLO
+Delibere.Lista Delibere.elenco.Data Protocollo;DELIBERE.LISTA_DELIBERE.ELENCO.DATA_PROTOCOLLO
+Delibere.Lista Delibere.elenco.Unità Organizzativa Creazione  ;DELIBERE.LISTA_DELIBERE.ELENCO.UNITA_ORGANIZZATIVA_CREAZIONE
+Delibere.Lista Delibere.elenco.Tipo Proposta;DELIBERE.LISTA_DELIBERE.ELENCO.TIPO_PROPOSTA
+Delibere.Lista Delibere.elenco.Denominazione Proposta;DELIBERE.LISTA_DELIBERE.ELENCO.DENOMINAZIONE_PROPOSTA
+Delibere.Lista Delibere.elenco.GBV proposta;DELIBERE.LISTA_DELIBERE.ELENCO.GBV_PROPOSTA
+Delibere.Lista Delibere.elenco.Strategia Proposta;DELIBERE.LISTA_DELIBERE.ELENCO.STRATEGIA_PROPOSTA
+Delibere.Lista Delibere.elenco.Unità Organizzativa;DELIBERE.LISTA_DELIBERE.ELENCO.UNITA_ORGANIZZATIVA
+Delibere.Lista Delibere.elenco.Utente Assegnatario;DELIBERE.LISTA_DELIBERE.ELENCO.UTENTE_ASSEGNATARIO
+Delibere.Lista Delibere.elenco.Stato;DELIBERE.LISTA_DELIBERE.ELENCO.STATO
+Delibere.Lista Delibere.elenco.Nessuna delibera;DELIBERE.LISTA_DELIBERE.ELENCO.NESSUNA_DELIBERA
+Delibere.sintesi proposta.titolo;DELIBERE.SINTESI_PROPOSTA.TITOLO
+Delibere.sintesi proposta.dati.titolo;DELIBERE.SINTESI_PROPOSTA.DATI.TITOLO
+Delibere.sintesi proposta.dati.elenco.Codice Protocollo;DELIBERE.SINTESI_PROPOSTA.DATI.ELENCO.CODICE_PROTOCOLLO
+Delibere.sintesi proposta.dati.elenco.Denominazione;DELIBERE.SINTESI_PROPOSTA.DATI.ELENCO.DENOMINAZIONE
+Delibere.sintesi proposta.dati.elenco.Data Protocollo;DELIBERE.SINTESI_PROPOSTA.DATI.ELENCO.DATA_PROTOCOLLO
+Delibere.sintesi proposta.dati.elenco.Unità Organizzativa Creazione  ;DELIBERE.SINTESI_PROPOSTA.DATI.ELENCO.UNITA_ORGANIZZATIVA_CREAZIONE
+Delibere.sintesi proposta.dati.elenco.Tipo Pratica;DELIBERE.SINTESI_PROPOSTA.DATI.ELENCO.TIPO_PRATICA
+Delibere.sintesi proposta.dati.elenco.GBV proposta;DELIBERE.SINTESI_PROPOSTA.DATI.ELENCO.GBV_PROPOSTA
+Delibere.sintesi proposta.dati.elenco.Stato;DELIBERE.SINTESI_PROPOSTA.DATI.ELENCO.STATO
+Delibere.sintesi proposta.dati.elenco.Strategia Proposta;DELIBERE.SINTESI_PROPOSTA.DATI.ELENCO.STRATEGIA_PROPOSTA
+Delibere.sintesi proposta.dati.elenco.Unità Organizzativa;DELIBERE.SINTESI_PROPOSTA.DATI.ELENCO.UNITA_ORGANIZZATIVA
+Delibere.sintesi proposta.dati.elenco.Utente Assegnatario;DELIBERE.SINTESI_PROPOSTA.DATI.ELENCO.UTENTE_ASSEGNATARIO
+Delibere.Sintesi proposta.dati.azioni.Modifica denominazione;DELIBERE.SINTESI_PROPOSTA.DATI.AZIONI.MODIFICA_DENOMINAZIONE
+Delibere.Sintesi proposta.dati.azioni.cambia stato proposta;DELIBERE.SINTESI_PROPOSTA.DATI.AZIONI.CAMBIA_STATO_PROPOSTA
+Delibere.Sintesi proposta.dati.azioni.Modifica Strategia;DELIBERE.SINTESI_PROPOSTA.DATI.AZIONI.MODIFICA_STRATEGIA
+Delibere.Sintesi proposta.Elenco Posizioni.titolo ;DELIBERE.SINTESI_PROPOSTA.ELENCO_POSIZIONI.TITOLO
+Delibere.Sintesi proposta.Elenco Posizioni.Azioni.Aggiungi Posizione;DELIBERE.SINTESI_PROPOSTA.ELENCO_POSIZIONI.AZIONI.AGGIUNGI_POSIZIONE
+Delibere.Sintesi proposta.Elenco Posizioni.Azioni.modale conferma. messaggio;DELIBERE.SINTESI_PROPOSTA.ELENCO_POSIZIONI.AZIONI.MODALE_CONFERMA.MESSAGGIO
+Delibere.Sintesi proposta.Elenco Posizioni.Azioni.modale conferma. annulla;DELIBERE.SINTESI_PROPOSTA.ELENCO_POSIZIONI.AZIONI.MODALE_CONFERMA.ANNULLA
+Delibere.Sintesi proposta.Elenco Posizioni.Azioni. Modale conferma.conferma ;DELIBERE.SINTESI_PROPOSTA.ELENCO_POSIZIONI.AZIONI.MODALE_CONFERMA.CONFERMA
+Delibere.Sintesi proposta.Elenco Posizioni.Azioni.Rimuovi Selezione;DELIBERE.SINTESI_PROPOSTA.ELENCO_POSIZIONI.AZIONI.RIMUOVI_SELEZIONE
+Delibere.Sintesi proposta.Aggiungi posizione.Titolo ;DELIBERE.SINTESI_PROPOSTA.AGGIUNGI_POSIZIONE.TITOLO
+Delibere.Sintesi proposta.Aggiungi posizione.Azioni Seleziona Posizione;DELIBERE.SINTESI_PROPOSTA.AGGIUNGI_POSIZIONE.AZIONI_SELEZIONA_POSIZIONE
+Delibere.Sintesi proposta.Aggiungi posizione.elenco.nessuna posizione;DELIBERE.SINTESI_PROPOSTA.AGGIUNGI_POSIZIONE.ELENCO.NESSUNA_POSIZIONE
+Delibere.Sintesi proposta.Aggiungi posizione.Azioni.Contatore delle posizioni Associate;DELIBERE.SINTESI_PROPOSTA.AGGIUNGI_POSIZIONE.AZIONI.CONTATORE_DELLE_POSIZIONI_ASSOCIATE
+Delibere.Sintesi proposta.Elenco rapporti.Azioni.Rimuovi selezionati;DELIBERE.SINTESI_PROPOSTA.ELENCO_RAPPORTI.AZIONI.RIMUOVI_SELEZIONATI
+Delibere.Sintesi proposta.Elenco rapporti.Azioni.Contatore dei rapporti associati ;DELIBERE.SINTESI_PROPOSTA.ELENCO_RAPPORTI.AZIONI.CONTATORE_DEI_RAPPORTI_ASSOCIATI
+Delibere.Sintesi proposta.Elenco rapporti.Azioni.Rimuovi rapporto;DELIBERE.SINTESI_PROPOSTA.ELENCO_RAPPORTI.AZIONI.RIMUOVI_RAPPORTO
+Delibere.Sintesi proposta.Elenco rapporti.Azioni. Aggiungi Rapporto;DELIBERE.SINTESI_PROPOSTA.ELENCO_RAPPORTI.AZIONI.AGGIUNGI_RAPPORTO
+Delibere.Sintesi proposta.Aggiungi rapporti.Azioni.Contatore dei rapporti Associati;DELIBERE.SINTESI_PROPOSTA.AGGIUNGI_RAPPORTI.AZIONI.CONTATORE_DEI_RAPPORTI_ASSOCIATI
+Delibere.Sintesi proposta.Aggiungi rapporti.Azioni.Aggiungi tutti i rapporti;DELIBERE.SINTESI_PROPOSTA.AGGIUNGI_RAPPORTI.AZIONI.AGGIUNGI_TUTTI_I_RAPPORTI
+Carica business plan.titolo;CARICA_BUSINESS_PLAN.TITOLO
+Carica business plan.selezione file.messaggio;CARICA_BUSINESS_PLAN.SELEZIONE_FILE.MESSAGGIO
+Carica business plan.chiudi;CARICA_BUSINESS_PLAN.CHIUDI
+Carica business plan.avanzamento.messaggio;CARICA_BUSINESS_PLAN.AVANZAMENTO.MESSAGGIO
+Carica business plan.avanzamento.annulla;CARICA_BUSINESS_PLAN.AVANZAMENTO.ANNULLA
+Carica business plan.esito positivo.messaggio;CARICA_BUSINESS_PLAN.ESITO_POSITIVO.MESSAGGIO
+Carica business plan.carica nuovo file;CARICA_BUSINESS_PLAN.CARICA_NUOVO_FILE
+Carica business plan.esito negativo.messaggio uno;CARICA_BUSINESS_PLAN.ESITO_NEGATIVO.MESSAGGIO_UNO
+Carica business plan.esito negativo.messaggio due;CARICA_BUSINESS_PLAN.ESITO_NEGATIVO.MESSAGGIO_DUE
+Carica business plan.lista errori;CARICA_BUSINESS_PLAN.LISTA_ERRORI
+carica business plan.errore.mancanza fogli;CARICA_BUSINESS_PLAN.ERRORE.MANCANZA_FOGLI
+carica business plan.errore.colonne errate;CARICA_BUSINESS_PLAN.ERRORE.COLONNE_ERRATE
+carica business plan.errore.numero righe compilate;CARICA_BUSINESS_PLAN.ERRORE.NUMERO_RIGHE_COMPILATE
+carica business plan.errore.errore formato;CARICA_BUSINESS_PLAN.ERRORE.ERRORE_FORMATO
+NomeRiga identifica la riga in cui è stato rilevato l'errore;NOME_RIGA_IDENTIFICA_LA_RIGA_IN_CUI_E_STATO_RILEVATO_L_ERRORE
+NomeCampo contiene il nome dell'intestazione della colonna in cui è stato rilevato l'errore";NOME_CAMPO_CONTIENE_IL_NOME_DELL_INTESTAZIONE_DELLA_COLONNA_IN_CUI_E_STATO_RILEVATO_L_ERRORE
+Carica business plan.errore.versione duplicata;CARICA_BUSINESS_PLAN.ERRORE.VERSIONE_DUPLICATA
+NomeRiga identifica la riga in cui è stato rilevato l'errore;NOME_RIGA_IDENTIFICA_LA_RIGA_IN_CUI_E_STATO_RILEVATO_L_ERRORE
+NomeCampo contiene il nome dell'intestazione della colonna in cui è stato rilevato l'errore";NOME_CAMPO_CONTIENE_IL_NOME_DELL_INTESTAZIONE_DELLA_COLONNA_IN_CUI_E_STATO_RILEVATO_L_ERRORE
+carica business plan.errore. portafoglio non corretto;CARICA_BUSINESS_PLAN.ERRORE.PORTAFOGLIO_NON_CORRETTO
+NumeroRiga identifica la riga in cui è stato rilevato l'errore ";NUMERO_RIGA_IDENTIFICA_LA_RIGA_IN_CUI_E_STATO_RILEVATO_L_ERRORE
+carica business plan.errore. NDG non corretto;CARICA_BUSINESS_PLAN.ERRORE.NDG_NON_CORRETTO
+NumeroRiga identifica la riga in cui è stato rilevato l'errore ";NUMERO_RIGA_IDENTIFICA_LA_RIGA_IN_CUI_E_STATO_RILEVATO_L_ERRORE
+carica business plan.errore.sequenza posizioni;CARICA_BUSINESS_PLAN.ERRORE.SEQUENZA_POSIZIONI
+NumeroRiga identifica la riga in cui è stato rilevato l'errore ";NUMERO_RIGA_IDENTIFICA_LA_RIGA_IN_CUI_E_STATO_RILEVATO_L_ERRORE
+carica business plan.errore.sequenza date;CARICA_BUSINESS_PLAN.ERRORE.SEQUENZA_DATE
+NumeroRiga identifica la riga in cui è stato rilevato l'errore ";NUMERO_RIGA_IDENTIFICA_LA_RIGA_IN_CUI_E_STATO_RILEVATO_L_ERRORE
+carica business plan.errore.BP eterogenei;CARICA_BUSINESS_PLAN.ERRORE.BP_ETEROGENEI
+carica business plan.errore.Portafogli eterogenei;CARICA_BUSINESS_PLAN.ERRORE.PORTAFOGLI_ETEROGENEI
+carica business plan.errore.NDG ripetuto;CARICA_BUSINESS_PLAN.ERRORE.NDG_RIPETUTO
+carica business plan.errore.mancanza righe;CARICA_BUSINESS_PLAN.ERRORE.MANCANZA_RIGHE
+Posizione.Toolbar.Documenti.Titolo;POSIZIONE.TOOLBAR.DOCUMENTI.TITOLO
+Posizione.Toolbar.Documenti.Apri cartella;POSIZIONE.TOOLBAR.DOCUMENTI.APRI_CARTELLA
+Delibere.Sintesi proposta.Toolbar.Documenti.Titolo;DELIBERE.SINTESI_PROPOSTA.TOOLBAR.DOCUMENTI.TITOLO
+Delibere.Sintesi proposta.Toolbar.Documenti.Apri cartella;DELIBERE.SINTESI_PROPOSTA.TOOLBAR.DOCUMENTI.APRI_CARTELLA
+Portfolio management.Menu.Assegnazione gestore;PORTFOLIO_MANAGEMENT.MENU.ASSEGNAZIONE_GESTORE
+Portfolio management.assegnazione gestore.carica file.azioni.carica assegnazione;PORTFOLIO_MANAGEMENT.ASSEGNAZIONE_GESTORE.CARICA_FILE.AZIONI.CARICA_ASSEGNAZIONE
+Portfolio management.assegnazione gestore.carica file.titolo;PORTFOLIO_MANAGEMENT.ASSEGNAZIONE_GESTORE.CARICA_FILE.TITOLO
+Portfolio management.assegnazione gestore.carica file.selezione file.messaggio;PORTFOLIO_MANAGEMENT.ASSEGNAZIONE_GESTORE.CARICA_FILE.SELEZIONE_FILE.MESSAGGIO
+Portfolio management.assegnazione gestore.carica file.avanzamento.messaggio;PORTFOLIO_MANAGEMENT.ASSEGNAZIONE_GESTORE.CARICA_FILE.AVANZAMENTO.MESSAGGIO
+Portfolio management.assegnazione gestore. carica file.esito positivo.messaggio;PORTFOLIO_MANAGEMENT.ASSEGNAZIONE_GESTORE.CARICA_FILE.ESITO_POSITIVO.MESSAGGIO
+Portfolio management.assegnazione gestore. carica file.esito negativo.messaggio uno;PORTFOLIO_MANAGEMENT.ASSEGNAZIONE_GESTORE.CARICA_FILE.ESITO_NEGATIVO.MESSAGGIO_UNO
+Portfolio management.assegnazione gestore. carica file.esito negativo.messaggio due;PORTFOLIO_MANAGEMENT.ASSEGNAZIONE_GESTORE.CARICA_FILE.ESITO_NEGATIVO.MESSAGGIO_DUE
+Portfolio management.assegnazione gestore. carica file.esito warning.messaggio uno;PORTFOLIO_MANAGEMENT.ASSEGNAZIONE_GESTORE.CARICA_FILE.ESITO_WARNING.MESSAGGIO_UNO
+Portfolio management.assegnazione gestore. carica file.esito warning.messaggio due;PORTFOLIO_MANAGEMENT.ASSEGNAZIONE_GESTORE.CARICA_FILE.ESITO_WARNING.MESSAGGIO_DUE
+Portfolio management.assegnazione gestore.carica file.azioni.Annulla caricamento;PORTFOLIO_MANAGEMENT.ASSEGNAZIONE_GESTORE.CARICA_FILE.AZIONI.ANNULLA_CARICAMENTO
+Portfolio management.assegnazione gestore.carica file.azioni.Chiudi;PORTFOLIO_MANAGEMENT.ASSEGNAZIONE_GESTORE.CARICA_FILE.AZIONI.CHIUDI
+Portfolio management.assegnazione gestore.carica file.azioni.Carica nuovo file;PORTFOLIO_MANAGEMENT.ASSEGNAZIONE_GESTORE.CARICA_FILE.AZIONI.CARICA_NUOVO_FILE
+Portfolio management.assegnazione gestore.carica file.azioni.Scarica errori;PORTFOLIO_MANAGEMENT.ASSEGNAZIONE_GESTORE.CARICA_FILE.AZIONI.SCARICA_ERRORI
+Portfolio management.assegnazione gestore.carica file.azioni.Scarica warning;PORTFOLIO_MANAGEMENT.ASSEGNAZIONE_GESTORE.CARICA_FILE.AZIONI.SCARICA_WARNING
+Carica file assegnazione utenti.errore.manca foglio;CARICA_FILE_ASSEGNAZIONE_UTENTI.ERRORE.MANCA_FOGLIO
+Carica file assegnazione utenti.errore.colonne errate;CARICA_FILE_ASSEGNAZIONE_UTENTI.ERRORE.COLONNE_ERRATE
+Carica file assegnazione utenti.errore.nessuna riga;CARICA_FILE_ASSEGNAZIONE_UTENTI.ERRORE.NESSUNA_RIGA
+Carica file assegnazione utenti.errore.Portafoglio;CARICA_FILE_ASSEGNAZIONE_UTENTI.ERRORE.PORTAFOGLIO
+NumeroRiga contiene il numero della riga su cui è stato rilevato il portafoglio non corretto";NUMERO_RIGA_CONTIENE_IL_NUMERO_DELLA_RIGA_SU_CUI_E_STATO_RILEVATO_IL_PORTAFOGLIO_NON_CORRETTO
+Carica file assegnazione utenti.errore.NDG;CARICA_FILE_ASSEGNAZIONE_UTENTI.ERRORE.NDG
+NumeroRiga contiene il numero della riga su cui è stato rilevato l'NDG non corretto";NUMERO_RIGA_CONTIENE_IL_NUMERO_DELLA_RIGA_SU_CUI_E_STATO_RILEVATO_L_NDG_NON_CORRETTO
+Carica file assegnazione utenti.errore.Email;CARICA_FILE_ASSEGNAZIONE_UTENTI.ERRORE.EMAIL
+NumeroRiga contiene il numero della riga su cui è stato rilevato l'errore sulla e-mail";NUMERO_RIGA_CONTIENE_IL_NUMERO_DELLA_RIGA_SU_CUI_E_STATO_RILEVATO_L_ERRORE_SULLA_E_MAIL
+Carica file assegnazione utenti.errore.Assegnazione;CARICA_FILE_ASSEGNAZIONE_UTENTI.ERRORE.ASSEGNAZIONE
+NumeroRiga contiene il numero della riga su cui è stato rilevato un  valore Tipo Assegnazione non corretto ";NUMERO_RIGA_CONTIENE_IL_NUMERO_DELLA_RIGA_SU_CUI_E_STATO_RILEVATO_UN_VALORE_TIPO_ASSEGNAZIONE_NON_CORRETTO
+Carica file assegnazione utenti.errore.codice portafoglio non omogeneo;CARICA_FILE_ASSEGNAZIONE_UTENTI.ERRORE.CODICE_PORTAFOGLIO_NON_OMOGENEO
+Carica file assegnazione utenti.errore.NDG ripetuto;CARICA_FILE_ASSEGNAZIONE_UTENTI.ERRORE.NDG_RIPETUTO
+Carica file assegnazione utenti.errore.indirizzo email duplicato;CARICA_FILE_ASSEGNAZIONE_UTENTI.ERRORE.INDIRIZZO_EMAIL_DUPLICATO
+NumeroRiga contiene il numero della riga su cui è presente l'indirizzo email non univoco all'interno del sistema;NUMERO_RIGA_CONTIENE_IL_NUMERO_DELLA_RIGA_SU_CUI_E_PRESENTE_L_INDIRIZZO_EMAIL_NON_UNIVOCO_ALL_INTERNO_DEL_SISTEMA
+EmailUtente è l'indirizzo email non univoco all'interno del sistema";EMAIL_UTENTE_E_L_INDIRIZZO_EMAIL_NON_UNIVOCO_ALL_INTERNO_DEL_SISTEMA
+Carica file assegnazione utenti.warning.Utente UO non coerente;CARICA_FILE_ASSEGNAZIONE_UTENTI.WARNING.UTENTE_UO_NON_COERENTE
+NumeroRiga contiene il numero della riga su cui è stata rilevata l'incongruenza tra Unità assegnataria Posizione e Unità organizzativa dell'utente";NUMERO_RIGA_CONTIENE_IL_NUMERO_DELLA_RIGA_SU_CUI_E_STATA_RILEVATA_L_INCONGRUENZA_TRA_UNITA_ASSEGNATARIA_POSIZIONE_E_UNITA_ORGANIZZATIVA_DELL_UTENTE
+Carica file assegnazione utenti.warning.Gruppo economico;CARICA_FILE_ASSEGNAZIONE_UTENTI.WARNING.GRUPPO_ECONOMICO
+Gruppo contiene la denominazione del gruppo economico dell'NDG;GRUPPO_CONTIENE_LA_DENOMINAZIONE_DEL_GRUPPO_ECONOMICO_DELL_NDG
+Utente contiene la denominazione dell'utente assegnatario;UTENTE_CONTIENE_LA_DENOMINAZIONE_DELL_UTENTE_ASSEGNATARIO
+ListaNdgUtenti : lista delle coppie <NDG, Utente assegnatario> delle posizioni dello stesso gruppo economico assegnate ad utenti diversi.  Il formalismo della lista è il seguente: ""<{{NDG1}}, {{Utente1}}>, <{{NDG2}}, {{Utente2}}>, … <{{NDGn}}, {{Utenten}}>""";LISTA_NDG_UTENTI_LISTA_DELLE_COPPIE_NDG_UTENTE_ASSEGNATARIO_DELLE_POSIZIONI_DELLO_STESSO_GRUPPO_ECONOMICO_ASSEGNATE_AD_UTENTI_DIVERSI.IL_FORMALISMO_DELLA_LISTA_E_IL_SEGUENTE_ND_G1_UTENTE1_ND_G2_UTENTE2_ND_GN_UTENTEN
+Carica file assegnazione segmento.errore.manca foglio;CARICA_FILE_ASSEGNAZIONE_SEGMENTO.ERRORE.MANCA_FOGLIO
+Carica file assegnazione segmento.errore.colonne errate;CARICA_FILE_ASSEGNAZIONE_SEGMENTO.ERRORE.COLONNE_ERRATE
+Carica file assegnazione segmento.errore.nessuna riga;CARICA_FILE_ASSEGNAZIONE_SEGMENTO.ERRORE.NESSUNA_RIGA
+Carica file assegnazione segmento.errore.Portafoglio;CARICA_FILE_ASSEGNAZIONE_SEGMENTO.ERRORE.PORTAFOGLIO
+NumeroRiga contiene il numero della riga su cui è stato rilevato il portafoglio non corretto";NUMERO_RIGA_CONTIENE_IL_NUMERO_DELLA_RIGA_SU_CUI_E_STATO_RILEVATO_IL_PORTAFOGLIO_NON_CORRETTO
+Carica file assegnazione segmento.errore.NDG;CARICA_FILE_ASSEGNAZIONE_SEGMENTO.ERRORE.NDG
+NumeroRiga contiene il numero della riga su cui è stato rilevato l'NDG non corretto";NUMERO_RIGA_CONTIENE_IL_NUMERO_DELLA_RIGA_SU_CUI_E_STATO_RILEVATO_L_NDG_NON_CORRETTO
+Carica file assegnazione segmento.errore.Segmento;CARICA_FILE_ASSEGNAZIONE_SEGMENTO.ERRORE.SEGMENTO
+NumeroRiga contiene il numero della riga su cui è stato rilevato un segmento non valido";NUMERO_RIGA_CONTIENE_IL_NUMERO_DELLA_RIGA_SU_CUI_E_STATO_RILEVATO_UN_SEGMENTO_NON_VALIDO
+Carica file assegnazione segmento.errore.codice portafoglio non omogeneo;CARICA_FILE_ASSEGNAZIONE_SEGMENTO.ERRORE.CODICE_PORTAFOGLIO_NON_OMOGENEO
+Carica file assegnazione segmento.errore.NDG ripetuto;CARICA_FILE_ASSEGNAZIONE_SEGMENTO.ERRORE.NDG_RIPETUTO
+Carica file assegnazione gruppo economico.errore.manca foglio;CARICA_FILE_ASSEGNAZIONE_GRUPPO_ECONOMICO.ERRORE.MANCA_FOGLIO
+Carica file assegnazione gruppo economico.errore.colonne errate;CARICA_FILE_ASSEGNAZIONE_GRUPPO_ECONOMICO.ERRORE.COLONNE_ERRATE
+Carica file assegnazione gruppo economico.errore.nessuna riga;CARICA_FILE_ASSEGNAZIONE_GRUPPO_ECONOMICO.ERRORE.NESSUNA_RIGA
+Carica file assegnazione gruppo economico.errore.NDG;CARICA_FILE_ASSEGNAZIONE_GRUPPO_ECONOMICO.ERRORE.NDG
+NumeroRiga contiene il numero della riga su cui è stato rilevato l'NDG inesistente";NUMERO_RIGA_CONTIENE_IL_NUMERO_DELLA_RIGA_SU_CUI_E_STATO_RILEVATO_L_NDG_INESISTENTE
+Carica file assegnazione gruppo economico.errore.codice gruppo duplicato;CARICA_FILE_ASSEGNAZIONE_GRUPPO_ECONOMICO.ERRORE.CODICE_GRUPPO_DUPLICATO
+NumeroRiga contiene il numero della riga su cui è presente il codice gruppo economico non univoco all'interno del sistema;NUMERO_RIGA_CONTIENE_IL_NUMERO_DELLA_RIGA_SU_CUI_E_PRESENTE_IL_CODICE_GRUPPO_ECONOMICO_NON_UNIVOCO_ALL_INTERNO_DEL_SISTEMA
+CodiceGruppo è il codice gruppo economico non univoco all'interno del sistema";CODICE_GRUPPO_E_IL_CODICE_GRUPPO_ECONOMICO_NON_UNIVOCO_ALL_INTERNO_DEL_SISTEMA
+Carica file assegnazione gruppo economico.errore.gruppo economico;CARICA_FILE_ASSEGNAZIONE_GRUPPO_ECONOMICO.ERRORE.GRUPPO_ECONOMICO
+NumeroRiga contiene il numero della riga su cui è stato rilevato il gruppo economico inesistente";NUMERO_RIGA_CONTIENE_IL_NUMERO_DELLA_RIGA_SU_CUI_E_STATO_RILEVATO_IL_GRUPPO_ECONOMICO_INESISTENTE
+Carica file assegnazione gruppo economico.errore.NDG ripetuto;CARICA_FILE_ASSEGNAZIONE_GRUPPO_ECONOMICO.ERRORE.NDG_RIPETUTO
+Login.titolo;LOGIN.TITOLO
+Login.data entry.nome utente;LOGIN.DATA_ENTRY.NOME_UTENTE
+Login.data entry.password;LOGIN.DATA_ENTRY.PASSWORD
+Login.data entry.Nome utente;LOGIN.DATA_ENTRY.NOME_UTENTE
+Login.errore.credenziali non valide;LOGIN.ERRORE.CREDENZIALI_NON_VALIDE
+Posizione.Toolbar.Note.Titolo;POSIZIONE.TOOLBAR.NOTE.TITOLO
+Posizione.Toolbar.Note.Data entry.Titolo;POSIZIONE.TOOLBAR.NOTE.DATA_ENTRY.TITOLO
+Posizione.Toolbar.Note.Data entry.Testo nota;POSIZIONE.TOOLBAR.NOTE.DATA_ENTRY.TESTO_NOTA
+Posizione.Toolbar.Note.Azioni.Aggiungi nota;POSIZIONE.TOOLBAR.NOTE.AZIONI.AGGIUNGI_NOTA
+Posizione.Toolbar.Note.Azioni.Conferma inserimento;POSIZIONE.TOOLBAR.NOTE.AZIONI.CONFERMA_INSERIMENTO
+Posizione.Toolbar.Note.Azioni.Annulla Inserimento;POSIZIONE.TOOLBAR.NOTE.AZIONI.ANNULLA_INSERIMENTO
+Posizione.Toolbar.Note.Azioni.Cancellazione Nota;POSIZIONE.TOOLBAR.NOTE.AZIONI.CANCELLAZIONE_NOTA
+Posizione.Toolbar.Note.Azioni.Modifica Nota;POSIZIONE.TOOLBAR.NOTE.AZIONI.MODIFICA_NOTA
+Posizione.Toolbar.Note.Azioni.Conferma modifica;POSIZIONE.TOOLBAR.NOTE.AZIONI.CONFERMA_MODIFICA
+Posizione.Toolbar.Note.Azioni.Annulla modifica;POSIZIONE.TOOLBAR.NOTE.AZIONI.ANNULLA_MODIFICA
+Posizione.Toolbar.Note.Azioni.Ricerca nota;POSIZIONE.TOOLBAR.NOTE.AZIONI.RICERCA_NOTA
+Posizione.Toolbar.Note.Azioni.messaggio conferma cancellazione;POSIZIONE.TOOLBAR.NOTE.AZIONI.MESSAGGIO_CONFERMA_CANCELLAZIONE
+Posizione.Toolbar.Note.Azioni.messaggio conferma uscita;POSIZIONE.TOOLBAR.NOTE.AZIONI.MESSAGGIO_CONFERMA_USCITA
+Posizione.Toolbar.Note.Azioni.conferma;POSIZIONE.TOOLBAR.NOTE.AZIONI.CONFERMA
+Posizione.Toolbar.Note.Azioni.annulla;POSIZIONE.TOOLBAR.NOTE.AZIONI.ANNULLA
+Posizione.Dettagli.Contenzioso.Sezione Contenzioso.Titolo;POSIZIONE.DETTAGLI.CONTENZIOSO.SEZIONE_CONTENZIOSO.TITOLO
+Stato identifica se il contenzioso in oggetto è ancora in corso o chiuso";STATO_IDENTIFICA_SE_IL_CONTENZIOSO_IN_OGGETTO_E_ANCORA_IN_CORSO_O_CHIUSO
+Posizione.Dettagli.Contenzioso.Sezione Contenzioso.Titolo in creazione;POSIZIONE.DETTAGLI.CONTENZIOSO.SEZIONE_CONTENZIOSO.TITOLO_IN_CREAZIONE
+Posizione.Dettagli.Contenzioso.Sezione Contenzioso.Titolo in modifica;POSIZIONE.DETTAGLI.CONTENZIOSO.SEZIONE_CONTENZIOSO.TITOLO_IN_MODIFICA
+Posizione.Dettagli.Contenzioso.Sezione Contenzioso.Elenco.Data inizio;POSIZIONE.DETTAGLI.CONTENZIOSO.SEZIONE_CONTENZIOSO.ELENCO.DATA_INIZIO
+Posizione.Dettagli.Contenzioso.Sezione Contenzioso.Elenco.Data fine;POSIZIONE.DETTAGLI.CONTENZIOSO.SEZIONE_CONTENZIOSO.ELENCO.DATA_FINE
+Posizione.Dettagli.Contenzioso.Sezione Contenzioso.Elenco.Tipo contenzioso;POSIZIONE.DETTAGLI.CONTENZIOSO.SEZIONE_CONTENZIOSO.ELENCO.TIPO_CONTENZIOSO
+Posizione.Dettagli.Contenzioso.Sezione Contenzioso.Elenco.Soggetti collegati;POSIZIONE.DETTAGLI.CONTENZIOSO.SEZIONE_CONTENZIOSO.ELENCO.SOGGETTI_COLLEGATI
+Posizione.Dettagli.Contenzioso.Sezione Contenzioso.Elenco.Altri soggetti;POSIZIONE.DETTAGLI.CONTENZIOSO.SEZIONE_CONTENZIOSO.ELENCO.ALTRI_SOGGETTI
+Posizione.Dettagli.Contenzioso.Sezione Contenzioso.Elenco.Note;POSIZIONE.DETTAGLI.CONTENZIOSO.SEZIONE_CONTENZIOSO.ELENCO.NOTE
+Posizione.Dettagli.Contenzioso.Azioni.Aggiungi contenzioso;POSIZIONE.DETTAGLI.CONTENZIOSO.AZIONI.AGGIUNGI_CONTENZIOSO
+Posizione.Dettagli.Contenzioso.Azioni.Conferma inserimento;POSIZIONE.DETTAGLI.CONTENZIOSO.AZIONI.CONFERMA_INSERIMENTO
+Posizione.Dettagli.Contenzioso.Azioni.Annulla Inserimento;POSIZIONE.DETTAGLI.CONTENZIOSO.AZIONI.ANNULLA_INSERIMENTO
+Posizione.Dettagli.Contenzioso.Azioni.Conferma modifica;POSIZIONE.DETTAGLI.CONTENZIOSO.AZIONI.CONFERMA_MODIFICA
+Posizione.Dettagli.Contenzioso.Azioni.Annulla modifica;POSIZIONE.DETTAGLI.CONTENZIOSO.AZIONI.ANNULLA_MODIFICA
+Posizione.Dettagli.Contenzioso.Azioni.messaggio conferma cancellazione;POSIZIONE.DETTAGLI.CONTENZIOSO.AZIONI.MESSAGGIO_CONFERMA_CANCELLAZIONE
+Posizione.Dettagli.Contenzioso.Azioni.Conferma;POSIZIONE.DETTAGLI.CONTENZIOSO.AZIONI.CONFERMA
+Posizione.Dettagli.Contenzioso.Azioni.Annulla;POSIZIONE.DETTAGLI.CONTENZIOSO.AZIONI.ANNULLA
+Posizione.Dettagli.Contenzioso.Nessun contenzioso;POSIZIONE.DETTAGLI.CONTENZIOSO.NESSUN_CONTENZIOSO
+Posizione.dettagli.centrale Rischi.Fenomeno.Crediti per cassa   ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.CREDITI_PER_CASSA
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Crediti per Cassa.Rischi.autoliquidanti ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.CREDITI_PER_CASSA.RISCHI.AUTOLIQUIDANTI
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Crediti per Cassa.Rischi a scadenza ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.CREDITI_PER_CASSA.RISCHI_A_SCADENZA
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Crediti per Cassa.Rischi a Revoca ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.CREDITI_PER_CASSA.RISCHI_A_REVOCA
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Crediti per Cassa.Finanz. a proc. Conc. e altri fin. particolari ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.CREDITI_PER_CASSA.FINANZ.A_PROC._CONC._E_ALTRI_FIN._PARTICOLARI
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Crediti per Cassa.Sofferenze;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.CREDITI_PER_CASSA.SOFFERENZE
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Creditidi Firma ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.CREDITIDI_FIRMA
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Crediti di Firma. Garanzie connesse con operazioni di natura commerciale ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.CREDITI_DI_FIRMA.GARANZIE_CONNESSE_CON_OPERAZIONI_DI_NATURA_COMMERCIALE
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Crediti di Firma. Garanzie connesse con operazioni di natura finanziaria ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.CREDITI_DI_FIRMA.GARANZIE_CONNESSE_CON_OPERAZIONI_DI_NATURA_FINANZIARIA
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Garanzie ricevute ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.GARANZIE_RICEVUTE
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Derivati finanziari ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.DERIVATI_FINANZIARI
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Sezione informativa ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.SEZIONE_INFORMATIVA
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Sezione Informativa. Crediti per cassa: operazioni in pool azienda capofila ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.SEZIONE_INFORMATIVA.CREDITI_PER_CASSA_OPERAZIONI_IN_POOL_AZIENDA_CAPOFILA
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Sezione Informativa. Crediti per cassa: operazioni in “pool” - azienda capofila ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.SEZIONE_INFORMATIVA.CREDITI_PER_CASSA_OPERAZIONI_IN_POOL_AZIENDA_CAPOFILA
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Sezione Informativa. Crediti per cassa: operazioni in “pool” – altra azienda partecipante ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.SEZIONE_INFORMATIVA.CREDITI_PER_CASSA_OPERAZIONI_IN_POOL_ALTRA_AZIENDA_PARTECIPANTE
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Sezione Informativa. Crediti per cassa: operazioni in “pool” – totale ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.SEZIONE_INFORMATIVA.CREDITI_PER_CASSA_OPERAZIONI_IN_POOL_TOTALE
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Sezione Informativa. Crediti acquisiti da clientela diversa da intermediari – debitori ceduti ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.SEZIONE_INFORMATIVA.CREDITI_ACQUISITI_DA_CLIENTELA_DIVERSA_DA_INTERMEDIARI_DEBITORI_CEDUTI
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Sezione Informativa. Rischi autoliquidanti crediti scaduti ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.SEZIONE_INFORMATIVA.RISCHI_AUTOLIQUIDANTI_CREDITI_SCADUTI
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Sezione Informativa. Sofferenze crediti passati a perdita ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.SEZIONE_INFORMATIVA.SOFFERENZE_CREDITI_PASSATI_A_PERDITA
+Posizione.Dettagli.Centrale Rischi.Fenomeno.Sezione Informativa.Crediti ceduti a terzi ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.FENOMENO.SEZIONE_INFORMATIVA.CREDITI_CEDUTI_A_TERZI
+Posizione.dettagli.centrale rischi.Stato Rapporto ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.STATO_RAPPORTO
+Posizione.dettagli.centrale rischi.Sezione Portafoglio.;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_PORTAFOGLIO.
+Posizione.dettagli.centrale rischi.Sezione Portafoglio.Accordato ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_PORTAFOGLIO.ACCORDATO
+Posizione.dettagli.centrale rischi.Sezione Portafoglio.Utilizzato;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_PORTAFOGLIO.UTILIZZATO
+Posizione.dettagli.centrale rischi.Sezione Portafoglio.Valore garanzia ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_PORTAFOGLIO.VALORE_GARANZIA
+Posizione.dettagli.centrale rischi.Sezione Portafoglio.Importo Garantito ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_PORTAFOGLIO.IMPORTO_GARANTITO
+Posizione.dettagli.centrale rischi.Sezione Portafoglio.Altri importi ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_PORTAFOGLIO.ALTRI_IMPORTI
+Posizione.dettagli.centrale rischi.Sezione Portafoglio.Sconfino  ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_PORTAFOGLIO.SCONFINO
+Posizione.dettagli.centrale rischi.Sezione Portafoglio.Margine ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_PORTAFOGLIO.MARGINE
+Posizione.dettagli.centrale rischi.Sezione Sistema;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_SISTEMA
+Posizione.dettagli.centrale rischi.Sezione Sistema.Accordato ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_SISTEMA.ACCORDATO
+Posizione.dettagli.centrale rischi.Sezione Sistema.Utilizzato;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_SISTEMA.UTILIZZATO
+Posizione.dettagli.centrale rischi.Sezione Sistema.Valore garanzia ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_SISTEMA.VALORE_GARANZIA
+Posizione.dettagli.centrale rischi.Sezione Sistema.Importo Garantito ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_SISTEMA.IMPORTO_GARANTITO
+Posizione.dettagli.centrale rischi.Sezione Sistema.Altri importi ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_SISTEMA.ALTRI_IMPORTI
+Posizione.dettagli.centrale rischi.Sezione Sistema.Sconfino  ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_SISTEMA.SCONFINO
+Posizione.dettagli.centrale rischi.Sezione Sistema.Margine ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_SISTEMA.MARGINE
+Posizione.dettagli.centrale rischi.Sezione Calcolato;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_CALCOLATO
+Posizione.dettagli.centrale rischi.Sezione Calcolato.Accordato;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_CALCOLATO.ACCORDATO
+Posizione.dettagli.centrale rischi.Sezione Calcolato.Sow;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.SEZIONE_CALCOLATO.SOW
+Posizione.dettagli.centrale rischi.Elenco.filtri.Soggetto;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.ELENCO.FILTRI.SOGGETTO
+Posizione.dettagli.centrale rischi.Elenco.filtri.Tipo Visualizzazione;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.ELENCO.FILTRI.TIPO_VISUALIZZAZIONE
+Posizione.dettagli.centrale rischi.Elenco.filtri.Tipo Visualizzazione.mese;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.ELENCO.FILTRI.TIPO_VISUALIZZAZIONE.MESE
+Posizione.dettagli.centrale rischi.Elenco.filtri.Tipo Visualizzazione.Andamentale;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.ELENCO.FILTRI.TIPO_VISUALIZZAZIONE.ANDAMENTALE
+Posizione.dettagli.centrale rischi.Elenco.filtri.Mese e anno di riferimento ;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.ELENCO.FILTRI.MESE_E_ANNO_DI_RIFERIMENTO
+Posizione.dettagli.centrale rischi.Elenco.filtri.Fenomeno;POSIZIONE.DETTAGLI.CENTRALE_RISCHI.ELENCO.FILTRI.FENOMENO
+Posizone.dettagli.centrale rischi.campi testata.elenco.Codice CR ;POSIZONE.DETTAGLI.CENTRALE_RISCHI.CAMPI_TESTATA.ELENCO.CODICE_CR
+Posizone.dettagli.centrale rischi.campi testata.elenco.Codice Fiscale ;POSIZONE.DETTAGLI.CENTRALE_RISCHI.CAMPI_TESTATA.ELENCO.CODICE_FISCALE
+Posizone.dettagli.centrale rischi.campi testata.elenco.Partita Iva;POSIZONE.DETTAGLI.CENTRALE_RISCHI.CAMPI_TESTATA.ELENCO.PARTITA_IVA
+Posizone.dettagli.centrale rischi.campi testata.elenco.N° soggetti segnalanti;POSIZONE.DETTAGLI.CENTRALE_RISCHI.CAMPI_TESTATA.ELENCO.N_SOGGETTI_SEGNALANTI
+Posizone.dettagli.centrale rischi.nessun dato disponibile;POSIZONE.DETTAGLI.CENTRALE_RISCHI.NESSUN_DATO_DISPONIBILE
+Posizione.Toolbar.Contatti.Titolo;POSIZIONE.TOOLBAR.CONTATTI.TITOLO
+Posizione.Toolbar.Contatti.Dati Advisor.Titolo;POSIZIONE.TOOLBAR.CONTATTI.DATI_ADVISOR.TITOLO
+Posizione.Toolbar.Contatti.Dati Advisor.Elenco.Denominazione Advisor;POSIZIONE.TOOLBAR.CONTATTI.DATI_ADVISOR.ELENCO.DENOMINAZIONE_ADVISOR
+Posizione.Toolbar.Contatti.Dati Advisor.Elenco.Partita iva;POSIZIONE.TOOLBAR.CONTATTI.DATI_ADVISOR.ELENCO.PARTITA_IVA
+Posizione.Toolbar.Contatti.Dati Advisor.Elenco.Categoria;POSIZIONE.TOOLBAR.CONTATTI.DATI_ADVISOR.ELENCO.CATEGORIA
+Posizione.Toolbar.Contatti.Dati Advisor.Elenco.Riferimento;POSIZIONE.TOOLBAR.CONTATTI.DATI_ADVISOR.ELENCO.RIFERIMENTO
+Posizione.Toolbar.Contatti.Dati Advisor.Elenco.Telefono;POSIZIONE.TOOLBAR.CONTATTI.DATI_ADVISOR.ELENCO.TELEFONO
+Posizione.Toolbar.Contatti.Dati Advisor.Elenco.PEC;POSIZIONE.TOOLBAR.CONTATTI.DATI_ADVISOR.ELENCO.PEC
+Posizione.Toolbar.Contatti.Dati Contatto Aggiuntivo.Titolo;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO_AGGIUNTIVO.TITOLO
+Posizione.Toolbar.Contatti.Dati Contatto Aggiuntivo.Elenco.Denominazione Contatto;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO_AGGIUNTIVO.ELENCO.DENOMINAZIONE_CONTATTO
+Posizione.Toolbar.Contatti.Dati Contatto Aggiuntivo.Elenco.Ruolo;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO_AGGIUNTIVO.ELENCO.RUOLO
+Posizione.Toolbar.Contatti.Dati Contatto Aggiuntivo.Elenco.Telefono1;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO_AGGIUNTIVO.ELENCO.TELEFONO1
+Posizione.Toolbar.Contatti.Dati Contatto Aggiuntivo.Elenco.Telefono2;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO_AGGIUNTIVO.ELENCO.TELEFONO2
+Posizione.Toolbar.Contatti.Dati Contatto Aggiuntivo.Elenco.Email;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO_AGGIUNTIVO.ELENCO.EMAIL
+Posizione.Toolbar.Contatti.Dati Contatto Aggiuntivo.Elenco.PEC;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO_AGGIUNTIVO.ELENCO.PEC
+Posizione.Toolbar.Contatti.Dati Contatto Aggiuntivo.Elenco.Note;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO_AGGIUNTIVO.ELENCO.NOTE
+Posizione.Toolbar.Contatti.Dati Contatto.Titolo;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO.TITOLO
+Posizione.Toolbar.Contatti.Dati Contatto.Elenco.Denominazione Contatto;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO.ELENCO.DENOMINAZIONE_CONTATTO
+Posizione.Toolbar.Contatti.Dati Contatto.Elenco.Ruolo;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO.ELENCO.RUOLO
+Posizione.Toolbar.Contatti.Dati Contatto.Elenco.Telefono1;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO.ELENCO.TELEFONO1
+Posizione.Toolbar.Contatti.Dati Contatto.Elenco.Telefono2;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO.ELENCO.TELEFONO2
+Posizione.Toolbar.Contatti.Dati Contatto.Elenco.Email;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO.ELENCO.EMAIL
+Posizione.Toolbar.Contatti.Dati Contatto.Elenco.PEC;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO.ELENCO.PEC
+Posizione.Toolbar.Contatti.Dati Contatto.Elenco.Note;POSIZIONE.TOOLBAR.CONTATTI.DATI_CONTATTO.ELENCO.NOTE
+Posizione.Toolbar.Contatti.Azioni.Aggiungi Contatto ;POSIZIONE.TOOLBAR.CONTATTI.AZIONI.AGGIUNGI_CONTATTO
+Posizione.Toolbar.Contatti.Azioni.Conferma Inserimento;POSIZIONE.TOOLBAR.CONTATTI.AZIONI.CONFERMA_INSERIMENTO
+Posizione.Toolbar.Contatti.Azioni.Annulla Inserimento;POSIZIONE.TOOLBAR.CONTATTI.AZIONI.ANNULLA_INSERIMENTO
+Posizione.Toolbar.Contatti.Azioni.messaggio conferma uscita;POSIZIONE.TOOLBAR.CONTATTI.AZIONI.MESSAGGIO_CONFERMA_USCITA
+Posizione.Toolbar.Contatti.Azioni.messaggio di conferma cancellazione;POSIZIONE.TOOLBAR.CONTATTI.AZIONI.MESSAGGIO_DI_CONFERMA_CANCELLAZIONE
+Posizione.Toolbar.Contatti.Azioni.Conferma Modifica;POSIZIONE.TOOLBAR.CONTATTI.AZIONI.CONFERMA_MODIFICA
+Posizione.Toolbar.Contatti.Azioni.Annulla Modifica;POSIZIONE.TOOLBAR.CONTATTI.AZIONI.ANNULLA_MODIFICA
+Posizione.Toolbar.Contatti.Azioni.Conferma;POSIZIONE.TOOLBAR.CONTATTI.AZIONI.CONFERMA
+Posizione.Toolbar.Contatti.Azioni.Annulla;POSIZIONE.TOOLBAR.CONTATTI.AZIONI.ANNULLA
+Posizione.Toolbar.Contatti.Data entry.Tipo contatto;POSIZIONE.TOOLBAR.CONTATTI.DATA_ENTRY.TIPO_CONTATTO
+Posizione.Toolbar.Contatti.Placeholder.Seleziona;POSIZIONE.TOOLBAR.CONTATTI.PLACEHOLDER.SELEZIONA

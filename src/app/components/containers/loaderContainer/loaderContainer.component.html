@@ -1,0 +1,6 @@
+<div class="loaderContainer" >
+    <div class="loaderBox" *ngIf="loading">
+        <nz-spin nzSimple></nz-spin>
+    </div>
+    <ng-content  *ngIf="!loading"></ng-content>
+</div>

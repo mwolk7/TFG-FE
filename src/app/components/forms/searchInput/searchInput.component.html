@@ -1,0 +1,6 @@
+<nz-input-group [nzSuffix]="inputClearTpl" nzSize="medium">
+        <input nz-input placeholder="Buscar..." [(ngModel)]="inputModel" (ngModelChange)="inputModelChange.emit(inputModel)"/>
+</nz-input-group>
+<ng-template #inputClearTpl>
+        <i nz-icon class="ant-input-clear-icon" nzTheme="fill" nzType="close-circle" *ngIf="inputModel" (click)="clearFilter()"></i>
+</ng-template>

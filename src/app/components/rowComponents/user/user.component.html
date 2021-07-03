@@ -1,0 +1,28 @@
+<div style="display: flex; justify-content: center">
+    <nz-row class="row-component-row">
+        <!-- Avatar -->
+        <nz-col  nzSm="24" nzMd="2" class="row-component-avatar-col">
+          <nz-avatar [nzText]="projectUser.name | twoCharacters" class="notBug-avatar"></nz-avatar>
+        </nz-col>
+
+        <!-- Name -->
+        <nz-col  nzSm="24" nzMd="14" class="row-component-name-col">
+            <span class="row-component-name-col-title" >{{projectUser.name}}</span>
+            <span>{{projectUser.role}}</span>
+            <button *ngIf="projectUser.role !== 'Owner'" style="position: absolute; right: 0; margin-right: -60%; margin-top: 1%" nz-button nzType="danger" nzSize="small" nz-popconfirm nzPopconfirmTitle="Delete Project User?" (nzOnConfirm)="deleteProjectUserOnClick()"><i nz-icon nzType="delete"></i></button>
+        </nz-col>
+
+        <!-- TEstCases -->
+        <nz-col  nzSm="24" nzMd="6" class="row-component-testSuite-col">
+            <div>
+                <nz-select  *ngIf="projectUser.actualUserProject" ngModel="lucy">
+                    <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                    <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                    <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                    <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                </nz-select>
+            </div>
+        </nz-col>
+
+    </nz-row>
+</div>

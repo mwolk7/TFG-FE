@@ -1,0 +1,543 @@
+//
+// Colour customisation
+//
+// `!default` allows overriding variables that are defined before @import
+//
+
+// Border between the header (and footer) and the table body
+$table-header-border: 1px solid #d1d3d3 !default;
+$table-header-background: #f3f3f3 !default;
+$table-header-background-hover: #e5e5e5 !default;
+
+// Border of rows / cells
+$table-body-border: 1px solid #d1d3d3 !default;
+
+// Row background colour (hover, striping etc are all based on this colour and
+// calculated automatically)
+$table-row-background: #ffffff !default;
+$table-row-background-hover: #e5f2f1 !default;
+
+// Row colour, when selected (tr.selected)
+$table-row-selected: #ff0000 !default;
+
+// Text colour of the interaction control elements (info, filter, paging etc)
+$table-control-color: #333333 !default;
+
+// Highlight colour of the paging button for the current page
+$table-paging-button-active: #333333 !default;
+
+// Hover colour of paging buttons on mouse over
+$table-paging-button-hover: #333333 !default;
+
+// Colour to use when shading
+$table-shade: black !default;
+
+// Padding
+$cell-padding: 12px;
+$cell-compact-padding: 6px;
+
+// Common
+$common-border: 1px solid #d1d3d3;
+$common-font-size: 14px;
+$common-line-height: 22px;
+
+//
+// Functions / mixins
+//
+@function tint( $color, $percent ) {
+    @return mix(white, $color, $percent);
+}
+
+@function shade( $color, $percent ) {
+    @return mix($table-shade, $color, $percent);
+}
+
+@mixin gradient( $from, $to ) {
+    background-color: $from;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,     $from 0%, $to 100%); /* Chrome10+,Safari5.1+ */
+    background:    -moz-linear-gradient(top,     $from 0%, $to 100%); /* FF3.6+ */
+    background:     -ms-linear-gradient(top,     $from 0%, $to 100%); /* IE10+ */
+    background:      -o-linear-gradient(top,     $from 0%, $to 100%); /* Opera 11.10+ */
+    background:         linear-gradient(to bottom, $from 0%, $to 100%); /* W3C */
+}
+
+table
+table th,
+table td {
+    box-sizing: content-box;
+}
+
+.data-table {
+    border: $table-header-border;
+    overflow: hidden;
+
+    &.pointer {
+      cursor: pointer;
+    }
+}
+
+// Stripe classes - add "stripe" class to the table to activate
+.stripe tbody,
+.display tbody {
+    tr:nth-child(odd) td {
+        background-color: shade($table-row-background, 2.35%); // shade by f9
+
+        &.selected {
+            background-color: shade($table-row-selected, 2.35%);
+        }
+    }
+}
+
+// Stripe classes - add "row-border" class to the table to activate
+.row-border tbody,
+.display tbody {
+    & > tr > th, & > tr > td {
+        border-top: $table-body-border;
+    }
+
+    & > tr:first-child > th,
+    & > tr:first-child > td {
+        border-top: none;
+    }
+}
+
+// Stripe classes - add "cell-border" class to the table to activate
+.cell-border tbody {
+    th, td {
+        border-top: $table-body-border;
+        border-right: $table-body-border;
+    }
+
+    tr th:first-child,
+    tr td:first-child {
+        border-left: $table-body-border;
+    }
+
+    tr:first-child th,
+    tr:first-child td {
+        border-top: none;
+    }
+}
+
+// Hover classes - add "hover" class to the table to activate
+.hover tbody,
+.display tbody {
+    tr td {
+      transition: background-color,box-shadow 0.3s ease;
+    }
+    tr:hover td {
+        background-color: $table-row-background-hover;
+
+        &.selected {
+            background-color: shade($table-row-selected, 3.6%);
+        }
+    }
+}
+
+// Sort column highlighting - add "order-column" class to the table to activate
+.order-column,
+.display {
+    tbody {
+        tr>.sorting_1,
+        tr>.sorting_2,
+        tr>.sorting_3 {
+            background-color: shade($table-row-background, 2%); // shade by fa
+        }
+
+        tr.selected>.sorting_1,
+        tr.selected>.sorting_2,
+        tr.selected>.sorting_3 {
+            background-color: shade($table-row-selected, 2%);
+        }
+    }
+}
+
+.display tbody,
+.order-column.stripe tbody {
+    tr:nth-child(odd) {
+        >.sorting_1 { background-color: shade($table-row-background, 5.4%); } // shade by f1
+        >.sorting_2 { background-color: shade($table-row-background, 4.7%); } // shade by f3
+        >.sorting_3 { background-color: shade($table-row-background, 3.9%); } // shade by f5
+
+        &.selected {
+            >.sorting_1 { background-color: shade($table-row-selected, 5.4%); }
+            >.sorting_2 { background-color: shade($table-row-selected, 4.7%); }
+            >.sorting_3 { background-color: shade($table-row-selected, 3.9%); }
+        }
+    }
+
+    tr:nth-child(even) {
+        >.sorting_1 { background-color: shade($table-row-background, 2%); } // shade by fa
+        >.sorting_2 { background-color: shade($table-row-background, 1.2%); } // shade by fc
+        >.sorting_3 { background-color: shade($table-row-background, 0.4%); } // shade by fe
+
+        &.selected {
+            >.sorting_1 { background-color: shade($table-row-selected, 2%); }
+            >.sorting_2 { background-color: shade($table-row-selected, 1.2%); }
+            >.sorting_3 { background-color: shade($table-row-selected, 0.4%); }
+        }
+    }
+}
+
+.display tbody,
+.order-column.hover tbody {
+    tr:hover {
+        >.sorting_1 { background-color: shade($table-row-background, 8.2%); } // shade by ea
+        >.sorting_2 { background-color: shade($table-row-background, 7.5%); } // shade by ec
+        >.sorting_3 { background-color: shade($table-row-background, 6.3%); } // shade by ef
+
+        &.selected {
+            >.sorting_1 { background-color: shade($table-row-selected, 8.2%); }
+            >.sorting_2 { background-color: shade($table-row-selected, 7.5%); }
+            >.sorting_3 { background-color: shade($table-row-selected, 6.3%); }
+        }
+    }
+}
+
+.nowrap {
+    th, td {
+        white-space: nowrap;
+    }
+}
+
+.compact {
+    thead th, thead td,
+    tfoot th, tfoot td,
+    tbody th, tbody td {
+        padding: $cell-compact-padding;
+    }
+}
+
+.t-sticky-left {
+  position: sticky;
+  left: 0px;
+  z-index: 1;
+  transition: background-color,box-shadow 0.3s ease;
+
+  .scroll-left & {
+    box-shadow: 6px 0 6px 0px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.t-sticky-right {
+  position: sticky;
+  right: 0px;
+  z-index: 1;
+  transition: background-color,box-shadow 0.3s ease;
+  padding-top: 8px;
+  padding-bottom: 6px;
+
+  .scroll-right & {
+    box-shadow: -6px 0 6px 0 rgba(0,0,0,.05)
+  }
+}
+
+.t-header-left-border {
+  .column-header-border & {
+    border-left: $table-header-border;
+  }
+}
+
+// .dataTables_scrollHead table, .dataTables_scrollBody table {
+//   border-right: $table-header-border;
+// }
+
+/* NOTE: this method of sticky also works for header, but the drawback is on scrollbars which goes over the header,
+        so for now using dataTable native method... */
+// &.sticky-top-1 {
+//     thead {
+//         tr:first-child {
+//             th {
+//                 position: sticky;
+//                 top: 0px;
+//             }
+//         }
+//     }
+// }
+
+/*
+ * Table styles
+ */
+table {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: $common-font-size;
+
+    td, th {
+        line-height: $common-line-height;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+
+    thead {
+        th {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    /*
+     * Header and footer styles
+     */
+    thead,
+    tfoot {
+        th {
+            font-weight: bold;
+        }
+    }
+
+    thead th, thead td,
+    tfoot th, tfoot td {
+        padding: $cell-padding;
+        border-bottom: $table-header-border;
+
+        &:active {
+            outline: none;
+        }
+    }
+
+    thead {
+        th {
+            background-color: $table-header-background;
+        }
+
+        .sorting,
+        .sorting_asc,
+        .sorting_desc,
+        .sorting_asc_disabled,
+        .sorting_desc_disabled {
+            cursor: pointer;
+            *cursor: hand;
+            background-repeat: no-repeat;
+            background-position: center right;
+
+            &::after {
+                position: relative;
+                display: inline-block;
+                padding: 0;
+                top: 2px;
+                left: 4px;
+                width: 0px;
+                height: 13px;
+                .compact & {
+                  left: 1px;
+                }
+                overflow: visible;
+            }
+
+            transition: background-color 0.3s ease;
+            &:hover {
+                background: $table-header-background-hover;
+            }
+        }
+
+        .sorting {
+            padding-right: $cell-padding + 4px;
+            &::after {
+                content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 255" fill="rgb(133, 133, 133)" width="8" height="13"><g><path d="m-0.070716,91.401982l84.078944,-91.263165l84.078944,91.263165l-168.157888,0z"/><path transform="rotate(-180 84.00822448730469,208.92823791503906)" d="m-0.070719,254.559879l84.07895,-91.26317l84.07894,91.26317l-168.15789,0z"/></g></svg>');
+            }
+        }
+        .sorting_asc {
+            padding-right: $cell-padding + 4px;
+            &::after {
+                content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 255" fill="rgb(50, 167, 178)" width="8" height="13"><g><path d="m-0.070716,91.401982l84.078944,-91.263165l84.078944,91.263165l-168.157888,0z"/></g></svg>');
+            }
+        }
+        .sorting_desc {
+            padding-right: $cell-padding + 4px;
+            &::after {
+                content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 255" fill="rgb(50, 167, 178)" width="8" height="13"><g><path transform="rotate(-180 84.00822448730469,208.92823791503906)" d="m-0.070719,254.559879l84.07895,-91.26317l84.07894,91.26317l-168.15789,0z"/></g></svg>');
+            }
+        }
+        .sorting_asc_disabled {
+            /* TODO */
+        }
+        .sorting_desc_disabled {
+            /* TODO */
+        }
+    }
+
+    /*
+     * Body styles
+     */
+    tbody {
+        tr td {
+            background-color: $table-row-background;
+
+            &.selected {
+                background-color: $table-row-selected;
+            }
+        }
+
+        th,
+        td {
+            padding: $cell-padding;
+        }
+    }
+
+    // Typography
+    th.dt-left,
+    td.dt-left {
+        text-align: left;
+    }
+
+    th.dt-center,
+    td.dt-center {
+        text-align: center;
+    }
+
+    th.dt-right,
+    td.dt-right {
+        text-align: right;
+    }
+
+    th.dt-justify,
+    td.dt-justify {
+        text-align: justify;
+    }
+
+    th.dt-nowrap,
+    td.dt-nowrap {
+        white-space: nowrap;
+    }
+
+    thead,
+    tfoot {
+        th.dt-head-left,
+        td.dt-head-left {
+            text-align: left;
+        }
+
+        th.dt-head-center,
+        td.dt-head-center{
+            text-align: center;
+        }
+
+        th.dt-head-right,
+        td.dt-head-right {
+            text-align: right;
+        }
+
+        th.dt-head-justify,
+        td.dt-head-justify {
+            text-align: justify;
+        }
+
+        th.dt-head-nowrap,
+        td.dt-head-nowrap {
+            white-space: nowrap;
+        }
+    }
+
+    tbody {
+        th.dt-body-left,
+        td.dt-body-left {
+            text-align: left;
+        }
+
+        th.dt-body-center,
+        td.dt-body-center {
+            text-align: center;
+        }
+
+        th.dt-body-right,
+        td.dt-body-right {
+            text-align: right;
+        }
+
+        th.dt-body-justify,
+        td.dt-body-justify {
+            text-align: justify;
+        }
+
+        th.dt-body-nowrap,
+        td.dt-body-nowrap {
+            white-space: nowrap;
+        }
+    }
+}
+
+/*
+ * Control feature layout
+ */
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+    *zoom: 1;
+    overflow-x: none;
+
+    .dataTables_empty {
+      display: none;
+    }
+
+    // Scrolling
+    > .dataTables_scroll {
+        clear: both;
+
+        > .dataTables_scrollBody {
+            *margin-top: -1px;
+            -webkit-overflow-scrolling: touch;
+
+            > table > thead > tr, > table > tbody > tr {
+                > th, > td {
+                    // Setting v-align baseline can cause the headers to be visible
+                    vertical-align: middle;
+                }
+
+                > th > div.dataTables_sizing,
+                > td > div.dataTables_sizing {
+                    // Hide the element used to wrap the content in the header for
+                    // the body scrolling table
+                    height: 0;
+                    overflow: hidden;
+                    margin: 0 !important;
+                    padding: 0 !important;
+                }
+            }
+
+            thead {
+                .sorting,
+                .sorting_asc,
+                .sorting_desc,
+                .sorting_asc_disabled,
+                .sorting_desc_disabled {
+                    &::after {
+                        height: 0px;
+                        overflow: hidden;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .dataTables_scrollHead > table,
+    .dataTables_scrollBody > table {
+        border-bottom: none;
+        margin-left: 0;
+    }
+
+    .dataTables_scrollHead {
+      background: $table-header-background;
+    }
+
+    .dataTables_scrollBody > table > thead > tr > th {
+      background: none !important;
+      border-spacing: 0px;
+      line-height: 0px;
+      height: 0px;
+    }
+
+    // Self clear the wrapper
+    &:after {
+        visibility: hidden;
+        display: block;
+        content: "";
+        clear: both;
+        height: 0;
+    }
+    zoom: 1; // Poor old IE
+}

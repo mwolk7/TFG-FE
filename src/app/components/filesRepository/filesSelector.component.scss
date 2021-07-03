@@ -1,0 +1,37 @@
+@import "src/assets/scss/style";
+
+
+.container {
+  z-index: 50;
+  background-color: $Light-Grey-2;
+  align-items: center;
+  width: 100%;
+  color: $White;
+  margin-bottom: 10px;
+  margin-top: -8px;
+  padding: 10px;
+  border-bottom-left-radius: $border-radius;
+  border-radiusborder-bottom-right-radius: $border-radius;
+}
+
+.colClass {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px solid $Light-Grey-3;
+  padding: 10px 16px 2% 0%;
+  text-align: right;
+  left: 0px;
+  background: $Light-Grey-2;
+}
+
+.ant-form-item {
+  margin-bottom: 5px;
+}
+
+

@@ -1,0 +1,11 @@
+<nz-sider  [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
+
+  <div class="logo">mT</div>
+
+  <ul nz-menu nzMode="inline"  class="menu" [nzInlineCollapsed]="isCollapsed">
+    <li nz-menu-item nz-tooltip nzTooltipPlacement="right" [nzTitle]="isCollapsed ? 'Dashboard' : ''" >
+      <button nz-button nzType="primary" class="buttons" (click)="homeClick()"><i nz-icon nzType="home"></i></button>
+    </li>
+  </ul>
+
+</nz-sider>

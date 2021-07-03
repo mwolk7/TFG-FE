@@ -1,0 +1,13 @@
+<div>
+    <label [class.big-filters]="isBigTitle"> {{ titleCode | translate}} </label>
+    <a href="javascript:void(0);" *ngFor="let shortcut of shortcuts; let i = index"
+    [ngClass]="{'first': i==0}"
+        (click)="shortcutSelected(shortcut.selectedItems)" [class.linkActive]="!exist(shortcut.selectedItems, selectedItems)">{{shortcut.titleCode | translate}}</a>
+</div>
+
+<nz-select nzMode="multiple" nzShowSearch nzAllowClear [nzMaxTagPlaceholder]="tagPlaceHolder"
+    [nzMaxTagCount]="1" [ngModel]="selectedItems" (ngModelChange)="change($event)"
+    [nzPlaceHolder]="'DEV.DEFAULT.VALUES.ALL' | translate" >
+    <nz-option *ngFor="let item of items" nzLabel="{{item.description}}" nzValue="{{item.code}}"></nz-option>
+</nz-select>
+<ng-template #tagPlaceHolder let-selectedList>{{'DEV.DEFAULT.VALUES.OTHERS' | translate}}  {{ selectedList.length }}</ng-template>

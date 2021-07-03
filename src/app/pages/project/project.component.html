@@ -1,0 +1,42 @@
+<pageMiniLoaderHover *delayLoader="isLoading"></pageMiniLoaderHover>
+<app-section-container>
+    <nz-page-header class="site-page-header"  nzTitle="PROYECTOS">
+        <nz-page-header-extra>
+            <div style="display: flex">
+                <app-search-input [(inputModel)]="search" style="padding-right: 16px"> </app-search-input>
+                <button nz-button class="nb-main-button" (click)="newProjectOnClick()">NUEVO PROYECTO</button>
+            </div>
+        </nz-page-header-extra>
+    </nz-page-header>
+    <app-medium-separator></app-medium-separator>
+    <app-loader-container [loading]="isLoading" >
+        <nz-row>
+            <nz-card  style="width:100%;">
+                <div>
+
+                    <div *ngIf="projects.length === 0 ; then noProjects else showProjects"></div>
+                    <ng-template #noProjects>
+                        <div class="noProject">
+                            <img src="../../../assets/images/notBug_noProjectAssigned.png">
+                            <nz-comment nzAuthor="notBug" [nzDatetime]="currentDate">
+                                <nz-comment-content>
+                                    <p>
+                                        <br>
+                                        NO HAY PROJECTOS
+                                    </p>
+                                </nz-comment-content>
+                            </nz-comment>
+                        </div>
+                    </ng-template>
+                    <ng-template #showProjects>
+                        <div *ngFor="let data of projects | filterTable: search" style="width: 100%">
+                            <app-row-proyect [project]="data" style="width: 100%"></app-row-proyect>
+                        </div>
+                    </ng-template>
+
+                </div>
+            </nz-card>
+        </nz-row>
+    </app-loader-container>
+</app-section-container>
+<app-project-new-project [parentProject]="null" (closeOnClick)="closeNewProjectOnClick()" (successOnClick)="successNewProjectOnClick($event)" [showNewProject]="showNewProject" ></app-project-new-project>

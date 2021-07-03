@@ -1,0 +1,170 @@
+<app-section-container>
+
+        <nz-page-header class="site-page-header" nzBackIcon [nzGhost]="false" (nzBack)="backOnClick()">
+            <!--avatar-->
+            <nz-avatar nz-page-header-avatar [nzText]="testSuiteData.name | twoCharacters" class="notBug-avatar"></nz-avatar>
+
+            <!--title-->
+            <nz-page-header-title (click)="editTestSuite()" style="cursor: pointer">{{testSuiteData.name}}</nz-page-header-title>
+
+            <!--subtitle-->
+            <nz-page-header-subtitle>{{testSuiteData.description}}</nz-page-header-subtitle>
+
+            <!--extra-->
+            <nz-page-header-extra>
+                <button nz-button class="nb-main-button" (click)="newTestRunnerOnClick()">Nuevo ciclo</button>
+                <button nz-button class="nb-util-button" (click)="editTestSuite()">Editar</button>
+            </nz-page-header-extra>
+
+            <!--content-->
+            <nz-page-header-content>
+                <app-loader-container [loading]="isTestSuiteLoading">
+                    <nz-descriptions nzSize="small" [nzColumn]="3">
+                        <nz-descriptions-item nzTitle="Casos de testing" [nzSpan]="1">{{testSuiteData.totalTestCases}}</nz-descriptions-item>
+                        <nz-descriptions-item nzTitle="Ciclos" [nzSpan]="1">{{testSuiteData.totalTestRunners}} ({{testSuiteData.totalTestRunnersRunning}} En proceso)</nz-descriptions-item>
+                        <nz-descriptions-item nzTitle="Modificado" [nzSpan]="1">{{testSuiteData.lastModifiedDate | date: 'short'}}</nz-descriptions-item>
+
+                        <nz-descriptions-item nzTitle="PRIORIDADES" [nzSpan]="1">
+                            <app-priority-dot [testSuite]="testSuiteData" ></app-priority-dot>
+                        </nz-descriptions-item>
+                        <nz-descriptions-item nzTitle="Entornos" [nzSpan]="2">
+                            <div>
+                                <span>{{testSuiteData.devices}},</span>
+                                <span>{{testSuiteData.os}},</span>
+                                <span>{{testSuiteData.browsers}}</span>
+                            </div>
+                        </nz-descriptions-item>
+                    </nz-descriptions>
+                </app-loader-container>
+            </nz-page-header-content>
+        </nz-page-header>
+    <app-medium-separator></app-medium-separator>
+    <nz-row>
+        <nz-card style="width:100%;" nzTitle="Ciclos de testing" [nzExtra]="searchTemplate">
+            <div *ngIf="statisticData?.totalTestRunner > 1">
+                <app-medium-separator></app-medium-separator>
+                    <div style="display: flex;justify-content: space-between;align-items: center;">
+                        <table>
+                            <tbody>
+                            <tr style="font-weight: bold;">
+                                <td class="statisticsTableHeader">Casos</td>
+                                <td class="statisticsTableHeader" style="color: #6ABE39">Exitosos</td>
+                                <td class="statisticsTableHeader" style="color: #FF4343">Fallaron</td>
+                                <td class="statisticsTableHeader">N/P</td>
+                                <td class="statisticsTableHeader">N/A</td>
+                                <td class="statisticsTableHeader">Bugs</td>
+                                <td class="statisticsTableHeader">Pendiente</td>
+                                <td class="statisticsTableHeader">En Proceso</td>
+                                <td class="statisticsTableHeader">Esperando</td>
+                                <td class="statisticsTableHeader">Finalizado</td>
+                                <td class="statisticsTableHeader">Cancelado</td>
+                            </tr>
+
+                            <tr style="text-align: center">
+                                <td class="statisticsTableData">{{statisticData?.totalTestCases}}</td>
+                                <td class="statisticsTableData">{{statisticData?.passed}}</td>
+                                <td class="statisticsTableData">{{statisticData?.failed}}</td>
+                                <td class="statisticsTableData">{{statisticData?.cnt}}</td>
+                                <td class="statisticsTableData">{{statisticData?.na}}</td>
+                                <td class="statisticsTableData">{{statisticData?.bugsReported }}</td>
+                                <td class="statisticsTableData">{{statisticData?.pendingStatusCount}}</td>
+                                <td class="statisticsTableData">{{statisticData?.runningStatusCount}}</td>
+                                <td class="statisticsTableData">{{statisticData?.waitingStatusCount}}</td>
+                                <td class="statisticsTableData">{{statisticData?.finishedStatusCount}}</td>
+                                <td class="statisticsTableData">{{statisticData?.cancelledStatusCount}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+            <app-medium-separator></app-medium-separator>
+            <app-loader-container [loading]="isTestRunnerLoading">
+                <nz-table #borderedTable [nzData]="testRunnerData | filterTable: search" [nzFrontPagination]="false" [nzShowTotal]="totalTemplate" [nzShowPagination]="true" [(nzPageIndex)]="page" [nzTotal]="totalPaginationElements" (nzPageIndexChange)="pageIndexChanged()">
+                    <ng-template #totalTemplate let-total> Total {{ testRunnerData.length }} de {{totalPaginationElements}} </ng-template>
+                    <thead>
+                    <tr>
+                        <th click-stop-propagation nzShowCheckbox [(nzChecked)]="masterCheck" [nzIndeterminate]="indeterminate" (nzCheckedChange)="toggleCheckAll()" nzAlign="center"></th>
+                        <th nzAlign="left" nzWidth="1px">Estado</th>
+                        <th nzAlign="left">Version</th>
+                        <th nzAlign="left">Nombre</th>
+                        <th nzAlign="left">Casos de prueba</th>
+                        <th nzAlign="center">Exitoso</th>
+                        <th nzAlign="center">Fallo</th>
+                        <th nzAlign="center">N/P</th>
+                        <th nzAlign="center">N/A</th>
+                        <th nzAlign="center">Completado</th>
+                        <th nzAlign="center">Bugs</th>
+                        <th nzAlign="center">Usuarios</th>
+                        <th nzAlign="center">Ultimo cambio</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let data of borderedTable.data" style="cursor: pointer" (click)="testRunnerTableOnClick(data)">
+                        <td click-stop-propagation nzShowCheckbox [(nzChecked)]="data.checked"  (nzCheckedChange)="toggleCheckSingle(data)"></td>
+                        <td nzAlign="left">
+                            <app-testcases-status-tag [status]="data.status"></app-testcases-status-tag>
+                        </td>
+                        <td nzAlign="left" class="blueText">
+                            {{ data.projectVersion?.project_version }}
+                        </td>
+                        <td nzAlign="left">{{ data.name }}</td>
+                        <td nzAlign="left">{{ getTestCasesString(data) }}</td>
+                        <td nzAlign="center" class="greenText">{{ data.statistics.passed }}</td>
+                        <td nzAlign="center" class="redText">{{ data.statistics.failed }}</td>
+                        <td nzAlign="center">{{ data.statistics.cnt }}</td>
+                        <td nzAlign="center">{{ data.statistics.na }}</td>
+                        <td nzAlign="center">{{ data.statistics.remaining | decimalFormat:2}}%</td>
+                        <td nzAlign="center" class="redText">{{ data.statistics.bugsReported }}</td>
+                        <td nzAlign="center">
+                            <div *ngIf="data.users.length < 2; then showSingleUser else showMultipleUsers"></div>
+
+                                <ng-template #showSingleUser>
+                                    <div>{{data.users[0].name}}</div>
+                                </ng-template>
+
+                                <ng-template #showMultipleUsers>
+                                    <div nz-tooltip nzTooltipPlacement="bottomLeft" [nzTooltipTitle]=userNamesToolTip>
+                                        {{data.users[0].name}}, +{{(data.users.length)-1}} </div>
+                                    <ng-template #userNamesToolTip >
+                                        <div *ngFor="let users of data.users | slice:1">
+                                            {{users.name}}
+                                        </div>
+                                    </ng-template>
+                                </ng-template>
+                        </td>
+                        <td nzAlign="center">{{ data.lastModifiedDate | date: 'short' }}</td>
+                    </tr>
+                    </tbody>
+                </nz-table>
+            </app-loader-container>
+
+        </nz-card>
+
+        <ng-template #searchTemplate>
+            <div style="display: flex; align-items: center">
+
+                <div nz-row class="searchFields">
+
+                <div nz-col nzSm="24" nzMd="16" class="searchTags">
+                    <nz-form-item style="margin-bottom: 0px" nz-row>
+                        <nz-select nz-col nzMd="18" nzShowSearch nzAllowClear name="Filter"
+                                   [(ngModel)]="testSuiteRunner.status" [nzPlaceHolder]="'Filtrar por estados'"
+                                   [nzMaxTagCount]="2" nzMode="multiple" (ngModelChange)="onChangeSelect($event)">
+                            <nz-option *ngFor="let status of testSuiteStatusSelect" [nzLabel]="status.key"
+                                       [nzValue]="status.value"></nz-option>
+                        </nz-select>
+                    </nz-form-item>
+                </div>
+
+                <div nz-col nzSm="24" nzMd="8" class="searchInput">
+                    <app-search-input [(inputModel)]="search" > </app-search-input>
+                </div>
+
+            </div>
+            </div>
+
+        </ng-template>
+
+
+    </nz-row>
+</app-section-container>

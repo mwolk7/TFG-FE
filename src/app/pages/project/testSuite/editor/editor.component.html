@@ -1,0 +1,173 @@
+<app-section-container>
+    <nz-page-header class="site-page-header" nzBackIcon [nzGhost]="false" (nzBack)="change ? showConfirmationModal() : backOnClick()">
+        <!--avatar-->
+        <nz-avatar nz-page-header-avatar [nzText]="testSuite.name | twoCharacters" class="notBug-avatar"></nz-avatar>
+
+        <!--title-->
+        <nz-page-header-title>{{testSuite.name}}</nz-page-header-title>
+
+        <!--subtitle-->
+        <nz-page-header-subtitle>{{testSuite.description}}</nz-page-header-subtitle>
+
+        <!--tags-->
+        <nz-page-header-tags>
+            <nz-tag *ngIf="change" [nzColor]="'red'">Cambios sin guardar</nz-tag>
+        </nz-page-header-tags>
+
+        <!--extra-->
+        <nz-page-header-extra style="display: flex !important;">
+            <button nz-button class="nb-main-button" (click)="newTestSuiteOnClick()">{{isNewTestSuite ? 'Crear' : 'Guardar'}}</button>
+<!--            <nz-upload nzAction="" [nzCustomRequest]="uploadFile" [nzLimit]="1" [nzSize]="5000" [nzMultiple]="false" (nzChange)="handleUpload($event)">-->
+<!--                <button nz-button class="nb-util-button"><i nz-icon nzType="download"></i>Import csv</button>-->
+<!--            </nz-upload>-->
+            <button nz-button click-stop-propagation class="nb-util-button" nz-popconfirm nzPopconfirmTitle="clonar?" *ngIf="!isNewTestSuite" (nzOnConfirm)="cloneTestSuite(testSuite)">Clonar</button>
+            <div *ngIf="change; then showModal else hideModal"></div>
+            <ng-template #showModal>
+                <button nz-button class="nb-util-button" (click)="showConfirmationModal()" *ngIf="!isNewTestSuite">Cancelar</button>
+            </ng-template>
+            <ng-template #hideModal>
+                <button nz-button class="nb-util-button" (click)="cancelTestSuiteOnClick()" *ngIf="!isNewTestSuite">Cancelar</button>
+            </ng-template>
+            <button nz-button nzType="danger" nz-popconfirm nzPopconfirmTitle="borrar?" (nzOnConfirm)="deleteTestSuiteOnClick()" *ngIf="!isNewTestSuite">Borrar</button>
+        </nz-page-header-extra>
+
+        <!--content-->
+        <nz-page-header-content>
+            <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+
+                <div nz-row style="width: 100%">
+                    <div nz-col nzSm="24" nzMd="8" class="colClass">
+                        <nz-form-item >
+                            <nz-form-label  nzRequired nzFor="name" >Nombre</nz-form-label>
+                            <nz-form-control  nzErrorTip="Nombre es obligatorio">
+                                <input type="text" nz-input formControlName="name" [(ngModel)]="testSuite.name"/>
+                            </nz-form-control>
+                        </nz-form-item>
+                    </div>
+                    <div nz-col nzSm="24" nzMd="16" class="colClass">
+                        <nz-form-item>
+                            <nz-form-label>Descripcion</nz-form-label>
+                            <input type="text" nz-input formControlName="description" name="descripcion" [(ngModel)]="testSuite.description">
+                        </nz-form-item >
+                    </div>
+
+                </div>
+
+                <div nz-row style="width: 100%">
+                    <div nz-col nzSm="24" nzMd="8" class="colClass">
+                        <nz-form-item>
+                            <nz-form-label>Dispositivos</nz-form-label>
+                            <nz-select nzShowSearch nzAllowClear formControlName="devices" name="dispositivos" [(ngModel)]="testSuite.devices" [nzPlaceHolder]="'Select..'" [nzMaxTagCount]="3" [nzMaxTagPlaceholder]="tagPlaceHolderDevice" nzMode="multiple">
+                                <nz-option *ngFor="let item of devicesSelect" [nzLabel]="item.key" [nzValue]="item.value"></nz-option>
+                            </nz-select>
+                            <ng-template #tagPlaceHolderDevice let-selectedList> and {{ selectedList.length }} more selected </ng-template>
+                        </nz-form-item >
+                    </div>
+                    <div nz-col nzSm="24" nzMd="8" class="colClass">
+                        <nz-form-item>
+                            <nz-form-label>SO</nz-form-label>
+                            <nz-select nzShowSearch nzAllowClear formControlName="os" name="os" [(ngModel)]="testSuite.os" [nzPlaceHolder]="'Select..'" [nzMaxTagCount]="3" [nzMaxTagPlaceholder]="tagPlaceHolderDevice" nzMode="multiple">
+                                <nz-option  *ngFor="let item of osSelect" [nzLabel]="item.key" [nzValue]="item.value"></nz-option>
+                            </nz-select>
+                        </nz-form-item >
+                    </div>
+                    <div nz-col nzSm="24" nzMd="8" class="colClass">
+                        <nz-form-item>
+                            <nz-form-label>Navegadores</nz-form-label>
+                            <nz-select nzShowSearch nzAllowClear formControlName="browsers" name="browsers" [(ngModel)]="testSuite.browsers" [nzPlaceHolder]="'Select..'" [nzMaxTagCount]="3" [nzMaxTagPlaceholder]="tagPlaceHolderDevice" nzMode="multiple">
+                                <nz-option *ngFor="let item of browserSelect" [nzLabel]="item.key" [nzValue]="item.value"></nz-option>
+                            </nz-select>
+                        </nz-form-item >
+                    </div>
+
+                </div>
+
+            </form>
+        </nz-page-header-content>
+    </nz-page-header>
+
+    <app-medium-separator></app-medium-separator>
+
+    <nz-card style="width:100%;" nzTitle="Casos de prueba">
+
+        <app-medium-separator></app-medium-separator>
+
+        <!-- MODULES-->
+        <div cdkDropList (cdkDropListDropped)="drop($event, testSuite.modules)">
+            <div cdkDrag  *ngFor="let module of testSuite.modules">
+                <div class="module">
+                    <div style="display: flex; justify-content: flex-start; width: 100%; cursor: pointer" (click)="module.toggle=!module.toggle">
+                        <i nz-icon nzType="drag" class="iconModule"></i>
+                        <i nz-icon click-stop-propagation  class="iconExpand" nzType="{{module.toggle ? 'down' : 'right'}}" (click)="module.toggle=!module.toggle"></i>
+                        <input nz-input class="title" click-stop-propagation [(ngModel)]="module.name" />
+                    </div>
+                    <div style="display: flex; justify-content: flex-end;">
+                        <span style="padding-right: 15px">({{module.testCases.length}})</span>
+                        <button nz-button click-stop-propagation class="nb-util-button" nzSize="small" (click)="copyModule(module, this.testSuite.modules)"><i nz-icon nzType="copy"></i></button>
+                        <button style="margin-left: 15px" nz-button click-stop-propagation nzType="danger" nzSize="small" (click)="deleteModuleOnClick(module)"><i nz-icon nzType="delete"></i></button>
+                    </div>
+                </div>
+
+                <!-- TEST CASES -->
+                <div  click-stop-propagation class="testCasesContainer" *ngIf="module.toggle">
+                    <div cdkDropList (cdkDropListDropped)="drop($event, module.testCases)" style="width: 100%">
+                        <div cdkDrag  *ngFor="let testCase of module.testCases">
+                            <div class="testCase" >
+                                <div style="display: flex; justify-content: flex-start; width: 100%; cursor: pointer" (click)="testCase.toggle=!testCase.toggle">
+                                    <i nz-icon nzType="drag" class="iconTestCase"></i>
+                                    <i nz-icon click-stop-propagation class="iconExpand" nzType="{{testCase.toggle ? 'down' : 'right'}}" (click)="testCase.toggle=!testCase.toggle"></i>
+                                    <input nz-input class="title" click-stop-propagation [(ngModel)]="testCase.name" />
+                                </div>
+                                <div style="display: flex; justify-content: flex-end;">
+                                    <button nz-button click-stop-propagation class="nb-util-button" nzSize="small" (click)="copyTestCase(testCase, module.testCases)"><i nz-icon nzType="copy"></i></button>
+                                    <button nz-button click-stop-propagation nzType="danger" nzSize="small" style="margin-left: 15px"  (click)="deleteTestCaseOnClick(testCase, module.testCases)"><i nz-icon nzType="delete"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- TEST CASES DATA -->
+                            <app-new-testcase  click-stop-propagation style="width: 100%" *ngIf="testCase.toggle" [newTestCaseObj]="testCase">
+
+                            </app-new-testcase>
+                        </div>
+
+                        <!-- ADD TEST CASE -->
+                        <app-small-separator></app-small-separator>
+                        <div class="testCase">
+                            <div style="display: flex; justify-content: flex-start; width: 100%;">
+                                <i nz-icon nzType="plus" class="icon" (click)="addTestCaseOnClick(module.testCases, '')"></i>
+                                <input nz-input class="title" click-stop-propagation [placeholder]="'New testCase'"  (keyup.enter)="addTestCaseOnClick(module.testCases, $event.target)"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- ADD MODULE -->
+            <app-small-separator></app-small-separator>
+            <div class="module">
+                <div style="display: flex; justify-content: flex-start; width: 100%;">
+                    <i nz-icon nzType="plus" class="icon"  (click)="addModuleOnClick()"></i>
+                    <input nz-input class="title" click-stop-propagation [(ngModel)]="newModuleValue" [placeholder]="'New module'"  (keyup.enter)="addModuleOnClick()"/>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </nz-card>
+
+</app-section-container>
+
+<nz-modal [(nzVisible)]="modalVisibility" nzTitle="Cambios sin guardar" (nzOnCancel)="closeConfirmationModal()">
+    <div style="padding-bottom: 4%">
+        Esta a punto de irse sin guardar sus cambios, que desea hacer?
+    </div>
+    <div *nzModalFooter>
+        <button nz-button class="nb-main-button" (click)="newTestSuiteOnClick()">Guardar</button>
+        <button nz-button class="nb-util-button" (click)="backOnClick()">Descartar</button>
+        <button nz-button class="nb-util-button" (click)="closeConfirmationModal()">Cancelar</button>
+    </div>
+</nz-modal>

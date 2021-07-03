@@ -1,0 +1,98 @@
+@import "src/assets/scss/style";
+
+.colClass {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+
+.searchInput {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.searchFields {
+  width: 700px;
+  padding-top: 20px;
+}
+
+.searchTags {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.statisticSummary {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.statisticCount {
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.statisticCountTitle {
+  font-weight: bold;
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.statisticsTableHeader {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.statisticsTableData {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content {
+  flex: 1;
+}
+
+.content p {
+  margin-bottom: 1em;
+}
+
+.content-link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-link a {
+  margin-right: 16px;
+}
+
+.content-link a img {
+  margin-right: 8px;
+}
+
+.content-image {
+  margin: 0 0 0 60px;
+  display: flex;
+  align-items: center;
+}
+
+.content-image img {
+  width: 100%;
+}
+
+
+.greenText {
+  color: $Green;
+}
+
+.redText {
+  color: $Red
+}
+
+.blueText {
+  color: $Primary
+}
+
+.ant-page-header {
+  background-color: $Light-Grey-2;
+}

@@ -1,0 +1,39 @@
+<div style="display: flex; justify-content: center">
+    <nz-row class="row-component-row">
+        <!-- Avatar -->
+        <nz-col  nzSm="24" nzMd="2" class="row-component-avatar-col" style="padding-top: 7px">
+            <nz-avatar [nzText]="testSuite.name | twoCharacters" class="notBug-avatar" (click)="testSuiteClick()"></nz-avatar>
+        </nz-col>
+        <!-- Name -->
+        <nz-col  nzSm="24" nzMd=4 class="row-component-name-col" style="padding-top: 13px">
+            <span class="row-component-name-col-title"  (click)="testSuiteClick()">{{testSuite.name}}</span>
+            <span>{{testSuite.description}}</span>
+        </nz-col>
+        <nz-col  nzSm="24" nzMd=4 class="row-component-name-col">
+            <span class="row-component-date-col-date">PRIORIDADES</span>
+            <app-priority-dot [testSuite]="testSuite"></app-priority-dot>
+        </nz-col>
+        <!-- Extra data -->
+        <nz-col  nzSm="24" nzMd="3" class="row-component-name-col">
+            <span class="row-component-date-col-date">{{modules}} Modulos</span>
+            <span class="row-component-date-col-date">{{testCases}} Casos de prueba</span>
+        </nz-col>
+        <!-- Extra data -->
+        <nz-col  nzSm="24" nzMd="3" class="row-component-name-col">
+            <span class="row-component-date-col-date">{{testSuite.totalTestRunners}} Ciclos</span>
+            <span class="row-component-date-col-date">{{testSuite.totalTestRunnersRunning}} En proceso</span>
+        </nz-col>
+        <!-- Extras -->
+        <nz-col  nzSm="24" nzMd="3" class="row-component-action-col">
+                <i nz-icon nzType="eye" nz-tooltip nzTooltipTitle="View" click-stop-propagation nzTheme="outline" class="row-component-action-col-icon" (click)="previewOnClick()"></i>
+                <i nz-icon nzType="edit" nz-tooltip nzTooltipTitle="Edit"  click-stop-propagation nzTheme="outline" class="row-component-action-col-icon"  (click)="testSuiteEditClick()"></i>
+                <i nz-icon nzType="play-circle" nz-tooltip nzTooltipTitle="Run"  click-stop-propagation nzTheme="outline" class="row-component-action-col-icon" (click)="testRunnerClick()"></i>
+        </nz-col>
+
+        <!-- Date -->
+        <nz-col  nzSm="24" nzMd="4" class="row-component-date-col">
+            <span class="row-component-date-col-date">{{testSuite.lastModifiedDate | date: 'short'}}</span>
+        </nz-col>
+
+    </nz-row>
+</div>

@@ -1,0 +1,136 @@
+<app-section-container>
+    <nz-page-header class="site-page-header" nzBackIcon [nzGhost]="false" (nzBack)="change ? showModal() : cancelTestRunnerOnClick()">
+        <!--avatar-->
+        <nz-avatar nz-page-header-avatar [nzText]="testRunner.name | twoCharacters" class="notBug-avatar"></nz-avatar>
+
+        <!--title-->
+        <nz-page-header-title>{{testRunner.name}}</nz-page-header-title>
+
+        <!--tags-->
+        <nz-page-header-tags>
+            <nz-tag *ngIf="change" [nzColor]="'red'">Cambios sin guardar</nz-tag>
+        </nz-page-header-tags>
+
+        <!--extra-->
+        <nz-page-header-extra>
+            <button nz-button class="nb-main-button" *ngIf="!isNewTestRunner" (click)="startTestRunner()">Start</button>
+            <button nz-button class="nb-util-button" (click)="newTestRunnerOnClick()">{{isNewTestRunner ? 'Create' : 'Save'}}</button>
+            <button nz-button click-stop-propagation class="nb-util-button" nz-popconfirm nzPopconfirmTitle="Clonar?" [disabled]="testRunner.status !== 'Pending'" *ngIf="!isNewTestRunner" (nzOnConfirm)="cloneTestRunner(testRunner)">Clone</button>
+            <button nz-button class="nb-util-button" (click)="cancelTestRunnerOnClick()" *ngIf="!isNewTestRunner">Back</button>
+            <button nz-button click-stop-propagation nzType="danger" nz-popconfirm nzPopconfirmTitle="borrar?" [disabled]="testRunner.status !== 'Pending'" *ngIf="!isNewTestRunner" (nzOnConfirm)="deleteTestRunner()">Delete</button>
+        </nz-page-header-extra>
+
+        <!--content-->
+        <nz-page-header-content>
+            <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+
+                <div nz-row style="width: 100%">
+                    <div nz-col nzSm="24" nzMd="8" class="colClass">
+                        <nz-form-item >
+                            <nz-form-label  nzRequired nzFor="name" >Nombre</nz-form-label>
+                            <nz-form-control  nzErrorTip="Name is mandatory">
+                                <input type="text" nz-input formControlName="name" maxlength="20" [(ngModel)]="testRunner.name"/>
+                            </nz-form-control>
+                        </nz-form-item>
+                    </div>
+
+                    <div nz-col nzSm="24" nzMd="8" class="colClass">
+                        <nz-form-item>
+<!--                            {{validateForm && validateForm.value.projectVersion | json}}-->
+<!--                            {{projectVersionSelect | json}}-->
+                            <nz-form-label>Version</nz-form-label>
+                            <nz-select nzShowSearch nzAllowClear  formControlName="projectVersion"  [compareWith]="versionCompare" [(ngModel)]="testRunner.projectVersion" [nzPlaceHolder]="'Select..'" (ngModelChange)="printTestRunner()">
+                                <nz-option *ngFor="let version of projectVersionSelect" [nzLabel]="version.project_version" [nzValue]="version"></nz-option>
+                            </nz-select>
+                        </nz-form-item >
+                    </div>
+
+                    <div nz-col nzSm="24" nzMd="8" class="colClass">
+                        <nz-form-item>
+                            <nz-form-label>Usuarios</nz-form-label>
+                            <nz-select nzShowSearch nzAllowClear formControlName="users" [compareWith]="userCompare" [(ngModel)]="testRunner.users" [nzPlaceHolder]="'Select..'" [nzMaxTagCount]="3" [nzMaxTagPlaceholder]="tagPlaceHolderDevice" nzMode="multiple">
+                                <nz-option  *ngFor="let user of usersSelect" [nzLabel]="user.name+' - ('+user.role+')'" [nzValue]="user"></nz-option>
+                            </nz-select>
+                            <ng-template #tagPlaceHolderDevice let-selectedList> and {{ selectedList.length }} more selected </ng-template>
+                        </nz-form-item >
+                    </div>
+
+                </div>
+
+                <div nz-row style="width: 100%">
+                    <div nz-col nzSm="24" nzMd="6" class="colClass">
+                        <nz-form-item>
+                            <nz-form-label>Dispositivos</nz-form-label>
+                            <nz-select nzShowSearch nzAllowClear  formControlName="devices" [(ngModel)]="testRunner.devices" [nzPlaceHolder]="'Seleccione..'" [nzMaxTagCount]="3" [nzMaxTagPlaceholder]="tagPlaceHolderDevice" nzMode="multiple">
+                                <nz-option *ngFor="let device of this.testSuite.devices" [nzLabel]="device" [nzValue]="device"></nz-option>
+                            </nz-select>
+                            <ng-template #tagPlaceHolderDevice let-selectedList> y {{ selectedList.length }} mas seleccionados </ng-template>
+                        </nz-form-item >
+                    </div>
+                    <div nz-col nzSm="24" nzMd="6" class="colClass">
+                        <nz-form-item>
+                            <nz-form-label>SO</nz-form-label>
+                            <nz-select nzShowSearch nzAllowClear formControlName="os" [(ngModel)]="testRunner.os" [nzPlaceHolder]="'Select..'" [nzMaxTagCount]="3" [nzMaxTagPlaceholder]="tagPlaceHolderDevice" nzMode="multiple">
+                                <nz-option *ngFor="let os of this.testSuite.os" [nzLabel]="os" [nzValue]="os"></nz-option>
+                            </nz-select>
+                        </nz-form-item >
+                    </div>
+                    <div nz-col nzSm="24" nzMd="6" class="colClass">
+                        <nz-form-item>
+                            <nz-form-label>Navegadores</nz-form-label>
+                            <nz-select nzShowSearch nzAllowClear  formControlName="browsers" [(ngModel)]="testRunner.browsers" [nzPlaceHolder]="'Select..'" [nzMaxTagCount]="3" [nzMaxTagPlaceholder]="tagPlaceHolderDevice" nzMode="multiple">
+                                <nz-option *ngFor="let browsers of this.testSuite.browsers" [nzLabel]="browsers" [nzValue]="browsers"></nz-option>
+                            </nz-select>
+                        </nz-form-item >
+                    </div>
+                    <div nz-col nzSm="24" nzMd="6" class="colClass">
+                        <nz-form-item>
+                            <nz-form-label>Fecha limite</nz-form-label>
+                            <div>
+                                <nz-date-picker [nzDisabledDate]="disabledStartDate" formControlName="dueDate" [(ngModel)]="testRunner.dueDate" nzFormat="yyyy/MM/dd"></nz-date-picker>
+                            </div>
+                        </nz-form-item >
+                    </div>
+
+                </div>
+
+            </form>
+        </nz-page-header-content>
+    </nz-page-header>
+
+    <app-medium-separator></app-medium-separator>
+
+    <nz-card style="width:100%;" nzTitle="TestCases"  [nzExtra]="priorityFilter">
+
+        <ng-template #priorityFilter>
+            <div style="display: flex; flex-direction: row">
+                <button nz-button nzSize="default" type="button" (click)="selectAll()" class="nb-util-button" style="margin-right: 7px"><span>Select All</span></button>
+                <nz-form-item>
+                    <nz-select nzShowSearch nzAllowClear [(ngModel)]="testCaseDtoPriority"
+                               [nzPlaceHolder]="'Select Priority..'" [nzMaxTagCount]="4"
+                               [nzMaxTagPlaceholder]="tagPlaceHolderDevice" nzMode="multiple" style="width: 500px">
+                        <nz-option nzValue="Critical" nzLabel="Critical" ></nz-option>
+                        <nz-option nzValue="High" nzLabel="High"></nz-option>
+                        <nz-option nzValue="Medium" nzLabel="Medium"></nz-option>
+                        <nz-option nzValue="Low" nzLabel="Low"></nz-option>
+                    </nz-select>
+                    <ng-template #tagPlaceHolderDevice let-selectedList> y {{ selectedList.length }} mas seleccionados </ng-template>
+                </nz-form-item >
+            </div>
+        </ng-template>
+        <app-medium-separator></app-medium-separator>
+        <app-select-testcase #selectTestCaseComponent *ngFor="let module of testRunner.modules | testCaseFilter: testCaseDtoPriority" [module]="module" [priorityFilter]="testCaseDtoPriority" [selectAllFlag]="selectAllFlag"></app-select-testcase>
+    </nz-card>
+
+</app-section-container>
+
+<nz-modal [(nzVisible)]="modalVisibility" nzTitle="Unsaved changes detected" (nzOnCancel)="closeModal()">
+    <div style="padding-bottom: 4%">
+        Esta a punto de irse sin guardar sus cambios, que desea hacer?
+    </div>
+    <div *nzModalFooter>
+        <button nz-button class="nb-main-button" (click)="newTestRunnerOnClick()">Guardar</button>
+        <button nz-button class="nb-util-button" (click)="cancelTestRunnerOnClick()">Descartar</button>
+        <button nz-button class="nb-util-button" (click)="closeModal()">Cancelar</button>
+    </div>
+</nz-modal>

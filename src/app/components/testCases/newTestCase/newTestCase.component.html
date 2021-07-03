@@ -1,0 +1,47 @@
+<div class="container" >
+    <div nz-row>
+        <div nz-col  nzSm="24" nzMd="8" class="colClass">
+            <div nz-row >
+                <nz-form-item>
+                    <nz-form-label>Preconditions</nz-form-label>
+                    <app-markdown-area [(text)]="newTestCaseObj.precondition" [rows]="10"></app-markdown-area>
+                </nz-form-item >
+            </div>
+            <div nz-row>
+                <nz-form-item>
+                    <nz-form-label>Priority</nz-form-label>
+                    <nz-select  ngModel="priority" style="border: 1px solid #546d76;width: 100%" [(ngModel)]="newTestCaseObj.priority">
+                        <nz-option nzValue="Critical" nzLabel="Critical" ></nz-option>
+                        <nz-option nzValue="High" nzLabel="High"></nz-option>
+                        <nz-option nzValue="Medium" nzLabel="Medium"></nz-option>
+                        <nz-option nzValue="Low" nzLabel="Low"></nz-option>
+                    </nz-select>
+                </nz-form-item >
+            </div>
+        </div>
+        <div nz-col  nzSm="24" nzMd="8" class="colClass">
+            <div nz-row>
+                <nz-form-item>
+                    <nz-form-label>Expected result</nz-form-label>
+                    <app-markdown-area [(text)]="newTestCaseObj.expectedResult" [rows]="10"></app-markdown-area>
+                </nz-form-item >
+            </div>
+            <div nz-row>
+                <nz-form-item>
+                    <nz-form-label>Estimated time(in hours)</nz-form-label>
+                    <input style="border: 1px solid #546d76;" nz-input name="name" type="number" id="name"  [(ngModel)]="newTestCaseObj.estimatedTime">
+                </nz-form-item >
+            </div>
+        </div>
+
+        <div nz-col  nzSm="24" nzMd="8" class="colClass">
+            <div nz-row>
+                <nz-form-item>
+                    <nz-form-label>Steps</nz-form-label>
+                    <app-steps-testcase [(steps)]="newTestCaseObj.steps"></app-steps-testcase>
+                </nz-form-item >
+            </div>
+        </div>
+    </div>
+
+</div>

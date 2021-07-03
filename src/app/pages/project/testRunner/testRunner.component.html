@@ -1,0 +1,71 @@
+<app-section-container>
+
+    <nz-card>
+        <app-medium-separator></app-medium-separator>
+        <nz-steps [nzCurrent]="currentStep">
+            <nz-step nzTitle="Inicio"></nz-step>
+            <nz-step nzTitle="{{testRunner.status !== 'Finished' ? 'En proceso' : 'Hecho'}}"></nz-step>
+            <nz-step nzTitle="{{testRunner.status !== 'Finished' ? 'En espera' : 'Finalizado'}}"></nz-step>
+        </nz-steps>
+    </nz-card>
+
+    <app-medium-separator></app-medium-separator>
+
+    <nz-page-header nzBackIcon="" [nzGhost]="false" (nzBack)="goBack()">
+        <nz-page-header-title>{{testRunner.name}}</nz-page-header-title>
+        <nz-page-header-subtitle>{{testRunner.lastModifiedDate | date: 'short'}}</nz-page-header-subtitle>
+        <nz-page-header-tags>
+            <app-testcases-status-tag [status]="testRunner.status"></app-testcases-status-tag>
+        </nz-page-header-tags>
+
+        <nz-page-header-extra>
+            <div *ngIf="testRunner.status === 'Waiting'; then run else pause"></div>
+            <ng-template #run>
+                <button nz-button class="nb-main-button" (click)="runTestSuiteRunner()" *ngIf="testRunner.status === 'Waiting'"><i nz-icon nzType="right"></i>Ejecutar</button>
+            </ng-template>
+            <ng-template #pause>
+                <button nz-button class="nb-main-button" (click)="pauseTestSuiteRunner()" *ngIf="testRunner.status === 'Running'"><i nz-icon nzType="pause"></i>Pausar</button>
+            </ng-template>
+            <button nz-button class="nb-util-button" nzType="default" title="100% Completed needed to finish" [disabled]="testRunner.statistics.remaining !== 100" nz-popconfirm nzPopconfirmTitle="Finish this test runner?" (nzOnConfirm)="finishTestRunner()" *ngIf="testRunner.status !== 'Finished' && testRunner.status !== 'Cancelled'">FINISH<i nz-icon nzType="check"></i></button>
+            <button nz-button nzType="danger" nz-popconfirm nzPopconfirmTitle="Cancel this test runner?" (nzOnConfirm)="cancelTestRunner()" *ngIf="testRunner.status !== 'Cancelled' && testRunner.status !== 'Finished'"><i nz-icon nzType="stop"></i>CANCELAR</button>
+        </nz-page-header-extra>
+        <nz-page-header-content>
+            <nz-descriptions nzSize="small" [nzColumn]="3" *ngIf="testRunner.statistics">
+                <nz-descriptions-item nzTitle="Casos de prueba"
+                                      [nzSpan]="1">{{testRunner.statistics.totalTestCases}}</nz-descriptions-item>
+                <nz-descriptions-item nzTitle="Exito / Fallo" [nzSpan]="1">{{testRunner.statistics
+                    .passed}} / {{testRunner.statistics.failed}}</nz-descriptions-item>
+                <nz-descriptions-item nzTitle="Fecha inicio"
+                                      [nzSpan]="1">{{testRunner.startDate === null ? '-' : testRunner.startDate | shortDateAndTimeFormat}}</nz-descriptions-item>
+
+                <nz-descriptions-item nzTitle="Completado"
+                                      [nzSpan]="1">{{testRunner.statistics.remaining | decimalFormat:2}}%
+                </nz-descriptions-item>
+                <nz-descriptions-item nzTitle="N/P" [nzSpan]="1">{{testRunner.statistics.cnt}}</nz-descriptions-item>
+                <nz-descriptions-item nzTitle="Fecha fin"
+                                      [nzSpan]="1">{{testRunner.finishDate === null ? '-' : testRunner.finishDate | shortDateAndTimeFormat}}</nz-descriptions-item>
+
+                <nz-descriptions-item nzTitle="Bugs"
+                                      [nzSpan]="1">{{testRunner.statistics.bugsReported}}</nz-descriptions-item>
+                <nz-descriptions-item nzTitle="N/A" [nzSpan]="1">{{testRunner.statistics.na}}</nz-descriptions-item>
+                <nz-descriptions-item nzTitle="Tiempo total"
+                                      [nzSpan]="1">{{testRunner.statistics.totalTime}}</nz-descriptions-item>
+            </nz-descriptions>
+        </nz-page-header-content>
+    </nz-page-header>
+
+    <app-medium-separator></app-medium-separator>
+
+    <nz-card style="width:100%;" nzTitle="Casos de prueba">
+        <app-medium-separator></app-medium-separator>
+        <div *ngFor="let module of testRunner.modules">
+            <div *ngIf="getTotalTestCaseToRunByModule(module) > 0">
+                <app-resolve-testcase [module]="module" [totalTestCases]="getTotalTestCaseToRunByModule(module)" [isClosed]="isClosed" (newBug)="openDrawerNewBug($event,module)" (newTestCaseStatus)="changeTestCaseStatusOnClick()"></app-resolve-testcase>
+            </div>
+        </div>
+    </nz-card>
+
+</app-section-container>
+
+<!-- DRAWER NEW BUG --->
+<ng-template #drawerTemplate let-data let-drawerRef="drawerRef"></ng-template>

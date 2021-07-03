@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Progress Bar/Circular/Default/Warning</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2,15.7421875 C1.39570312,15.7421875 0.90625,15.2527344 0.90625,14.6484375 L0.90625,1.11328125 C0.90625,0.508984375 1.39570312,0.01953125 2,0.01953125 C2.60429688,0.01953125 3.09375,0.508984375 3.09375,1.11328125 L3.09375,14.6484375 C3.09375,15.2527344 2.60429688,15.7421875 2,15.7421875 Z M0.76953125,18.75 C0.76953125,19.4295691 1.32043087,19.9804688 2,19.9804688 C2.67956913,19.9804688 3.23046875,19.4295691 3.23046875,18.75 C3.23046875,18.0704309 2.67956913,17.5195312 2,17.5195312 C1.32043087,17.5195312 0.76953125,18.0704309 0.76953125,18.75 Z" id="path-1"></path>
+    </defs>
+    <g id="Progress-Bar/Circular/Default/Warning" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/Exclamation" transform="translate(38.000000, 30.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#F7C626" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+        <circle id="Oval-31-Copy-2" stroke="#F7C626" stroke-width="4" cx="40" cy="40" r="38"></circle>
+    </g>
+</svg>

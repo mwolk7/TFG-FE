@@ -1,0 +1,20 @@
+<div cdkDropList (cdkDropListDropped)="drop($event, steps)">
+    <div cdkDrag  *ngFor="let step of steps">
+        <div class="module" style="border: 1px solid #546d76;">
+            <div style="display: flex; justify-content: flex-start; width: 100%;">
+                <i nz-icon nzType="drag" class="icon"></i>
+                <input nz-input class="title" click-stop-propagation [(ngModel)]="step.name" [placeholder]="'New Step'"/>
+            </div>
+            <div style="display: flex; justify-content: flex-end;">
+                <button nz-button nzType="danger" nzSize="small"  click-stop-propagation (click)="deleteStepOnClick(step)"><i nz-icon nzType="delete"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-small-separator></app-small-separator>
+<div class="module" style="border: 1px solid #546d76;">
+    <div style="display: flex; justify-content: flex-start;">
+        <i nz-icon nzType="plus" class="icon" (click)="addStepOnClick()"></i>
+        <input nz-input class="title" click-stop-propagation [(ngModel)]="newStepValue" [placeholder]="'New Step'" (keyup.enter)="addStepOnClick()"/>
+    </div>
+</div>

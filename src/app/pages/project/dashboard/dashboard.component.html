@@ -1,0 +1,84 @@
+<app-section-container>
+        <nz-page-header nzBackIcon [nzGhost]="false" (nzBack)="backOnClick()">
+            <!--avatar-->
+            <nz-avatar nz-page-header-avatar [nzText]="projectData.name | twoCharacters" class="notBug-avatar"> </nz-avatar>
+            <nz-page-header-title *ngIf="hasVisibility;" (click)="editOnclick()"  style="cursor: pointer">{{projectData.name}}</nz-page-header-title>
+            <nz-page-header-title *ngIf="!hasVisibility;" style="cursor: pointer">{{projectData.name}}</nz-page-header-title>
+            <nz-page-header-subtitle>{{projectData.tag}}</nz-page-header-subtitle>
+            <nz-page-header-extra *ngIf="!this.projectData.readOnly">
+                <button nz-button class="nb-main-button" (click)="newTestSuite()">NUEVO MODULO</button>
+<!--                <button nz-button class="nb-util-button" (click)="newProjectOnClick()">New Subproject</button>-->
+                <button nz-button class="nb-util-button" (click)="editOnclick()">EDITAR</button>
+            </nz-page-header-extra>
+            <nz-page-header-content>
+                <app-loader-container [loading]="projectDataIsLoading">
+                    <nz-descriptions nzSize="small" [nzColumn]="2">
+                        <nz-descriptions-item nzTitle="Creado" [nzSpan]="1">{{projectData.createdDate | date: 'short'}}</nz-descriptions-item>
+<!--                        <nz-descriptions-item nzTitle="Parent project" [nzSpan]="1"><a *ngIf="projectData.parentProjectName" (click)="goToProject(projectData.parentProjectId)">#{{projectData.parentProjectName}}</a></nz-descriptions-item>-->
+                        <nz-descriptions-item nzTitle="Modificado" [nzSpan]="1">{{projectData.lastModifiedDate | date: 'short'}}</nz-descriptions-item>
+<!--                        <nz-descriptions-item nzTitle="Child projects" [nzSpan]="1">-->
+<!--                            <div style="display: flex">-->
+<!--                                <span *ngFor="let childProject of projectData.childNestedProjects" style="padding-left: 5px">-->
+<!--                                    <a (click)="goToProject(childProject.id)">#{{childProject.tag}}</a>-->
+<!--                                </span>-->
+<!--                            </div>-->
+<!--                        </nz-descriptions-item>-->
+                    </nz-descriptions>
+                </app-loader-container>
+            </nz-page-header-content>
+        </nz-page-header>
+    <app-medium-separator></app-medium-separator>
+    <nz-row>
+
+        <div *ngIf="hasVisibility; then showTestSuite else hideTestSuite"></div>
+        <ng-template #hideTestSuite>
+            <nz-card style="width:100%;" nzTitle="Modulos de testing">
+            <div class="noVisibility">
+                <img src="../../../../assets/images/CAJA-DOCUMENTOS.png"/>
+
+                <nz-comment nzAuthor="not-bug" [nzDatetime]="currentDate | date">
+                    <nz-comment-content>
+                        <p>
+                            <br>
+                            NO TENES ACCESSO
+                        </p>
+                    </nz-comment-content>
+                </nz-comment>
+            </div>
+            </nz-card>
+        </ng-template>
+
+        <ng-template  #showTestSuite>
+                <nz-card style="width:100%;" nzTitle="Modulos de testing" [nzExtra]="searchTemplate">
+                    <app-loader-container [loading]="testSuitesDataIsLoading">
+                        <div *ngIf="testSuitesData.length > 0; then testSuites else noTestSuites"></div>
+                        <ng-template #testSuites>
+                            <div *ngFor="let data of testSuitesData | filterTable: search" style="width: 100%">
+                                <app-row-testsuite [testSuite]="data" style="width: 100%"></app-row-testsuite>
+                            </div>
+                        </ng-template>
+                        <ng-template #noTestSuites>
+                            <div class="noVisibility">
+                                <nz-empty style="margin-top: 5%"></nz-empty>
+                                <nz-comment nzAuthor="not-bug" [nzDatetime]="currentDate | date">
+                                    <nz-comment-content>
+                                        <p>
+                                            <br>ESTE PROYECTO NO TIENE MODULOS CREADOS
+                                        </p>
+                                    </nz-comment-content>
+                                </nz-comment>
+                            </div>
+                        </ng-template>
+
+                    </app-loader-container>
+                </nz-card>
+                <ng-template #searchTemplate>
+                    <div style="display: flex">
+                        <app-search-input [(inputModel)]="search" style="padding-right: 16px"> </app-search-input>
+                    </div>
+                </ng-template>
+        </ng-template>
+    </nz-row>
+</app-section-container>
+<app-project-new-project [parentProject]="projectData" (closeOnClick)="closeNewProjectOnClick()" (successOnClick)="successNewProjectOnClick($event)" [showNewProject]="showNewProject" ></app-project-new-project>
+

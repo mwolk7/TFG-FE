@@ -1,0 +1,71 @@
+<app-section-container>
+    <button nz-button nzType="link" nzSize="large" class="backButton" (click)="backOnClick()"><i nz-icon nzType="arrow-left" class="arrowIcon"></i></button>
+    <div style="text-align: center">
+        <!--avatar-->
+        <nz-avatar nz-page-header-avatar [nzText]="actualUser.name | twoCharacters" style="width: 200px; height: 200px; line-height: 200px; font-size: 80px" class="notBug-avatar"></nz-avatar>
+        <app-medium-separator></app-medium-separator>
+        <span style="font-size: 30px; font-weight: bold">{{actualUser.name}} {{actualUser.surname}}</span>
+    </div>
+    <app-medium-separator></app-medium-separator>
+    <app-medium-separator></app-medium-separator>
+    <div nz-row style="width: 100%">
+
+    <div nz-col nzSm="24" nzMd="12">
+        <nz-card style="width:80%;  margin: auto" nzTitle="Integrations"  [nzExtra]="addTemplate" >
+            <app-medium-separator></app-medium-separator>
+
+            <nz-list>
+                <nz-list-item *ngFor="let integration of integrationsData">
+                    <div style="display: flex; width: 100%; justify-content: space-between">
+                        <div style="align-content: flex-start; display: flex">
+                            <div [ngSwitch]="integration.type">
+                                    <nz-tag nzColor="orange" style="width: 70px; text-align: center"  *ngSwitchCase="'GitLab'">GitLab</nz-tag>
+                                    <nz-tag nzColor="green"  style="width: 70px; text-align: center"  *ngSwitchCase="'Backlog'">BackLog</nz-tag>
+                                    <div *ngSwitchDefault></div>
+                            </div>
+                            <span>{{ integration.name }}</span>
+                            <button class="edit-button" nz-button nzSize="small" (click)="editIntegration(integration)"><i nz-icon nzType="edit"></i></button>
+                            <button class="delete-button" nz-button nzType="danger" nzSize="small" nz-popconfirm nzPopconfirmTitle="Delete this integration?" (nzOnConfirm)="deleteIntegrationOnClick(integration.id)"><i nz-icon nzType="delete"></i></button>
+                        </div>
+                        <div style="align-content: flex-end">
+                            <!-- <button nz-button nzType="danger" nzSize="small">Delete</button> -->
+                        </div>
+                    </div>
+                </nz-list-item>
+            </nz-list>
+        </nz-card>
+
+        <ng-template #addTemplate>
+            <div style="display: flex">
+                <button nz-button class="nb-main-button" nz-dropdown [nzDropdownMenu]="menu" nzTrigger="click" nzPlacement="bottomLeft">Add</button>
+                <nz-dropdown-menu #menu="nzDropdownMenu">
+                    <ul nz-menu style="width: 120px;">
+                        <li nz-menu-item (click)="addBackLogIntegrationOnClick()">BackLog</li>
+                        <li nz-menu-item nzDisabled>GitLab</li>
+                        <li nz-menu-item nzDisabled>Jira</li>
+                        <li nz-menu-item nzDisabled>GitHub</li>
+                    </ul>
+                </nz-dropdown-menu>
+
+
+            </div>
+        </ng-template>
+
+
+    </div>
+        <div nz-col nzSm="24" nzMd="12" class="colClass">
+            <nz-card style="width:80%;  margin: auto" nzTitle="User Info">
+                <app-medium-separator></app-medium-separator>
+                <ul nz-menu>
+                    <li nz-menu-item style="cursor: default">Full name: {{actualUser.fullname}} </li>
+                    <li nz-menu-item style="cursor: default">Username: @{{actualUser.username}} </li>
+                    <li nz-menu-item style="cursor: default">Email: {{actualUser.email}} </li>
+                </ul>
+            </nz-card>
+        </div>
+    </div>
+
+
+</app-section-container>
+<!-- MODAL -->
+<app-new-backlog-integration *ngIf="objectIntegration" (successOnClick)="successBackLogAddIntegration()" (closeOnClick)="closeBackLogAddIntegration()" [showNewIntegration]="showBackLogAddIntegration" [newIntegration]="objectIntegration"></app-new-backlog-integration>

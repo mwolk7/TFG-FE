@@ -1,0 +1,6 @@
+<nz-row style="margin-left: 14px;margin-right: 14px;margin-bottom: 10px">
+    <button nz-button class="nb-util-button" nzType="default" (click)="openGalleryDrawer()" ><i nz-icon nzType="search"></i>Search in gallery</button>
+    <nz-upload  [nzFileList]="selectedFileList"  (nzChange)="handleUpload($event)">
+
+    </nz-upload>
+</nz-row>

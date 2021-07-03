@@ -1,0 +1,29 @@
+@import "src/assets/scss/style";
+
+.backButton {
+  background-size: contain;
+  margin-left: 20px;
+}
+
+.arrowIcon {
+  color: white;
+}
+
+.delete-button {
+  position: absolute;
+  right: 0;
+}
+
+.edit-button {
+  position:absolute;
+  right: 5%;
+  cursor: pointer;
+  background-color: $Light-Grey-4;
+  color: $White;
+  border-color: $Dark-blue-2;
+
+  &:hover {
+    background-color: $Dark-blue-3;
+    border-color: $Dark-blue-2;
+  }
+}
